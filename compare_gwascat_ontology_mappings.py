@@ -5,9 +5,10 @@ import pandas as pd
 import numpy as np
 import text2term
 from text2term import Mapper
+from tqdm import tqdm
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 # URL to EFO ontology version used
 EFO_URL = "http://www.ebi.ac.uk/efo/releases/v3.62.0/efo.owl"
@@ -41,6 +42,7 @@ def compute_text2term_mappings(metadata_df, source_term_col=TRAIT_COLUMN, source
 
 
 def extract_gwascatalog_mappings(metadata_df):
+    print("Extracting ontology mappings from the GWAS Catalog metadata...")
     mappings_list = []
     for _, row in metadata_df.iterrows():
         mapped_trait_uri = row[MAPPED_TRAIT_IRI_COLUMN]
@@ -58,8 +60,10 @@ def extract_gwascatalog_mappings(metadata_df):
                             MAPPED_TRAIT_IRI_COLUMN: iri,
                             MAPPED_TRAIT_CURIE_COLUMN: _get_curie_for_term(iri)}
                 mappings_list.append(mappings)
+    output_mappings_file = os.path.join(OUTPUT_FOLDER, "mappings_gwascatalog.tsv")
     mappings_df = pd.DataFrame(mappings_list)
-    mappings_df.to_csv(os.path.join(OUTPUT_FOLDER, "mappings_gwascatalog.tsv"), sep="\t", index=False)
+    mappings_df.to_csv(output_mappings_file, sep="\t", index=False)
+    print(f"...done (saved to {output_mappings_file})")
     return mappings_df
 
 
@@ -98,35 +102,37 @@ def compare_mappings(t2t_mappings, gwascat_mappings, efo_df):
     data = []
     unique_accessions = t2t_mappings[T2T_INPUT_TERM_ID_COL].unique()
 
-    for accession in unique_accessions:
-        input_trait = t2t_mappings.loc[t2t_mappings[T2T_INPUT_TERM_ID_COL] == accession, T2T_INPUT_TERM_COL].unique()[0]
+    for accession in tqdm(unique_accessions):
+        t2t_subset = t2t_mappings[t2t_mappings[T2T_INPUT_TERM_ID_COL] == accession]
+        gwascat_subset = gwascat_mappings[gwascat_mappings[STUDY_ID_COLUMN] == accession]
 
-        t2t_traits = t2t_mappings.loc[t2t_mappings[T2T_INPUT_TERM_ID_COL] == accession, T2T_MAPPED_TERM_CURIE_COL].unique()
-        gwascat_traits = gwascat_mappings.loc[gwascat_mappings[STUDY_ID_COLUMN] == accession, MAPPED_TRAIT_CURIE_COLUMN].unique()
+        input_trait = t2t_subset[T2T_INPUT_TERM_COL].iloc[0]
+        t2t_traits = t2t_subset[T2T_MAPPED_TERM_CURIE_COL].unique()
+        gwascat_traits = gwascat_subset[MAPPED_TRAIT_CURIE_COLUMN].unique()
 
         t2t_trait = t2t_traits[0]  # there is a single mapping for each input trait
+        t2t_trait_label = t2t_subset["Mapped Term Label"].unique()[0]
+
+        # look up parents and children in the EFO class hierarchy
         trait_parents = efo_df.loc[efo_df['Subject'] == t2t_trait, 'Object'].unique()
         trait_children = efo_df.loc[efo_df['Object'] == t2t_trait, 'Subject'].unique()
-
-        t2t_trait_label = t2t_mappings.loc[t2t_mappings[T2T_INPUT_TERM_ID_COL] == accession, "Mapped Term Label"].unique()[0]
 
         if np.any(gwascat_traits[:] == t2t_trait):
             data.append([accession, input_trait, t2t_trait, t2t_trait_label, t2t_trait, t2t_trait_label, 'Same'])
         elif any(t in trait_parents for t in gwascat_traits):
-            gwascat_trait_label = gwascat_mappings.loc[gwascat_mappings[STUDY_ID_COLUMN] == accession, MAPPED_TRAIT_COLUMN].unique()
+            gwascat_trait_label = gwascat_subset[MAPPED_TRAIT_COLUMN].iloc[0]
             data.append([accession, input_trait, t2t_trait, t2t_trait_label, gwascat_traits[0], gwascat_trait_label[0], 'More Specific'])
         elif any(t in trait_children for t in gwascat_traits):
-            gwascat_trait_label = gwascat_mappings.loc[gwascat_mappings[STUDY_ID_COLUMN] == accession, MAPPED_TRAIT_COLUMN].unique()
+            gwascat_trait_label = gwascat_subset[MAPPED_TRAIT_COLUMN].iloc[0]
             data.append([accession, input_trait, t2t_trait, t2t_trait_label, gwascat_traits[0], gwascat_trait_label[0], 'More Generic'])
         else:
             gwascat_trait = ""
             gwascat_trait_label = ""
             if len(gwascat_traits) > 0:
                 gwascat_trait = gwascat_traits[0]
-                gwascat_trait_label = gwascat_mappings.loc[gwascat_mappings[STUDY_ID_COLUMN] == accession, MAPPED_TRAIT_COLUMN].unique()
+                gwascat_trait_label = gwascat_subset[MAPPED_TRAIT_COLUMN].iloc[0]
             data.append([accession, input_trait, t2t_trait, t2t_trait_label, gwascat_trait, gwascat_trait_label, 'Unrelated'])
 
-    # Convert the list of rows into a DataFrame
     return pd.DataFrame(data, columns=[STUDY_ID_COLUMN, TRAIT_COLUMN, "TEXT2TERM.MAPPING", "TEXT2TERM.MAPPING.LABEL",
                                        "GWASCAT.MAPPING", "GWASCAT.MAPPING.LABEL", "CATEGORY"])
 
@@ -148,7 +154,7 @@ if __name__ == '__main__':
     # Compute text2term mappings from scratch or load mappings from file if they exist in the OUTPUT_FOLDER
     t2t_mappings_file = os.path.join(OUTPUT_FOLDER, "mappings_t2t.csv")
     if os.path.exists(t2t_mappings_file):
-        text2term_mappings = pd.read_csv(t2t_mappings_file, skiprows=11)
+        text2term_mappings = pd.read_csv(t2t_mappings_file, skiprows=11, low_memory=False)
         print("Loading text2term mappings from file...")
     else:
         text2term_mappings = compute_text2term_mappings(metadata_df=gwascatalog_metadata)
@@ -158,5 +164,4 @@ if __name__ == '__main__':
     results_df = compare_mappings(text2term_mappings, gwascatalog_mappings, efo_edges_df)
     output_file = os.path.join(OUTPUT_FOLDER, "mappings_comparison.tsv")
     results_df.to_csv(output_file, sep="\t", index=False)
-    print(f"...saved comparison results to {output_file}")
-    print(f"...done (comparison time: {format(time.time() - start, '.2f')} seconds)")
+    print(f"...done (comparison time: {format(time.time() - start, '.2f')} seconds. Saved results to: {output_file})")
