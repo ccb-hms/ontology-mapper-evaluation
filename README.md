@@ -11,7 +11,7 @@ python compare_gwascat_ontology_mappings.py
 ### Inputs
 The inputs needed for the comparison are: 
 
-- `data/gwascatalog_metadata.tsv`: table containing the GWAS Catalog metadata, downloaded on 2024-02-06. 
+- `data/gwascatalog_metadata.tsv`: the GWAS Catalog metadata table, downloaded on 2024-02-06. 
 - `data/efo_entailed_edges.tsv`: table containing all pairs of entailed subsumptions between terms in EFO. 
 
 ### Outputs
