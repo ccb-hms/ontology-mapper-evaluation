@@ -8,7 +8,7 @@ from text2term import Mapper
 from tqdm import tqdm
 
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 # URL to EFO ontology version used
 EFO_URL = "http://www.ebi.ac.uk/efo/releases/v3.62.0/efo.owl"
@@ -111,7 +111,9 @@ def compare_mappings(t2t_mappings, gwascat_mappings, efo_df):
         gwascat_traits = gwascat_subset[MAPPED_TRAIT_CURIE_COLUMN].unique()
 
         t2t_trait = t2t_traits[0]  # there is a single mapping for each input trait
-        t2t_trait_label = t2t_subset["Mapped Term Label"].unique()[0]
+        t2t_trait_label = t2t_subset["Mapped Term Label"].unique()
+        if not isinstance(t2t_trait_label, str):
+            t2t_trait_label = t2t_trait_label[0]
 
         # look up parents and children in the EFO class hierarchy
         trait_parents = efo_df.loc[efo_df['Subject'] == t2t_trait, 'Object'].unique()
