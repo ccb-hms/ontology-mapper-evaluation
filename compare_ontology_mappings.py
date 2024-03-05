@@ -2,13 +2,12 @@ import os
 import time
 import bioregistry
 import pandas as pd
-import numpy as np
 import text2term
 from text2term import Mapper
 from tqdm import tqdm
 
 
-__version__ = "0.1.2"
+__version__ = "0.2.0"
 
 # URL to EFO ontology version used
 EFO_URL = "http://www.ebi.ac.uk/efo/releases/v3.62.0/efo.owl"
@@ -98,7 +97,7 @@ def _get_curie(term):
     return curie
 
 
-def compare_mappings(t2t_mappings, gwascat_mappings, efo_df):
+def compare_mappings(t2t_mappings, gwascat_mappings, edges_df, entailed_edges_df):
     data = []
     unique_accessions = t2t_mappings[T2T_INPUT_TERM_ID_COL].unique()
 
@@ -115,18 +114,27 @@ def compare_mappings(t2t_mappings, gwascat_mappings, efo_df):
         if not isinstance(t2t_trait_label, str):
             t2t_trait_label = t2t_trait_label[0]
 
-        # look up parents and children in the EFO class hierarchy
-        trait_parents = efo_df.loc[efo_df['Subject'] == t2t_trait, 'Object'].unique()
-        trait_children = efo_df.loc[efo_df['Object'] == t2t_trait, 'Subject'].unique()
+        # get asserted EFO parents of both the text2term mapped term and all gwascatalog mapped terms
+        t2t_trait_asserted_parents = edges_df.loc[edges_df['Subject'] == t2t_trait, 'Object'].unique()
+        gwascat_traits_asserted_parents = []
+        for gwascat_trait in gwascat_traits:
+            gwascat_trait_parents = edges_df.loc[edges_df['Subject'] == gwascat_trait, 'Object'].unique()
+            gwascat_traits_asserted_parents.extend(gwascat_trait_parents)
 
-        if np.any(gwascat_traits[:] == t2t_trait):
+        # get entailed parents and children (of the text2term mapped term) in the EFO class hierarchy
+        t2t_trait_parents = entailed_edges_df.loc[entailed_edges_df['Subject'] == t2t_trait, 'Object'].unique()
+        t2t_trait_children = entailed_edges_df.loc[entailed_edges_df['Object'] == t2t_trait, 'Subject'].unique()
+
+        if t2t_trait in gwascat_traits:
             data.append([accession, input_trait, t2t_trait, t2t_trait_label, t2t_trait, t2t_trait_label, 'Same'])
-        elif any(t in trait_parents for t in gwascat_traits):
+        elif any(t in t2t_trait_parents for t in gwascat_traits):
             gwascat_trait_label = gwascat_subset[MAPPED_TRAIT_COLUMN].iloc[0]
             data.append([accession, input_trait, t2t_trait, t2t_trait_label, gwascat_traits[0], gwascat_trait_label[0], 'More Specific'])
-        elif any(t in trait_children for t in gwascat_traits):
+        elif any(t in t2t_trait_children for t in gwascat_traits):
             gwascat_trait_label = gwascat_subset[MAPPED_TRAIT_COLUMN].iloc[0]
             data.append([accession, input_trait, t2t_trait, t2t_trait_label, gwascat_traits[0], gwascat_trait_label[0], 'More Generic'])
+        elif any(t in t2t_trait_asserted_parents for t in gwascat_traits_asserted_parents):
+            data.append([accession, input_trait, t2t_trait, t2t_trait_label, t2t_trait, t2t_trait_label, 'Sibling'])
         else:
             gwascat_trait = ""
             gwascat_trait_label = ""
@@ -147,23 +155,30 @@ if __name__ == '__main__':
     # Load the GWAS Catalog metadata table
     gwascatalog_metadata = pd.read_csv(os.path.join("data", "gwascatalog_metadata.tsv"), sep="\t")
 
+    # Filter out the studies/rows that have been mapped to multiple EFO ontology terms
+    gwascatalog_metadata = gwascatalog_metadata[~gwascatalog_metadata['MAPPED_TRAIT_CURIE'].astype(str).str.contains(',')]
+
     # Extract ontology mappings from the GWAS Catalog metadata
     gwascatalog_mappings = extract_gwascatalog_mappings(metadata_df=gwascatalog_metadata)
 
-    # Load the EFO ontology table contained all entailed SubClassOf relationships between terms in EFO
-    efo_edges_df = pd.read_csv(os.path.join("data", "efo_entailed_edges.tsv"), sep="\t")
+    # Load the EFO ontology table containing all asserted SubClassOf relationships between terms in EFO
+    efo_edges_df = pd.read_csv(os.path.join("data", "efo_edges.tsv"), sep="\t")
+
+    # Load the EFO ontology table containing all entailed SubClassOf relationships between terms in EFO
+    efo_entailed_edges_df = pd.read_csv(os.path.join("data", "efo_entailed_edges.tsv"), sep="\t")
 
     # Compute text2term mappings from scratch or load mappings from file if they exist in the OUTPUT_FOLDER
     t2t_mappings_file = os.path.join(OUTPUT_FOLDER, "mappings_t2t.csv")
     if os.path.exists(t2t_mappings_file):
+        print(f"Loading text2term mappings from file ({t2t_mappings_file})...")
         text2term_mappings = pd.read_csv(t2t_mappings_file, skiprows=11, low_memory=False)
-        print("Loading text2term mappings from file...")
     else:
         text2term_mappings = compute_text2term_mappings(metadata_df=gwascatalog_metadata)
 
     start = time.time()
     print("Comparing mappings...")
-    results_df = compare_mappings(text2term_mappings, gwascatalog_mappings, efo_edges_df)
+    results_df = compare_mappings(t2t_mappings=text2term_mappings, gwascat_mappings=gwascatalog_mappings,
+                                  edges_df=efo_edges_df, entailed_edges_df=efo_entailed_edges_df)
     output_file = os.path.join(OUTPUT_FOLDER, "mappings_comparison.tsv")
     results_df.to_csv(output_file, sep="\t", index=False)
     print(f"...done (comparison time: {format(time.time() - start, '.2f')} seconds. Saved results to: {output_file})")
