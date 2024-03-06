@@ -7,7 +7,7 @@ from text2term import Mapper
 from tqdm import tqdm
 
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 
 # URL to EFO ontology version used
 EFO_URL = "http://www.ebi.ac.uk/efo/releases/v3.62.0/efo.owl"
@@ -132,7 +132,7 @@ def compare_mappings(t2t_mappings, gwascat_mappings, edges_df, entailed_edges_df
             data.append([accession, input_trait, t2t_trait, t2t_trait_label, gwascat_traits[0], gwascat_trait_label[0], 'More Specific'])
         elif any(t in t2t_trait_children for t in gwascat_traits):
             gwascat_trait_label = gwascat_subset[MAPPED_TRAIT_COLUMN].iloc[0]
-            data.append([accession, input_trait, t2t_trait, t2t_trait_label, gwascat_traits[0], gwascat_trait_label[0], 'More Generic'])
+            data.append([accession, input_trait, t2t_trait, t2t_trait_label, gwascat_traits[0], gwascat_trait_label[0], 'More General'])
         elif any(t in t2t_trait_asserted_parents for t in gwascat_traits_asserted_parents):
             data.append([accession, input_trait, t2t_trait, t2t_trait_label, t2t_trait, t2t_trait_label, 'Sibling'])
         else:
@@ -153,10 +153,13 @@ if __name__ == '__main__':
         os.makedirs(OUTPUT_FOLDER)
 
     # Load the GWAS Catalog metadata table
-    gwascatalog_metadata = pd.read_csv(os.path.join("data", "gwascatalog_metadata.tsv"), sep="\t")
+    metadata_file = os.path.join("data", "gwascatalog_metadata.tsv")
+    print(f"Loading GWAS Catalog metadata from: {metadata_file}")
+    gwascatalog_metadata = pd.read_csv(metadata_file, sep="\t")
 
     # Filter out the studies/rows that have been mapped to multiple EFO ontology terms
     gwascatalog_metadata = gwascatalog_metadata[~gwascatalog_metadata['MAPPED_TRAIT_CURIE'].astype(str).str.contains(',')]
+    print(f"...metadata contains {gwascatalog_metadata.shape[0]} traits...")
 
     # Extract ontology mappings from the GWAS Catalog metadata
     gwascatalog_mappings = extract_gwascatalog_mappings(metadata_df=gwascatalog_metadata)
