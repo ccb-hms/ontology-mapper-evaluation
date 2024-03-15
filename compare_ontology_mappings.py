@@ -1,52 +1,51 @@
 import os
 import time
+import logging
 import bioregistry
 import pandas as pd
 import text2term
-from text2term import Mapper
+from text2term import Mapper, onto_utils
 from tqdm import tqdm
 
-__version__ = "0.3.0"
+__version__ = "0.4.0"
 
 # URL to EFO ontology version used
 EFO_URL = "http://www.ebi.ac.uk/efo/releases/v3.62.0/efo.owl"
 
-# Output folder for the mappings computed using text2term and those extracted from GWAS Catalog
+# Output folder for the mappings computed using text2term and those extracted from the chosen benchmark dataset
 OUTPUT_FOLDER = "output"
-
-# Headers of the GWAS Catalog metadata table
-STUDY_ID_COLUMN = "STUDY.ACCESSION"
-TRAIT_COLUMN = "DISEASE.TRAIT"
-MAPPED_TRAIT_COLUMN = "MAPPED_TRAIT"
-MAPPED_TRAIT_IRI_COLUMN = "MAPPED_TRAIT_URI"
-MAPPED_TRAIT_CURIE_COLUMN = "MAPPED_TRAIT_CURIE"
 
 # Headers of the text2term mappings table
 T2T_INPUT_TERM_COL = "Source Term"
 T2T_INPUT_TERM_ID_COL = "Source Term ID"
+T2T_MAPPED_TERM_COL = "Mapped Term Label"
+T2T_MAPPED_TERM_IRI_COL = "Mapped Term IRI"
 T2T_MAPPED_TERM_CURIE_COL = "Mapped Term CURIE"
 
 # Dictionary specifying for each term their high-level types/parents
 MAPPING_TYPES = dict()
 
+LOG = onto_utils.get_logger("mapping.comparator", logging.INFO)
 
-def compute_text2term_mappings(metadata_df, source_term_col=TRAIT_COLUMN, source_term_id_col=STUDY_ID_COLUMN):
+
+def compute_text2term_mappings(metadata_df, dataset_name, source_term_col, source_term_id_col):
     source_terms = metadata_df[source_term_col].tolist()
     source_term_ids = metadata_df[source_term_id_col].tolist()
     return text2term.map_terms(source_terms=source_terms, source_terms_ids=source_term_ids,
                                target_ontology=EFO_URL, excl_deprecated=True, save_graphs=False,
                                max_mappings=1, min_score=0.0, save_mappings=True, mapper=Mapper.TFIDF,
-                               output_file=os.path.join(OUTPUT_FOLDER, "mappings_t2t.csv"),
+                               output_file=os.path.join(OUTPUT_FOLDER, f"mappings_t2t_{dataset_name}.csv"),
                                base_iris=("http://www.ebi.ac.uk/efo/", "http://purl.obolibrary.org/obo/MONDO",
                                           "http://purl.obolibrary.org/obo/HP", "http://www.orpha.net/ORDO",
                                           "http://purl.obolibrary.org/obo/DOID"))
 
 
-def extract_gwascatalog_mappings(metadata_df, entailed_edges_df):
-    print("Extracting ontology mappings from the GWAS Catalog metadata...")
+def extract_mappings(metadata_df, entailed_edges_df, dataset_name, study_id_col, trait_col, mapped_trait_col,
+                     mapped_trait_iri_col):
+    LOG.info(f"Extracting ontology mappings from {dataset_name}...")
     mappings_list = []
     for _, row in metadata_df.iterrows():
-        mapped_trait_uri = row[MAPPED_TRAIT_IRI_COLUMN]
+        mapped_trait_uri = row[mapped_trait_iri_col]
         if mapped_trait_uri != "" and not pd.isna(mapped_trait_uri):
             if "," in mapped_trait_uri:
                 iris_list = mapped_trait_uri.split(',')
@@ -69,23 +68,25 @@ def extract_gwascatalog_mappings(metadata_df, entailed_edges_df):
                                              "IS_PHENOTYPE": is_phenotype,
                                              "IS_AMOUNT": is_amount,
                                              "IS_PROCESS": is_process}
-
-                mappings = {STUDY_ID_COLUMN: row[STUDY_ID_COLUMN],
-                            TRAIT_COLUMN: row[TRAIT_COLUMN],
-                            MAPPED_TRAIT_COLUMN: row[MAPPED_TRAIT_COLUMN],
-                            MAPPED_TRAIT_IRI_COLUMN: iri,
-                            MAPPED_TRAIT_CURIE_COLUMN: term_curie,
-                            "IS_DISEASE": is_disease,
-                            "IS_MEASUREMENT": is_measurement,
-                            "IS_PHENOTYPE": is_phenotype,
-                            "IS_AMOUNT": is_amount,
-                            "IS_PROCESS": is_process,
-                            "PARENTS": term_parents}
-                mappings_list.append(mappings)
-    output_mappings_file = os.path.join(OUTPUT_FOLDER, "mappings_gwascatalog.tsv")
+                if study_id_col is None:
+                    study_id = onto_utils.generate_uuid()
+                else:
+                    study_id = row[study_id_col]
+                mapping = {T2T_INPUT_TERM_ID_COL: study_id,
+                           T2T_INPUT_TERM_COL: row[trait_col],
+                           T2T_MAPPED_TERM_COL: row[mapped_trait_col],
+                           T2T_MAPPED_TERM_IRI_COL: iri,
+                           T2T_MAPPED_TERM_CURIE_COL: term_curie,
+                           "IS_DISEASE": is_disease,
+                           "IS_MEASUREMENT": is_measurement,
+                           "IS_PHENOTYPE": is_phenotype,
+                           "IS_AMOUNT": is_amount,
+                           "IS_PROCESS": is_process}
+                mappings_list.append(mapping)
+    output_mappings_file = os.path.join(OUTPUT_FOLDER, f"mappings-{dataset_name}.tsv")
     mappings_df = pd.DataFrame(mappings_list)
     mappings_df.to_csv(output_mappings_file, sep="\t", index=False)
-    print(f"...done (saved to {output_mappings_file})")
+    LOG.info(f"...done (saved to {output_mappings_file})")
     return mappings_df
 
 
@@ -126,79 +127,142 @@ def _get_curie(term):
     return curie
 
 
-def compare_mappings(t2t_mappings, gwascat_mappings, edges_df, entailed_edges_df):
-    data = []
-    unique_accessions = t2t_mappings[T2T_INPUT_TERM_ID_COL].unique()
+def _fix_curie(value):
+    value = value.replace("_", ":")
+    if "Orphanet" in value:
+        value = value.replace("Orphanet", "ORDO")
+    return value
 
-    for accession in tqdm(unique_accessions):
-        t2t_subset = t2t_mappings[t2t_mappings[T2T_INPUT_TERM_ID_COL] == accession]
-        gwascat_subset = gwascat_mappings[gwascat_mappings[STUDY_ID_COLUMN] == accession]
+
+def compare_mappings(t2t_mappings, benchmark_mappings, edges_df, entailed_edges_df):
+    data = []
+    queries = t2t_mappings[T2T_INPUT_TERM_ID_COL].unique()
+
+    for query in tqdm(queries):
+        t2t_subset = t2t_mappings[t2t_mappings[T2T_INPUT_TERM_ID_COL] == query]
+        benchmark_subset = benchmark_mappings[benchmark_mappings[T2T_INPUT_TERM_ID_COL] == query]
 
         input_trait = t2t_subset[T2T_INPUT_TERM_COL].iloc[0]
         t2t_trait = t2t_subset[T2T_MAPPED_TERM_CURIE_COL].iloc[0]  # there is a single mapping for each input trait
-        t2t_trait_label = t2t_subset["Mapped Term Label"].iloc[0]
+        t2t_trait_label = t2t_subset[T2T_MAPPED_TERM_COL].iloc[0]
 
-        gwascat_traits = gwascat_subset[MAPPED_TRAIT_CURIE_COLUMN].unique()
+        benchmark_traits = benchmark_subset[T2T_MAPPED_TERM_CURIE_COL].unique()
+        if len(benchmark_traits) > 0:
+            # get asserted EFO parents of both the text2term mapped term and all benchmark mapped terms
+            t2t_trait_asserted_parents = edges_df.loc[edges_df['Subject'] == t2t_trait, 'Object'].unique()
+            benchmark_traits_asserted_parents = []
+            for benchmark_trait in benchmark_traits:
+                benchmark_trait_parents = edges_df.loc[edges_df['Subject'] == benchmark_trait, 'Object'].unique()
+                benchmark_traits_asserted_parents.extend(benchmark_trait_parents)
 
-        # get asserted EFO parents of both the text2term mapped term and all gwascatalog mapped terms
-        t2t_trait_asserted_parents = edges_df.loc[edges_df['Subject'] == t2t_trait, 'Object'].unique()
-        gwascat_traits_asserted_parents = []
-        for gwascat_trait in gwascat_traits:
-            gwascat_trait_parents = edges_df.loc[edges_df['Subject'] == gwascat_trait, 'Object'].unique()
-            gwascat_traits_asserted_parents.extend(gwascat_trait_parents)
+            # get entailed parents and children (of the text2term mapped term) in the EFO class hierarchy
+            t2t_trait_parents = entailed_edges_df.loc[entailed_edges_df['Subject'] == t2t_trait, 'Object'].unique()
+            t2t_trait_children = entailed_edges_df.loc[entailed_edges_df['Object'] == t2t_trait, 'Subject'].unique()
 
-        # get entailed parents and children (of the text2term mapped term) in the EFO class hierarchy
-        t2t_trait_parents = entailed_edges_df.loc[entailed_edges_df['Subject'] == t2t_trait, 'Object'].unique()
-        t2t_trait_children = entailed_edges_df.loc[entailed_edges_df['Object'] == t2t_trait, 'Subject'].unique()
+            benchmark_trait = benchmark_traits[0]
+            benchmark_trait_label = benchmark_subset[T2T_MAPPED_TERM_COL].iloc[0]
 
-        if len(gwascat_traits) > 0:
-            gwascat_trait = gwascat_traits[0]
-            gwascat_trait_label = gwascat_subset[MAPPED_TRAIT_COLUMN].iloc[0]
-
-            trait_term = MAPPING_TYPES[gwascat_trait]
+            trait_term = MAPPING_TYPES[benchmark_trait]
             is_disease = trait_term["IS_DISEASE"]
             is_measurement = trait_term["IS_MEASUREMENT"]
             is_phenotype = trait_term["IS_PHENOTYPE"]
             is_amount = trait_term["IS_AMOUNT"]
             is_process = trait_term["IS_PROCESS"]
 
-            if not isinstance(gwascat_trait_label, str):
-                gwascat_trait_label = gwascat_trait_label[0]
-            if t2t_trait in gwascat_traits:
-                data.append([accession, input_trait, t2t_trait, t2t_trait_label, gwascat_trait, gwascat_trait_label,
+            if not isinstance(benchmark_trait_label, str):
+                try:
+                    benchmark_trait_label = benchmark_trait_label[0]
+                except TypeError as e:
+                    LOG.error(benchmark_trait_label)
+                    LOG.error(e)
+                finally:
+                    benchmark_trait_label = ""
+            if t2t_trait in benchmark_traits:
+                data.append([query, input_trait, t2t_trait, t2t_trait_label, benchmark_trait, benchmark_trait_label,
                              'Same', is_disease, is_measurement, is_phenotype, is_amount, is_process])
-            elif any(t in t2t_trait_parents for t in gwascat_traits):
-                data.append([accession, input_trait, t2t_trait, t2t_trait_label, gwascat_trait, gwascat_trait_label,
+            elif any(t in t2t_trait_parents for t in benchmark_traits):
+                data.append([query, input_trait, t2t_trait, t2t_trait_label, benchmark_trait, benchmark_trait_label,
                              'More Specific', is_disease, is_measurement, is_phenotype, is_amount, is_process])
-            elif any(t in t2t_trait_children for t in gwascat_traits):
-                data.append([accession, input_trait, t2t_trait, t2t_trait_label, gwascat_trait, gwascat_trait_label,
+            elif any(t in t2t_trait_children for t in benchmark_traits):
+                data.append([query, input_trait, t2t_trait, t2t_trait_label, benchmark_trait, benchmark_trait_label,
                              'More General', is_disease, is_measurement, is_phenotype, is_amount, is_process])
-            elif any(t in t2t_trait_asserted_parents for t in gwascat_traits_asserted_parents):
-                data.append([accession, input_trait, t2t_trait, t2t_trait_label, gwascat_trait, gwascat_trait_label,
+            elif any(t in t2t_trait_asserted_parents for t in benchmark_traits_asserted_parents):
+                data.append([query, input_trait, t2t_trait, t2t_trait_label, benchmark_trait, benchmark_trait_label,
                              'Sibling', is_disease, is_measurement, is_phenotype, is_amount, is_process])
             else:
-                data.append([accession, input_trait, t2t_trait, t2t_trait_label, gwascat_trait, gwascat_trait_label,
+                data.append([query, input_trait, t2t_trait, t2t_trait_label, benchmark_trait, benchmark_trait_label,
                              'Unrelated', is_disease, is_measurement, is_phenotype, is_amount, is_process])
+        else:
+            LOG.debug(f"Could not find benchmark mapping for resource {query}, which was mapped by t2t "
+                      f"to '{t2t_trait_label}' ({t2t_trait})")
+    return pd.DataFrame(data, columns=[T2T_INPUT_TERM_ID_COL, T2T_INPUT_TERM_COL, "t2t.Mapping", "t2t.MappingLabel",
+                                       "Benchmark.Mapping", "Benchmark.MappingLabel", "Classification", "IsDisease",
+                                       "IsMeasurement", "IsPhenotype", "IsAmount", "IsProcess"])
 
-    return pd.DataFrame(data, columns=[STUDY_ID_COLUMN, TRAIT_COLUMN, "TEXT2TERM.MAPPING", "TEXT2TERM.MAPPING.LABEL",
-                                       "GWASCAT.MAPPING", "GWASCAT.MAPPING.LABEL", "CATEGORY", "IS_DISEASE",
-                                       "IS_MEASUREMENT", "IS_PHENOTYPE", "IS_AMOUNT", "IS_PROCESS"])
 
-
-if __name__ == '__main__':
-    # Create output directory if it does not exist
-    if not os.path.exists(OUTPUT_FOLDER):
-        os.makedirs(OUTPUT_FOLDER)
+def get_gwascatalog_metadata(dataset_name):
+    # Headers of the GWAS Catalog metadata table
+    study_id_column = "STUDY.ACCESSION"
+    trait_column = "DISEASE.TRAIT"
+    mapped_trait_column = "MAPPED_TRAIT"
+    mapped_trait_iri_column = "MAPPED_TRAIT_URI"
+    mapped_trait_curie_column = "MAPPED_TRAIT_CURIE"
 
     # Load the GWAS Catalog metadata table
     metadata_file = os.path.join("data", "gwascatalog_metadata.tsv")
-    print(f"Loading GWAS Catalog metadata from: {metadata_file}")
+    LOG.info(f"Loading GWAS Catalog metadata from: {metadata_file}")
     gwascatalog_metadata = pd.read_csv(metadata_file, sep="\t")
 
     # Filter out the studies/rows that have been mapped to multiple EFO ontology terms
     gwascatalog_metadata = gwascatalog_metadata[
-        ~gwascatalog_metadata[MAPPED_TRAIT_CURIE_COLUMN].astype(str).str.contains(',')]
-    print(f"...metadata contains {gwascatalog_metadata.shape[0]} traits")
+        ~gwascatalog_metadata[mapped_trait_curie_column].astype(str).str.contains(',')]
+    LOG.info(f"...metadata contains {gwascatalog_metadata.shape[0]} traits")
+
+    benchmark_mappings = extract_mappings(metadata_df=gwascatalog_metadata,
+                                          entailed_edges_df=efo_entailed_edges_df,
+                                          dataset_name=dataset_name,
+                                          trait_col=trait_column,
+                                          study_id_col=study_id_column,
+                                          mapped_trait_col=mapped_trait_column,
+                                          mapped_trait_iri_col=mapped_trait_iri_column)
+    return gwascatalog_metadata, benchmark_mappings
+
+
+def get_efo_ukbb_mappings(dataset_name):
+    # Load the UKBB-EFO mappings table
+    ukbbefo_table_file = os.path.join("data", "UK_Biobank_master_file.tsv")
+    LOG.info(f"Loading UKBB-EFO mappings table from: {ukbbefo_table_file}")
+    ukbbefo_table = pd.read_csv(ukbbefo_table_file, sep="\t")
+
+    # Filter out the rows that have been mapped to multiple EFO ontology terms
+    ukbbefo_table = ukbbefo_table[~ukbbefo_table["MAPPED_TERM_URI"].astype(str).str.contains(',')]
+    ukbbefo_table = ukbbefo_table[~ukbbefo_table["MAPPED_TERM_URI"].astype(str).str.contains(r'\|\|')]
+
+    ukbbefo_table = ukbbefo_table[ukbbefo_table["MAPPING_TYPE"] == "Exact"]
+    LOG.info(f"...UKBB-EFO table contains {ukbbefo_table.shape[0]} mappings")
+
+    ukbbefo_table["ID"] = [onto_utils.generate_uuid() for _ in range(len(ukbbefo_table))]
+    ukbbefo_table['MAPPED_TERM_URI'] = ukbbefo_table['MAPPED_TERM_URI'].apply(_fix_curie)
+
+    benchmark_mappings = extract_mappings(metadata_df=ukbbefo_table,
+                                          entailed_edges_df=efo_entailed_edges_df,
+                                          dataset_name=dataset_name,
+                                          trait_col="ZOOMA QUERY",
+                                          study_id_col="ID",
+                                          mapped_trait_col="MAPPED_TERM_LABEL",
+                                          mapped_trait_iri_col="MAPPED_TERM_URI")
+    return ukbbefo_table, benchmark_mappings
+
+
+if __name__ == '__main__':
+    DATASET_1 = "GWASCatalog"
+    DATASET_2 = "UKBB-EFO"
+
+    COMPARE_T2T_TO = DATASET_1
+
+    # Create output directory if it does not exist
+    if not os.path.exists(OUTPUT_FOLDER):
+        os.makedirs(OUTPUT_FOLDER)
 
     # Load the EFO ontology table containing all asserted SubClassOf relationships between terms in EFO
     efo_edges_df = pd.read_csv(os.path.join("data", "efo_edges.tsv"), sep="\t")
@@ -206,22 +270,32 @@ if __name__ == '__main__':
     # Load the EFO ontology table containing all entailed SubClassOf relationships between terms in EFO
     efo_entailed_edges_df = pd.read_csv(os.path.join("data", "efo_entailed_edges.tsv"), sep="\t")
 
-    # Extract ontology mappings from the GWAS Catalog metadata
-    gwascatalog_mappings = extract_gwascatalog_mappings(metadata_df=gwascatalog_metadata,
-                                                        entailed_edges_df=efo_entailed_edges_df)
+    if COMPARE_T2T_TO == DATASET_1:
+        metadata, mappings = get_gwascatalog_metadata(DATASET_1)
+    else:
+        metadata, mappings = get_efo_ukbb_mappings(DATASET_2)
 
     # Compute text2term mappings from scratch or load mappings from file if they exist in the OUTPUT_FOLDER
-    t2t_mappings_file = os.path.join(OUTPUT_FOLDER, "mappings_t2t.csv")
+    t2t_mappings_file = os.path.join(OUTPUT_FOLDER, f"mappings_t2t_{COMPARE_T2T_TO}.csv")
     if os.path.exists(t2t_mappings_file):
-        print(f"Loading text2term mappings from file ({t2t_mappings_file})...")
+        LOG.info(f"Loading text2term mappings from file ({t2t_mappings_file})...")
         text2term_mappings = pd.read_csv(t2t_mappings_file, skiprows=11, low_memory=False)
     else:
-        text2term_mappings = compute_text2term_mappings(metadata_df=gwascatalog_metadata)
+        if COMPARE_T2T_TO == DATASET_1:
+            text2term_mappings = compute_text2term_mappings(metadata_df=metadata,
+                                                            dataset_name=COMPARE_T2T_TO,
+                                                            source_term_col="DISEASE.TRAIT",
+                                                            source_term_id_col="STUDY.ACCESSION")
+        else:
+            text2term_mappings = compute_text2term_mappings(metadata_df=metadata,
+                                                            dataset_name=COMPARE_T2T_TO,
+                                                            source_term_col="ZOOMA QUERY",
+                                                            source_term_id_col="ID")
 
     start = time.time()
-    print("Comparing mappings...")
-    results_df = compare_mappings(t2t_mappings=text2term_mappings, gwascat_mappings=gwascatalog_mappings,
+    LOG.info("Comparing mappings...")
+    results_df = compare_mappings(t2t_mappings=text2term_mappings, benchmark_mappings=mappings,
                                   edges_df=efo_edges_df, entailed_edges_df=efo_entailed_edges_df)
-    output_file = os.path.join(OUTPUT_FOLDER, "mappings_comparison.tsv")
+    output_file = os.path.join(OUTPUT_FOLDER, f"mappings_comparison_{COMPARE_T2T_TO}.tsv")
     results_df.to_csv(output_file, sep="\t", index=False)
-    print(f"...done (comparison time: {format(time.time() - start, '.2f')} seconds. Saved results to: {output_file})")
+    LOG.info(f"...done (comparison time: {format(time.time()-start, '.2f')} seconds. Saved results to: {output_file})")
