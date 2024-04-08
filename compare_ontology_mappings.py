@@ -7,7 +7,7 @@ import text2term
 from text2term import Mapper, onto_utils
 from tqdm import tqdm
 
-__version__ = "0.4.0"
+__version__ = "0.5.0"
 
 # URL to EFO ontology version used
 EFO_URL = "http://www.ebi.ac.uk/efo/releases/v3.62.0/efo.owl"
@@ -254,11 +254,43 @@ def get_efo_ukbb_mappings(dataset_name):
     return ukbbefo_table, benchmark_mappings
 
 
-if __name__ == '__main__':
-    DATASET_1 = "GWASCatalog"
-    DATASET_2 = "UKBB-EFO"
+def get_biomappings(dataset_name, source_ontology="", target_ontology=""):
+    # Load the Biomappings table
+    biomappings_table_file = os.path.join("data", "biomappings.tsv")
+    LOG.info(f"Loading Biomappings table from: {biomappings_table_file}")
+    biomappings_table = pd.read_csv(biomappings_table_file, sep="\t")
 
-    COMPARE_T2T_TO = DATASET_1
+    # Filter Biomappings table by the source and/or target ontology of mappings
+    if source_ontology != "":
+        biomappings_table = biomappings_table[biomappings_table['source prefix'] == source_ontology]
+    if target_ontology != "":
+        biomappings_table = biomappings_table[biomappings_table['target prefix'] == target_ontology]
+
+    # Add IRI
+    biomappings_table["target IRI"] = biomappings_table.apply(
+        lambda row: _get_iri(target_ontology=row["target prefix"], target_identifier=row["target identifier"]), axis=1)
+
+    benchmark_mappings = extract_mappings(metadata_df=biomappings_table,
+                                          entailed_edges_df=efo_entailed_edges_df,
+                                          dataset_name=dataset_name,
+                                          trait_col="source name",
+                                          study_id_col="source identifier",
+                                          mapped_trait_col="target name",
+                                          mapped_trait_iri_col="target IRI")
+    return biomappings_table, benchmark_mappings
+
+
+def _get_iri(target_ontology, target_identifier):
+    return bioregistry.get_iri(prefix=target_ontology, identifier=target_identifier, priority=['obofoundry', 'default'])
+
+
+if __name__ == '__main__':
+    benchmark_dataset_1 = "GWASCatalog"
+    benchmark_dataset_2 = "UKBB-EFO"
+    benchmark_dataset_3 = "Biomappings"
+
+    # Specify which benchmark dataset to compare text2term mappings against
+    compare_t2t_to = benchmark_dataset_3
 
     # Create output directory if it does not exist
     if not os.path.exists(OUTPUT_FOLDER):
@@ -270,32 +302,39 @@ if __name__ == '__main__':
     # Load the EFO ontology table containing all entailed SubClassOf relationships between terms in EFO
     efo_entailed_edges_df = pd.read_csv(os.path.join("data", "efo_entailed_edges.tsv"), sep="\t")
 
-    if COMPARE_T2T_TO == DATASET_1:
-        metadata, mappings = get_gwascatalog_metadata(DATASET_1)
+    if compare_t2t_to == benchmark_dataset_1:
+        metadata, mappings = get_gwascatalog_metadata(benchmark_dataset_1)
+    elif compare_t2t_to == benchmark_dataset_2:
+        metadata, mappings = get_efo_ukbb_mappings(benchmark_dataset_2)
     else:
-        metadata, mappings = get_efo_ukbb_mappings(DATASET_2)
+        metadata, mappings = get_biomappings(benchmark_dataset_3, target_ontology="efo")
 
     # Compute text2term mappings from scratch or load mappings from file if they exist in the OUTPUT_FOLDER
-    t2t_mappings_file = os.path.join(OUTPUT_FOLDER, f"mappings_t2t_{COMPARE_T2T_TO}.csv")
+    t2t_mappings_file = os.path.join(OUTPUT_FOLDER, f"mappings_t2t_{compare_t2t_to}.csv")
     if os.path.exists(t2t_mappings_file):
         LOG.info(f"Loading text2term mappings from file ({t2t_mappings_file})...")
         text2term_mappings = pd.read_csv(t2t_mappings_file, skiprows=11, low_memory=False)
     else:
-        if COMPARE_T2T_TO == DATASET_1:
+        if compare_t2t_to == benchmark_dataset_1:
             text2term_mappings = compute_text2term_mappings(metadata_df=metadata,
-                                                            dataset_name=COMPARE_T2T_TO,
+                                                            dataset_name=compare_t2t_to,
                                                             source_term_col="DISEASE.TRAIT",
                                                             source_term_id_col="STUDY.ACCESSION")
-        else:
+        elif compare_t2t_to == benchmark_dataset_2:
             text2term_mappings = compute_text2term_mappings(metadata_df=metadata,
-                                                            dataset_name=COMPARE_T2T_TO,
+                                                            dataset_name=compare_t2t_to,
                                                             source_term_col="ZOOMA QUERY",
                                                             source_term_id_col="ID")
+        else:
+            text2term_mappings = compute_text2term_mappings(metadata_df=metadata,
+                                                            dataset_name=compare_t2t_to,
+                                                            source_term_col="source name",
+                                                            source_term_id_col="source identifier")
 
     start = time.time()
     LOG.info("Comparing mappings...")
     results_df = compare_mappings(t2t_mappings=text2term_mappings, benchmark_mappings=mappings,
                                   edges_df=efo_edges_df, entailed_edges_df=efo_entailed_edges_df)
-    output_file = os.path.join(OUTPUT_FOLDER, f"mappings_comparison_{COMPARE_T2T_TO}.tsv")
+    output_file = os.path.join(OUTPUT_FOLDER, f"mappings_comparison_{compare_t2t_to}.tsv")
     results_df.to_csv(output_file, sep="\t", index=False)
     LOG.info(f"...done (comparison time: {format(time.time()-start, '.2f')} seconds. Saved results to: {output_file})")
