@@ -7,7 +7,7 @@ import text2term
 from text2term import Mapper, onto_utils
 from tqdm import tqdm
 
-__version__ = "0.5.0"
+__version__ = "0.5.1"
 
 # URL to EFO ontology version used
 EFO_URL = "http://www.ebi.ac.uk/efo/releases/v3.62.0/efo.owl"
@@ -83,7 +83,7 @@ def extract_mappings(metadata_df, entailed_edges_df, dataset_name, study_id_col,
                            "IS_AMOUNT": is_amount,
                            "IS_PROCESS": is_process}
                 mappings_list.append(mapping)
-    output_mappings_file = os.path.join(OUTPUT_FOLDER, f"mappings-{dataset_name}.tsv")
+    output_mappings_file = os.path.join(OUTPUT_FOLDER, f"mappings_{dataset_name}.tsv")
     mappings_df = pd.DataFrame(mappings_list)
     mappings_df.to_csv(output_mappings_file, sep="\t", index=False)
     LOG.info(f"...done (saved to {output_mappings_file})")
@@ -132,6 +132,10 @@ def _fix_curie(value):
     if "Orphanet" in value:
         value = value.replace("Orphanet", "ORDO")
     return value
+
+
+def _get_iri(target_ontology, target_identifier):
+    return bioregistry.get_iri(prefix=target_ontology, identifier=target_identifier, priority=['obofoundry', 'default'])
 
 
 def compare_mappings(t2t_mappings, benchmark_mappings, edges_df, entailed_edges_df):
@@ -266,7 +270,10 @@ def get_biomappings(dataset_name, source_ontology="", target_ontology=""):
     if target_ontology != "":
         biomappings_table = biomappings_table[biomappings_table['target prefix'] == target_ontology]
 
-    # Add IRI
+    # Limit to skos:exactMatch type mappings
+    biomappings_table = biomappings_table[biomappings_table['relation'] == 'skos:exactMatch']
+
+    # Add an IRI column to enable IRI-based comparison
     biomappings_table["target IRI"] = biomappings_table.apply(
         lambda row: _get_iri(target_ontology=row["target prefix"], target_identifier=row["target identifier"]), axis=1)
 
@@ -278,10 +285,6 @@ def get_biomappings(dataset_name, source_ontology="", target_ontology=""):
                                           mapped_trait_col="target name",
                                           mapped_trait_iri_col="target IRI")
     return biomappings_table, benchmark_mappings
-
-
-def _get_iri(target_ontology, target_identifier):
-    return bioregistry.get_iri(prefix=target_ontology, identifier=target_identifier, priority=['obofoundry', 'default'])
 
 
 if __name__ == '__main__':
