@@ -7,7 +7,7 @@ import text2term
 from text2term import Mapper, onto_utils
 from tqdm import tqdm
 
-__version__ = "0.6.0"
+__version__ = "0.6.1"
 
 # URL to EFO ontology version used
 EFO_URL = "http://www.ebi.ac.uk/efo/releases/v3.62.0/efo.owl"
@@ -224,13 +224,6 @@ def compare_mappings(t2t_mappings, benchmark_mappings, edges_df, entailed_edges_
 
 
 def get_gwascatalog_metadata(dataset_name):
-    # Headers of the GWAS Catalog metadata table
-    study_id_column = "STUDY.ACCESSION"
-    trait_column = "DISEASE.TRAIT"
-    mapped_trait_column = "MAPPED_TRAIT"
-    mapped_trait_iri_column = "MAPPED_TRAIT_URI"
-    mapped_trait_curie_column = "MAPPED_TRAIT_CURIE"
-
     # Load the GWAS Catalog metadata table
     metadata_file = os.path.join("data", "gwascatalog_metadata.tsv")
     LOG.info(f"Loading GWAS Catalog metadata from: {metadata_file}")
@@ -238,16 +231,15 @@ def get_gwascatalog_metadata(dataset_name):
 
     # Filter out the studies/rows that have been mapped to multiple EFO ontology terms
     gwascatalog_metadata = gwascatalog_metadata[
-        ~gwascatalog_metadata[mapped_trait_curie_column].astype(str).str.contains(',')]
-    LOG.info(f"...metadata contains {gwascatalog_metadata.shape[0]} traits")
+        ~gwascatalog_metadata["MAPPED_TRAIT_CURIE"].astype(str).str.contains(',')]
 
     benchmark_mappings = extract_mappings(dataset=gwascatalog_metadata,
                                           dataset_name=dataset_name,
                                           entailed_edges_df=efo_entailed_edges_df,
-                                          source_term_col=trait_column,
-                                          source_term_id_col=study_id_column,
-                                          mapped_term_col=mapped_trait_column,
-                                          mapped_term_iri_col=mapped_trait_iri_column)
+                                          source_term_col="DISEASE.TRAIT",
+                                          source_term_id_col="STUDY.ACCESSION",
+                                          mapped_term_col="MAPPED_TRAIT",
+                                          mapped_term_iri_col="MAPPED_TRAIT_URI")
     return gwascatalog_metadata, benchmark_mappings
 
 
@@ -261,8 +253,8 @@ def get_efo_ukbb_mappings(dataset_name):
     ukbbefo_table = ukbbefo_table[~ukbbefo_table["MAPPED_TERM_URI"].astype(str).str.contains(',')]
     ukbbefo_table = ukbbefo_table[~ukbbefo_table["MAPPED_TERM_URI"].astype(str).str.contains(r'\|\|')]
 
+    # Limit table to skos:exactMatch type mappings
     ukbbefo_table = ukbbefo_table[ukbbefo_table["MAPPING_TYPE"] == "Exact"]
-    LOG.info(f"...UKBB-EFO table contains {ukbbefo_table.shape[0]} mappings")
 
     ukbbefo_table["ID"] = [onto_utils.generate_uuid() for _ in range(len(ukbbefo_table))]
     ukbbefo_table['MAPPED_TERM_URI'] = ukbbefo_table['MAPPED_TERM_URI'].apply(_fix_curie)
