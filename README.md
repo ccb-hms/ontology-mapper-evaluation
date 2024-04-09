@@ -9,14 +9,20 @@ python compare_ontology_mappings.py
 ```
 
 ### Inputs
-The inputs needed for the comparison are: 
+The inputs for the comparison are: 
 
-- `data/gwascatalog_metadata.tsv`: the GWAS Catalog metadata table, downloaded on 2024-02-06. 
+#### Benchmark mappings
+- `data/gwascatalog_metadata.tsv`: the GWAS Catalog metadata table, downloaded on 2024-02-06 ([URL](https://www.ebi.ac.uk/gwas/docs/file-downloads)).
+- `data/UK_Biobank_master_file.tsv`: mappings of UK Biobank traits to EFO, downloaded on 2024-03-14 ([URL](https://github.com/EBISPOT/EFO-UKB-mappings)).
+- `data/biomappings.tsv`: Biomappings table, downloaded on 2024-04-08 ([URL](https://github.com/biopragmatics/biomappings)).
+
+#### Target ontology
+- `data/efo_edges.tsv`: table containing all pairs of asserted subsumptions between terms in EFO.
 - `data/efo_entailed_edges.tsv`: table containing all pairs of entailed subsumptions between terms in EFO. 
 
 ### Outputs
-The outputs of the comparison are:
+The outputs of the comparison are, for each benchmark mapping set:
 
-- `output/mappings_t2t.csv`: table containing the generated text2term mappings.
-- `output/mappings_gwascatalog.tsv`: table containing mappings extracted from GWAS Catalog metadata.
-- `output/mappings_comparison.tsv`: table containing the results of the mappings' comparison.
+- `output/{dataset}_t2t_mappings.csv`: table containing the generated text2term mappings.
+- `output/{dataset}_mappings.tsv`: table containing mappings extracted from the original dataset.
+- `output/{dataset}_results.tsv`: table containing the results of the mappings' comparison.
