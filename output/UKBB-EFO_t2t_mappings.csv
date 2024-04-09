@@ -1,0 +1,911 @@
+# Timestamp: 2024-04-09 17:39:09.334154
+# Target Ontology: http://www.ebi.ac.uk/efo/releases/v3.62.0/efo.owl
+# text2term version: 4.1.2
+# Minimum Score: 0.00
+# Mapper: tfidf
+# Base IRIs: ('http://www.ebi.ac.uk/efo/', 'http://purl.obolibrary.org/obo/MONDO', 'http://purl.obolibrary.org/obo/HP', 'http://www.orpha.net/ORDO', 'http://purl.obolibrary.org/obo/DOID')
+# Max Mappings: 1
+# Term Type: OntologyTermType.CLASS
+# Deprecated Terms Excluded
+# Unmapped Terms Excluded
+# Of 899 entries, 899 were mapped to 750 unique terms
+Source Term ID,Source Term,Mapped Term Label,Mapped Term CURIE,Mapped Term IRI,Mapping Score,Tags
+gydiudZPXk,Alzheimer s disease,Alzheimer disease,MONDO:0004975,http://purl.obolibrary.org/obo/MONDO_0004975,0.989,None
+7xszpiWKQG,Endocarditis valve unspecified,endocarditis,EFO:0000465,http://www.ebi.ac.uk/efo/EFO_0000465,0.792,None
+FTwVa6sEcd,Family history of other conditions,family history,EFO:0000493,http://www.ebi.ac.uk/efo/EFO_0000493,0.812,None
+ZRBv8pSgif,Unspecified maternal hypertension,hypertension,EFO:0000537,http://www.ebi.ac.uk/efo/EFO_0000537,0.774,None
+LSuML35oA9,Stroke not specified as haemorrhage or infarction,hemorrhagic stroke,EFO:0020921,http://www.ebi.ac.uk/efo/EFO_0020921,0.685,None
+c6TXyKfpeD,Subarachnoid haemorrhage,subarachnoid hemorrhage,EFO:0000713,http://www.ebi.ac.uk/efo/EFO_0000713,0.993,None
+eNsG7WeTjw,Unspecified human immunodeficiency virus,HIV infection,EFO:0000764,http://www.ebi.ac.uk/efo/EFO_0000764,0.996,None
+gQudZ7dpjs,Other endocrine disorders,endocrine system disease,EFO:0001379,http://www.ebi.ac.uk/efo/EFO_0001379,0.983,None
+youNCqRhNg,Other diseases of liver,liver disease,EFO:0001421,http://www.ebi.ac.uk/efo/EFO_0001421,0.954,None
+3j6et9xhRk,Primary disorders of muscles,muscular disease,EFO:0002970,http://www.ebi.ac.uk/efo/EFO_0002970,0.655,None
+yNBZ4nABdj,Pervasive developmental disorders,autism spectrum disorder,EFO:0003756,http://www.ebi.ac.uk/efo/EFO_0003756,0.983,None
+vRLVvDEtNk,Other cerebrovascular diseases,cerebrovascular disorder,EFO:0003763,http://www.ebi.ac.uk/efo/EFO_0003763,0.954,None
+LyLtsMjKT9,Other diseases of gallbladder,gallbladder disease,EFO:0003832,http://www.ebi.ac.uk/efo/EFO_0003832,0.977,None
+6TBvUqhL2L,Pain,pain,EFO:0003843,http://www.ebi.ac.uk/efo/EFO_0003843,0.995,None
+yUHqUAtpSW,Fracture of spine level unspecified,spinal fracture,EFO:0003902,http://www.ebi.ac.uk/efo/EFO_0003902,0.676,None
+VBVVJD3SWN,Acute hepatitis B,Acute hepatitis,HP:0200119,http://purl.obolibrary.org/obo/HP_0200119,0.921,None
+hjzB9MsjWY,Abnormalities of heart beat,Abnormal heart morphology,HP:0001627,http://purl.obolibrary.org/obo/HP_0001627,0.69,None
+WnG9JhTJrD,Scoliosis,scoliosis,EFO:0004273,http://www.ebi.ac.uk/efo/EFO_0004273,0.996,None
+cHGS3XxCA9,Other congenital malformations of heart,congenital heart malformation,EFO:0005269,http://www.ebi.ac.uk/efo/EFO_0005269,0.934,None
+wQh2Qs7kjx,Disorders of tooth development and eruption,disorder of sexual differentiation,MONDO:0002145,http://purl.obolibrary.org/obo/MONDO_0002145,0.627,None
+GYikyfvzQR,Intracerebral haemorrhage,intracerebral hemorrhage,EFO:0005669,http://www.ebi.ac.uk/efo/EFO_0005669,0.893,None
+qRB8QL4T4n,Retinal detachments and breaks,retinal detachment,EFO:0005773,http://www.ebi.ac.uk/efo/EFO_0005773,0.744,None
+MxnWctDJNb,Tuberculosis of nervous system,central nervous system tuberculosis,EFO:0007199,http://www.ebi.ac.uk/efo/EFO_0007199,0.909,None
+PGydDudQiX,Acute hepatitis A,Acute hepatitis,HP:0200119,http://purl.obolibrary.org/obo/HP_0200119,0.93,None
+zvFVMmeqBV,Hookworm diseases,hookworm infectious disease,EFO:0007314,http://www.ebi.ac.uk/efo/EFO_0007314,0.81,None
+482ohbvcCA,Female infertility,female infertility,EFO:0008560,http://www.ebi.ac.uk/efo/EFO_0008560,0.994,None
+T4CDmQBCdn,Sleep disorders,Sleep Disorder,EFO:0008568,http://www.ebi.ac.uk/efo/EFO_0008568,0.994,None
+HJbdCH48Gj,Thiamine deficiency,Thiamine deficiency,EFO:0008569,http://www.ebi.ac.uk/efo/EFO_0008569,0.994,None
+CKydXwEQVi,Viral conjunctivitis,viral conjunctivitis,EFO:0008571,http://www.ebi.ac.uk/efo/EFO_0008571,0.996,None
+cTL9YiRqTF,Alcoholic liver disease,alcoholic liver disease,EFO:0008573,http://www.ebi.ac.uk/efo/EFO_0008573,0.995,None
+D35MxA9iVS,Spinal osteochondrosis,Spinal Osteochondrosis,EFO:0008576,http://www.ebi.ac.uk/efo/EFO_0008576,0.99,None
+Y5yitadvwt,Diseases of salivary glands,salivary gland disease,EFO:0008581,http://www.ebi.ac.uk/efo/EFO_0008581,0.843,None
+p8YrWjRKT6,Gender identity disorders,gender identity disorder,EFO:0008587,http://www.ebi.ac.uk/efo/EFO_0008587,0.952,None
+odoqnofcPT,Status asthmaticus,Status Asthmaticus,EFO:0008590,http://www.ebi.ac.uk/efo/EFO_0008590,0.993,None
+cumwHseRiv,Cystic kidney disease,Cystic Kidney Disease,EFO:0008615,http://www.ebi.ac.uk/efo/EFO_0008615,0.996,None
+iHnHeSimrE,Polyp of female genital tract,female genital tract polyp,EFO:0008622,http://www.ebi.ac.uk/efo/EFO_0008622,0.994,None
+FjsENfm58V,Persistent mood,dysthymic disorder,EFO:0008623,http://www.ebi.ac.uk/efo/EFO_0008623,0.987,None
+Yz7De9vmu7,Disorders of vitreous body,vitreous body disease,EFO:0008624,http://www.ebi.ac.uk/efo/EFO_0008624,0.96,None
+a8h9C63829,Ovarian dysfunction,ovarian dysfunction,EFO:0009003,http://www.ebi.ac.uk/efo/EFO_0009003,0.993,None
+2rbS69NxGm,Other coagulation defects,blood coagulation disease,EFO:0009314,http://www.ebi.ac.uk/efo/EFO_0009314,0.888,None
+wZAy4Kmr5e,Granulomatous disorders of skin and subcutaneous tissue,skin disease,EFO:0000701,http://www.ebi.ac.uk/efo/EFO_0000701,0.788,None
+RjJJxvYtS6,Excessive vomiting in pregnancy,pregnancy,EFO:0002950,http://www.ebi.ac.uk/efo/EFO_0002950,0.545,None
+aMPzm53Dyk,Hyperfunction of pituitary gland,functioning pituitary gland adenoma,MONDO:0003429,http://purl.obolibrary.org/obo/MONDO_0003429,0.694,None
+U4HFUuxuZa,Other nutritional deficiencies,nutritional deficiency disease,EFO:1001067,http://www.ebi.ac.uk/efo/EFO_1001067,0.795,None
+HwrUgXs6m5,Other rheumatic heart diseases,rheumatic heart disease,EFO:1001161,http://www.ebi.ac.uk/efo/EFO_1001161,0.946,None
+2Kecmcs7KB,Other helminthiases,Helminthiasis,EFO:1001342,http://www.ebi.ac.uk/efo/EFO_1001342,0.878,None
+K6hMas5xAE,Unspecified viral infection of CNS,viral disease,EFO:0000763,http://www.ebi.ac.uk/efo/EFO_0000763,0.803,None
+JgivKcEfGw,Diverticular disease of intestine,diverticular disease,EFO:0009959,http://www.ebi.ac.uk/efo/EFO_0009959,0.805,None
+MME9MCUdyA,Premature separation of placenta,Abruptio Placentae,EFO:1001754,http://www.ebi.ac.uk/efo/EFO_1001754,0.988,None
+fsNmt4zc2K,Retention of urine,Urinary retention,HP:0000016,http://purl.obolibrary.org/obo/HP_0000016,0.784,None
+iEfCTuH4Sg,Unspecified urinary incontinence,Urinary incontinence,HP:0000020,http://purl.obolibrary.org/obo/HP_0000020,0.996,None
+s4WqMGoLsb,Isolated proteinuria,Proteinuria,HP:0000093,http://purl.obolibrary.org/obo/HP_0000093,0.771,None
+QhsEQZzDYW,Cleft palate,cleft palate,MONDO:0016064,http://purl.obolibrary.org/obo/MONDO_0016064,0.997,None
+Lj4ykzpLBh,Hydrocephalus,Hydrocephalus,HP:0000238,http://purl.obolibrary.org/obo/HP_0000238,0.992,None
+UP3z2KR2Ty,Visual disturbances,Gait disturbance,HP:0001288,http://purl.obolibrary.org/obo/HP_0001288,0.623,None
+RDWtYzpD7a,Unspecified dementia,dementia,MONDO:0001627,http://purl.obolibrary.org/obo/MONDO_0001627,0.977,None
+pJSUqngb6P,Unspecified haematuria,Hematuria,HP:0000790,http://purl.obolibrary.org/obo/HP_0000790,0.734,None
+PvnmzU8FUV,Cholecystitis,Cholecystitis,HP:0001082,http://purl.obolibrary.org/obo/HP_0001082,0.984,None
+uTGZBwy3wm,Dystonia,Dystonia,HP:0001332,http://purl.obolibrary.org/obo/HP_0001332,0.993,None
+G7agJX39GF,Ascites,Ascites,HP:0001541,http://purl.obolibrary.org/obo/HP_0001541,0.997,None
+bXojFejvYE,Iron deficiency anaemia,Iron deficiency anemia,HP:0001891,http://purl.obolibrary.org/obo/HP_0001891,0.986,None
+ezybavupTo,Acute renal failure,Acute kidney injury,HP:0001919,http://purl.obolibrary.org/obo/HP_0001919,0.994,None
+FrBnmas85g,Nonspecific lymphadenitis,Lymphadenitis,HP:0002840,http://purl.obolibrary.org/obo/HP_0002840,0.661,None
+94kNGHaNPS,Cachexia,Cachexia,HP:0004326,http://purl.obolibrary.org/obo/HP_0004326,0.995,None
+VGKPydV4US,Disseminated intravascular coagulation,Disseminated intravascular coagulation,HP:0005521,http://purl.obolibrary.org/obo/HP_0005521,0.994,None
+ek9JJctb5i,Senile cataract,senile cataract,MONDO:0004847,http://purl.obolibrary.org/obo/MONDO_0004847,0.995,None
+DxrUnHZtS6,Agranulocytosis,Agranulocytosis,HP:0012234,http://purl.obolibrary.org/obo/HP_0012234,0.989,None
+AEN5ed4287,Helicobacter pylori,Helicobacter pylori infectious disease,EFO:1000961,http://www.ebi.ac.uk/efo/EFO_1000961,0.897,None
+GuXAYdi2zJ,Reduction defects of lower limb,Genetic syndrome with limb reduction defects,ORPHANET.ORDO:404574,http://www.orpha.net/ORDO/Orphanet_404574,0.696,None
+85aT7VMFSH,Congenital hydrocephalus,congenital hydrocephalus,MONDO:0016349,http://purl.obolibrary.org/obo/MONDO_0016349,0.994,None
+HB8dauNAao,Immunodeficiency with predominantly antibody defects,Other immunodeficiency syndrome with predominantly antibody defects,ORPHANET.ORDO:331244,http://www.orpha.net/ORDO/Orphanet_331244,0.919,None
+BuupACMv9i,Congenital malformations of oesophagus,developmental defect during embryogenesis,MONDO:0019755,http://purl.obolibrary.org/obo/MONDO_0019755,0.657,None
+E4a6bUDAQ4,Syndactyly,syndactyly,MONDO:0021002,http://purl.obolibrary.org/obo/MONDO_0021002,0.991,None
+ZDxjbvfuxE,Other congenital malformations of intestine,developmental defect during embryogenesis,MONDO:0019755,http://purl.obolibrary.org/obo/MONDO_0019755,0.713,None
+q9GrCoNZCv,Other disorders of peripheral nervous system,peripheral nervous system disease,EFO:0009387,http://www.ebi.ac.uk/efo/EFO_0009387,0.978,None
+jM2D9E5zXT,Spondylosis,spondylosis,MONDO:0002253,http://purl.obolibrary.org/obo/MONDO_0002253,0.998,None
+LApDFRrdFc,Other retinal disorders,retinopathy,EFO:0003839,http://www.ebi.ac.uk/efo/EFO_0003839,0.914,None
+htqFbfZFsD,Arterial embolism and thrombosis,Arterial thrombosis,HP:0004420,http://purl.obolibrary.org/obo/HP_0004420,0.825,None
+nzVQL2irzU,Juvenile osteochondrosis of hip and pelvis,Legg-Calve-Perthes disease,MONDO:0007885,http://purl.obolibrary.org/obo/MONDO_0007885,0.969,None
+FFFQGvXaRr,Encephalitis myelitis and encephalomyelitis,encephalomyelitis,EFO:0001423,http://www.ebi.ac.uk/efo/EFO_0001423,0.949,None
+tSCMcaDpy2,Atrial fibrillation and flutter,atrial fibrillation,EFO:0000275,http://www.ebi.ac.uk/efo/EFO_0000275,0.804,None
+CQyxDJERpL,Dermatopolymyositis,dermatomyositis,EFO:0000398,http://www.ebi.ac.uk/efo/EFO_0000398,0.99,None
+8uYKjDSNwq,Lack of food,malnutrition,EFO:0008572,http://www.ebi.ac.uk/efo/EFO_0008572,0.997,None
+pVKwFBtKfV,Inflammatory diseases of prostate,inflammatory disease,EFO:0009903,http://www.ebi.ac.uk/efo/EFO_0009903,0.792,None
+jpukekFHXj,Chronic renal failure,stage 5 chronic kidney disease,EFO:0009909,http://www.ebi.ac.uk/efo/EFO_0009909,0.994,None
+EAAJkKQBbH,Postpolio syndrome,postpoliomyelitis syndrome,EFO:0007454,http://www.ebi.ac.uk/efo/EFO_0007454,0.963,None
+BLzirCr3UB,Atopic dermatitis,atopic eczema,EFO:0000274,http://www.ebi.ac.uk/efo/EFO_0000274,0.993,None
+npmWitNKR7,Cardiomyopathy,cardiomyopathy,EFO:0000318,http://www.ebi.ac.uk/efo/EFO_0000318,0.997,None
+3eDrd427ay,other disorders of circulatory system,cardiovascular disease,EFO:0000319,http://www.ebi.ac.uk/efo/EFO_0000319,0.961,None
+56RVGCi9cN,Crohn s disease,Crohn's disease,EFO:0000384,http://www.ebi.ac.uk/efo/EFO_0000384,0.986,None
+WThPUCuFoF,Unspecified diabetes mellitus,diabetes mellitus,EFO:0000400,http://www.ebi.ac.uk/efo/EFO_0000400,0.991,None
+4PvCoSt8bX,Other specified diabetes mellitus,diabetes mellitus,EFO:0000400,http://www.ebi.ac.uk/efo/EFO_0000400,0.991,None
+bTKEhxsdva,Epilepsy,epilepsy,EFO:0000474,http://www.ebi.ac.uk/efo/EFO_0000474,0.997,None
+XYMVJwg6zy,Glaucoma,glaucoma,MONDO:0005041,http://purl.obolibrary.org/obo/MONDO_0005041,0.99,None
+55V9A38Jo8,Irritable bowel syndrome,irritable bowel syndrome,EFO:0000555,http://www.ebi.ac.uk/efo/EFO_0000555,0.969,None
+Chkg3fErjs,Schizophrenia,schizophrenia,MONDO:0005090,http://purl.obolibrary.org/obo/MONDO_0005090,0.99,None
+zhBZoXSgDN,Ulcerative colitis,ulcerative colitis,EFO:0000729,http://www.ebi.ac.uk/efo/EFO_0000729,0.989,None
+VRCDw7eqxP,Viral infection of unspecified site,viral disease,EFO:0000763,http://www.ebi.ac.uk/efo/EFO_0000763,0.81,None
+rnbbkbYdkb,Myositis,myositis,EFO:0000783,http://www.ebi.ac.uk/efo/EFO_0000783,0.991,None
+LawGtEeQHU,Other cataract,cataract,MONDO:0005129,http://purl.obolibrary.org/obo/MONDO_0005129,0.994,None
+tZpeAt8gUw,Cytomegaloviral disease,cytomegalovirus infection,EFO:0001062,http://www.ebi.ac.uk/efo/EFO_0001062,0.993,None
+27RPsfoqGp,Endometriosis,endometriosis,EFO:0001065,http://www.ebi.ac.uk/efo/EFO_0001065,0.992,None
+iYBu5K9zCw,Obesity,obesity,EFO:0001073,http://www.ebi.ac.uk/efo/EFO_0001073,0.99,None
+rpsjf9xitQ,Insulin dependent diabetes mellitus,type 1 diabetes mellitus,MONDO:0005147,http://purl.obolibrary.org/obo/MONDO_0005147,0.903,None
+yxydiumNye,Non insulin dependent diabetes mellitus,type 2 diabetes mellitus,MONDO:0005148,http://purl.obolibrary.org/obo/MONDO_0005148,0.917,None
+goBhA3L7ki,Parkinson s disease,Parkinson disease,MONDO:0005180,http://purl.obolibrary.org/obo/MONDO_0005180,0.996,None
+P6MmuVxj9V,Juvenile arthritis,juvenile idiopathic arthritis,EFO:0002609,http://www.ebi.ac.uk/efo/EFO_0002609,0.994,None
+V6vKgKCWTR,Cellulitis,cellulitis,EFO:0003035,http://www.ebi.ac.uk/efo/EFO_0003035,0.989,None
+GbcnFBYdjX,Cushing s syndrome,Cushing syndrome,EFO:0003099,http://www.ebi.ac.uk/efo/EFO_0003099,0.975,None
+R5km9GxBHC,Osteomyelitis,osteomyelitis,EFO:0003102,http://www.ebi.ac.uk/efo/EFO_0003102,0.996,None
+qy3u4hhDoW,Spina bifida,spina bifida,EFO:0003105,http://www.ebi.ac.uk/efo/EFO_0003105,0.994,None
+zdLf7sC7QG,Heart failure,heart failure,EFO:0003144,http://www.ebi.ac.uk/efo/EFO_0003144,0.996,None
+b89zKgf5zy,Vitamin D deficiency,vitamin D deficiency,EFO:0003762,http://www.ebi.ac.uk/efo/EFO_0003762,0.994,None
+FHBfoqZCR6,Dental caries,dental caries,EFO:0003819,http://www.ebi.ac.uk/efo/EFO_0003819,0.991,None
+YX369hHBti,Migraine,migraine disorder,MONDO:0005277,http://purl.obolibrary.org/obo/MONDO_0005277,0.99,None
+8tnhndmViz,Pulmonary embolism,pulmonary embolism,EFO:0003827,http://www.ebi.ac.uk/efo/EFO_0003827,0.997,None
+7uyUUSsGyX,Other peripheral vascular diseases,peripheral vascular disease,EFO:0003875,http://www.ebi.ac.uk/efo/EFO_0003875,0.993,None
+KAmN4jN83X,Multiple sclerosis,multiple sclerosis,MONDO:0005301,http://purl.obolibrary.org/obo/MONDO_0005301,0.997,None
+JALrUDq6NL,Acne,acne,EFO:0003894,http://www.ebi.ac.uk/efo/EFO_0003894,0.99,None
+6vNv7C38sf,Ankylosing spondylitis,ankylosing spondylitis,EFO:0003898,http://www.ebi.ac.uk/efo/EFO_0003898,0.994,None
+vnnyMMpZm8,Angina pectoris,angina pectoris,EFO:0003913,http://www.ebi.ac.uk/efo/EFO_0003913,0.996,None
+iHciUedq2t,Atherosclerosis,atherosclerosis,EFO:0003914,http://www.ebi.ac.uk/efo/EFO_0003914,0.995,None
+FDnehhGaPA,Gastro oesophageal reflux disease,gastroesophageal reflux disease,EFO:0003948,http://www.ebi.ac.uk/efo/EFO_0003948,0.935,None
+8GtXz4iN74,Sunburn,sunburn,EFO:0003958,http://www.ebi.ac.uk/efo/EFO_0003958,0.987,None
+gUqd2krW6Z,Cleft lip,cleft lip,EFO:0003959,http://www.ebi.ac.uk/efo/EFO_0003959,0.995,None
+fTv7v6ZCYt,Androgenic alopecia,androgenetic alopecia,EFO:0004191,http://www.ebi.ac.uk/efo/EFO_0004191,0.99,None
+vPxqqRZnaN,Alopecia areata,alopecia areata,EFO:0004192,http://www.ebi.ac.uk/efo/EFO_0004192,0.998,None
+zkPgwfmzhj,Vitiligo,Vitiligo,EFO:0004208,http://www.ebi.ac.uk/efo/EFO_0004208,0.986,None
+zyVYvW39DB,Hypospadias,hypospadias,EFO:0004209,http://www.ebi.ac.uk/efo/EFO_0004209,0.989,None
+wnEJAjZ7Bv,Otosclerosis,otosclerosis,EFO:0004213,http://www.ebi.ac.uk/efo/EFO_0004213,0.993,None
+ZQ5Qwp2zPK,Conduct disorders,conduct disorder,EFO:0004216,http://www.ebi.ac.uk/efo/EFO_0004216,0.932,None
+JUtbiaXb4h,Male infertility,male infertility,EFO:0004248,http://www.ebi.ac.uk/efo/EFO_0004248,0.996,None
+jT2jnkfRRx,Meningococcal infection,meningococcal infection,EFO:0004249,http://www.ebi.ac.uk/efo/EFO_0004249,0.995,None
+bWYLqCciyw,Calculus of kidney and ureter,nephrolithiasis,EFO:0004253,http://www.ebi.ac.uk/efo/EFO_0004253,0.961,None
+V9aKGWKhsx,Nephrotic syndrome,nephrotic syndrome,EFO:0004255,http://www.ebi.ac.uk/efo/EFO_0004255,0.983,None
+JHePyhnAqE,Osteonecrosis,osteonecrosis,EFO:0004259,http://www.ebi.ac.uk/efo/EFO_0004259,0.994,None
+97iXotGBnb,Paget s disease of bone,osteitis deformans,EFO:0004261,http://www.ebi.ac.uk/efo/EFO_0004261,0.991,None
+GgxoKCkRT9,Other anaemias,Aplastic anemia,HP:0001915,http://purl.obolibrary.org/obo/HP_0001915,0.604,None
+E4NTZLYN6v,Gout,gout,EFO:0004274,http://www.ebi.ac.uk/efo/EFO_0004274,0.995,None
+QWE5rdx5CA,Diabetes mellitus in pregnancy,gestational diabetes,EFO:0004593,http://www.ebi.ac.uk/efo/EFO_0004593,0.786,None
+Zu6fTuCqkE,Duodenal ulcer,duodenal ulcer,EFO:0004607,http://www.ebi.ac.uk/efo/EFO_0004607,0.984,None
+gJc58zmdSS,Cholelithiasis,cholelithiasis,EFO:0004799,http://www.ebi.ac.uk/efo/EFO_0004799,0.988,None
+ewzSXcxGoZ,Leishmaniasis,Leishmaniasis,EFO:0005044,http://www.ebi.ac.uk/efo/EFO_0005044,0.993,None
+ZD7xSpmkMX,Eating disorders,eating disorder,EFO:0005203,http://www.ebi.ac.uk/efo/EFO_0005203,0.916,None
+BwcRKgEop3,Hypotension,hypotension,EFO:0005251,http://www.ebi.ac.uk/efo/EFO_0005251,0.991,None
+rS2apQ6eRV,Unspecified contact dermatitis,contact dermatitis,EFO:0005319,http://www.ebi.ac.uk/efo/EFO_0005319,0.993,None
+iransn6DhY,Schizoaffective disorders,schizoaffective disorder,EFO:0005411,http://www.ebi.ac.uk/efo/EFO_0005411,0.962,None
+9ejZ8HbTzW,Urticaria,urticaria,EFO:0005531,http://www.ebi.ac.uk/efo/EFO_0005531,0.994,None
+EoSWSBZtsU,Seborrhoeic keratosis,seborrheic keratosis,EFO:0005584,http://www.ebi.ac.uk/efo/EFO_0005584,0.811,None
+zDdeGnxqxn,Shigellosis,shigellosis,EFO:0005585,http://www.ebi.ac.uk/efo/EFO_0005585,0.991,None
+UEfS254QLw,Other vitamin deficiencies,vitamin D deficiency,EFO:0003762,http://www.ebi.ac.uk/efo/EFO_0003762,0.93,None
+dXQaGP5fAS,Zoster,Herpes Zoster,EFO:0006510,http://www.ebi.ac.uk/efo/EFO_0006510,0.996,None
+ZN9WoyhfgW,Pyoderma gangrenosum,pyoderma gangrenosum,EFO:0006835,http://www.ebi.ac.uk/efo/EFO_0006835,0.988,None
+Ncs4qEpd88,Decubitus ulcer,decubitus ulcer,EFO:0007067,http://www.ebi.ac.uk/efo/EFO_0007067,0.988,None
+zs4KdWqBkX,Actinomycosis,actinomycosis,EFO:0007128,http://www.ebi.ac.uk/efo/EFO_0007128,0.988,None
+HVadFQuhfp,Amoebiasis,amebiasis,EFO:0007144,http://www.ebi.ac.uk/efo/EFO_0007144,0.99,None
+imCfxUwNyC,Unspecified appendicitis,appendicitis,EFO:0007149,http://www.ebi.ac.uk/efo/EFO_0007149,0.995,None
+J9FMBBUUUD,Ascariasis,ascariasis,EFO:0007154,http://www.ebi.ac.uk/efo/EFO_0007154,0.995,None
+ZxJWkju6ck,Aspergillosis,aspergillosis,EFO:0007157,http://www.ebi.ac.uk/efo/EFO_0007157,0.996,None
+RqXGZ2Z3ML,Varicella,chickenpox,EFO:0007204,http://www.ebi.ac.uk/efo/EFO_0007204,0.993,None
+c9kF9qV7RB,Cryptococcosis,cryptococcosis,EFO:0007229,http://www.ebi.ac.uk/efo/EFO_0007229,0.992,None
+5taxKte9Nb,Echinococcosis,echinococcosis,EFO:0007245,http://www.ebi.ac.uk/efo/EFO_0007245,0.987,None
+sUM7Eyuo5G,Enterobiasis,enterobiasis,EFO:0007254,http://www.ebi.ac.uk/efo/EFO_0007254,0.986,None
+ZcCcNFKidK,Granuloma inguinale,granuloma inguinale,EFO:0007291,http://www.ebi.ac.uk/efo/EFO_0007291,0.992,None
+FRx3rJTxNj,Histoplasmosis,histoplasmosis,EFO:0007310,http://www.ebi.ac.uk/efo/EFO_0007310,0.995,None
+Cjeuyew5n9,Infectious mononucleosis,infectious mononucleosis,EFO:0007326,http://www.ebi.ac.uk/efo/EFO_0007326,0.998,None
+KdhZjBawYX,Leptospirosis,leptospirosis,EFO:0007344,http://www.ebi.ac.uk/efo/EFO_0007344,0.991,None
+m24dCobZyz,Listeriosis,listeriosis,EFO:0007347,http://www.ebi.ac.uk/efo/EFO_0007347,0.998,None
+FJcW4irmxt,Miliary tuberculosis,miliary tuberculosis,EFO:0007368,http://www.ebi.ac.uk/efo/EFO_0007368,0.99,None
+Md6PCxSVT2,Myiasis,myiasis,EFO:0007389,http://www.ebi.ac.uk/efo/EFO_0007389,0.989,None
+3o6YLctKPi,Optic neuritis,optic neuritis,EFO:0007405,http://www.ebi.ac.uk/efo/EFO_0007405,0.992,None
+JMUjbfLKvm,Placenta praevia,placenta praevia,EFO:0007442,http://www.ebi.ac.uk/efo/EFO_0007442,0.987,None
+RwFECEBHpM,Plasmodium falciparum malaria,Plasmodium falciparum malaria,EFO:0007444,http://www.ebi.ac.uk/efo/EFO_0007444,0.995,None
+Wk5uUFeTEf,Plasmodium vivax malaria,Plasmodium vivax malaria,EFO:0007445,http://www.ebi.ac.uk/efo/EFO_0007445,0.988,None
+V5oxXSfC4T,Acute poliomyelitis,poliomyelitis,EFO:0007450,http://www.ebi.ac.uk/efo/EFO_0007450,0.996,None
+uJwjCqcDXQ,Scarlet fever,scarlet fever,EFO:0007477,http://www.ebi.ac.uk/efo/EFO_0007477,0.995,None
+Jbm3LscudE,Strongyloidiasis,strongyloidiasis,EFO:0007501,http://www.ebi.ac.uk/efo/EFO_0007501,0.992,None
+cCh9F4ZRcK,Suppurative and unspecified otitis media,suppurative otitis media,EFO:0007503,http://www.ebi.ac.uk/efo/EFO_0007503,0.992,None
+tJgVr7Kigh,other syphilis,syphilis,EFO:0007504,http://www.ebi.ac.uk/efo/EFO_0007504,0.986,None
+5Spmyhhhv2,Toxoplasmosis,toxoplasmosis,EFO:0007517,http://www.ebi.ac.uk/efo/EFO_0007517,0.991,None
+kbzJhNdRKD,Yaws,yaws,EFO:0007548,http://www.ebi.ac.uk/efo/EFO_0007548,0.998,None
+CmcF4Usyzi,Status epilepticus,status epilepticus,EFO:0008526,http://www.ebi.ac.uk/efo/EFO_0008526,0.994,None
+KpezWbqebK,Fracture of femur,femur fracture,EFO:0008553,http://www.ebi.ac.uk/efo/EFO_0008553,0.99,None
+XQ2WZ4X7YB,Diaphragmatic hernia,diaphragmatic hernia,EFO:0008561,http://www.ebi.ac.uk/efo/EFO_0008561,0.994,None
+KQGoR8fir6,Niacin deficiency,Vitamin B3 deficiency,EFO:0008570,http://www.ebi.ac.uk/efo/EFO_0008570,0.992,None
+ZNcuSeiBVP,Gangrene,gangrene,EFO:0008574,http://www.ebi.ac.uk/efo/EFO_0008574,0.988,None
+PvSdteghk7,Acute myocardial infarction,acute myocardial infarction,EFO:0008583,http://www.ebi.ac.uk/efo/EFO_0008583,0.994,None
+usxtPxM6yz,Subsequent myocardial infarction,myocardial infarction,EFO:0000612,http://www.ebi.ac.uk/efo/EFO_0000612,0.745,None
+EbSfsJTcqf,Peritonitis,peritonitis,EFO:0008588,http://www.ebi.ac.uk/efo/EFO_0008588,0.992,None
+5f9mE5jr2t,Diseases of spleen,splenic disease,EFO:0009002,http://www.ebi.ac.uk/efo/EFO_0009002,0.985,None
+FR38zELDGb,Typhus fever,typhus,EFO:0009117,http://www.ebi.ac.uk/efo/EFO_0009117,0.979,None
+AgyqJm9AKB,Other diseases of intestine,intestinal disease,EFO:0009431,http://www.ebi.ac.uk/efo/EFO_0009431,0.92,None
+PvdcEKUxH3,Fibroblastic disorders,fibroblastic disorder,EFO:0009432,http://www.ebi.ac.uk/efo/EFO_0009432,0.943,None
+hcZ7JXFj8t,Unspecified acute lower respiratory infection,Recurrent lower respiratory tract infections,HP:0002783,http://purl.obolibrary.org/obo/HP_0002783,0.79,None
+DozJ6hkBUP,Other ill defined and unspecified causes of mortality,mortality,EFO:0004352,http://www.ebi.ac.uk/efo/EFO_0004352,0.573,None
+LjMt2MwcJ6,Cystitis,cystitis,EFO:1000025,http://www.ebi.ac.uk/efo/EFO_1000025,0.992,None
+cg9GRrFivn,Lactose intolerance,lactose intolerance,EFO:1000062,http://www.ebi.ac.uk/efo/EFO_1000062,0.995,None
+nnjqbQgpVV,Thyroiditis,thyroiditis,MONDO:0004126,http://purl.obolibrary.org/obo/MONDO_0004126,0.991,None
+izkRGhMeNg,Acute pancreatitis,acute pancreatitis,EFO:1000652,http://www.ebi.ac.uk/efo/EFO_1000652,0.993,None
+U7vnj86BMT,Acanthosis nigricans,acanthosis nigricans,EFO:1000660,http://www.ebi.ac.uk/efo/EFO_1000660,0.993,None
+K9qUMRxYsL,Allergic contact dermatitis,allergic contact dermatitis,EFO:1000668,http://www.ebi.ac.uk/efo/EFO_1000668,0.993,None
+53dYiXP7yo,Cholesteatoma of middle ear,cholesteatoma of middle ear,EFO:1000678,http://www.ebi.ac.uk/efo/EFO_1000678,0.995,None
+87YREuQ7UT,Erythema multiforme,erythema multiforme,EFO:1000694,http://www.ebi.ac.uk/efo/EFO_1000694,0.993,None
+eB5xGRqEzD,Hyperhidrosis,Hyperhidrosis,HP:0000975,http://purl.obolibrary.org/obo/HP_0000975,0.99,None
+7QoZmmVkV5,Impetigo,impetigo,EFO:1000714,http://www.ebi.ac.uk/efo/EFO_1000714,0.991,None
+zBFtwc3fr8,Irritant contact dermatitis,irritant dermatitis,EFO:1000718,http://www.ebi.ac.uk/efo/EFO_1000718,0.986,None
+vZWyoUCbgj,Lichen planus,lichen planus,EFO:1000726,http://www.ebi.ac.uk/efo/EFO_1000726,0.998,None
+XH3ZC23HGR,Parapsoriasis,parapsoriasis,EFO:1000747,http://www.ebi.ac.uk/efo/EFO_1000747,0.992,None
+v7gyd3si7o,Pemphigus,pemphigus,EFO:1000749,http://www.ebi.ac.uk/efo/EFO_1000749,0.996,None
+pSpq4Yk9e9,Pityriasis rosea,pityriasis rosea,EFO:1000756,http://www.ebi.ac.uk/efo/EFO_1000756,0.995,None
+EcTyfZB3LN,Rosacea,rosacea,EFO:1000760,http://www.ebi.ac.uk/efo/EFO_1000760,0.994,None
+D6nmgNa4L8,Seborrhoeic dermatitis,seborrheic dermatitis,EFO:1000764,http://www.ebi.ac.uk/efo/EFO_1000764,0.992,None
+ube3Ag33hB,Atrophic disorders of skin,skin atrophy,EFO:1000766,http://www.ebi.ac.uk/efo/EFO_1000766,0.868,None
+uZCx7b89yw,Coxarthrosis,"osteoarthritis, hip",EFO:1000786,http://www.ebi.ac.uk/efo/EFO_1000786,0.986,None
+HonGm9Mq2R,Coalworker s pneumoconiosis,anthracosis,EFO:1000814,http://www.ebi.ac.uk/efo/EFO_1000814,0.796,None
+ggk5eoizZN,Ascorbic acid deficiency,ascorbic acid deficiency,EFO:1000822,http://www.ebi.ac.uk/efo/EFO_1000822,0.99,None
+XmrdY2xamE,Bacterial meningitis,bacterial meningitis,EFO:1000831,http://www.ebi.ac.uk/efo/EFO_1000831,0.991,None
+h8Tpw5WdmR,Dysplasia of cervix uteri,dysplasia of cervix,EFO:1000910,http://www.ebi.ac.uk/efo/EFO_1000910,0.99,None
+bJXVJewHYC,Habitual aborter,habitual abortion,EFO:1000954,http://www.ebi.ac.uk/efo/EFO_1000954,0.994,None
+J3rjb8ADdq,Other rickettsioses,rickettsiosis,EFO:1001162,http://www.ebi.ac.uk/efo/EFO_1001162,0.889,None
+jd39qTJRRs,Secondary parkinsonism,secondary Parkinson disease,EFO:1001175,http://www.ebi.ac.uk/efo/EFO_1001175,0.997,None
+XYDPcg4oRs,Viral meningitis,viral meningitis,EFO:1001236,http://www.ebi.ac.uk/efo/EFO_1001236,0.988,None
+qkCNnikw6Y,Vitamin A deficiency,vitamin A deficiency,EFO:1001237,http://www.ebi.ac.uk/efo/EFO_1001237,0.995,None
+4jg7kADKxL,Spontaneous abortion,spontaneous abortion,EFO:1001255,http://www.ebi.ac.uk/efo/EFO_1001255,0.998,None
+mqFEoz2e6y,Unspecified renal colic,renal colic,EFO:1001412,http://www.ebi.ac.uk/efo/EFO_1001412,0.999,None
+9pmsmF7RX2,Taeniasis,Taeniasis,EFO:1001433,http://www.ebi.ac.uk/efo/EFO_1001433,0.997,None
+6sopNAjo5n,Synovitis and tenosynovitis,tenosynovitis,EFO:1001435,http://www.ebi.ac.uk/efo/EFO_1001435,0.949,None
+EWXtQpQzza,Schistosomiasis,schistosomiasis,EFO:1001475,http://www.ebi.ac.uk/efo/EFO_1001475,0.98,None
+JWwk55ogHP,Unspecified abortion,abortion,EFO:1001491,http://www.ebi.ac.uk/efo/EFO_1001491,0.999,None
+oyLfP7hxRN,Femoral hernia,femoral hernia,EFO:1001791,http://www.ebi.ac.uk/efo/EFO_1001791,0.993,None
+NF6iWxt7BX,Ventral hernia,ventral hernia,EFO:1001866,http://www.ebi.ac.uk/efo/EFO_1001866,0.989,None
+oFU4ZqqNWM,Amyloidosis,amyloidosis,EFO:1001875,http://www.ebi.ac.uk/efo/EFO_1001875,0.997,None
+yuqJES9UyN,Cicatricial alopecia,cicatricial alopecia,EFO:1002028,http://www.ebi.ac.uk/efo/EFO_1002028,0.997,None
+xm9dvbZ7F4,Other disorders of nervous system,nervous system disease,EFO:0000618,http://www.ebi.ac.uk/efo/EFO_0000618,0.95,None
+adRB3JnxNr,Polyuria,Polyuria,HP:0000103,http://purl.obolibrary.org/obo/HP_0000103,0.988,None
+CWSv4AWUqs,Pruritus,Pruritus,HP:0000989,http://purl.obolibrary.org/obo/HP_0000989,0.997,None
+QmdUF2UHA5,Nausea and vomiting,Nausea and vomiting,HP:0002017,http://purl.obolibrary.org/obo/HP_0002017,0.941,None
+fKbNWz3LhP,Peptic ulcer site unspecified,Peptic ulcer,HP:0004398,http://purl.obolibrary.org/obo/HP_0004398,0.82,None
+6eSyohamPK,Erythema nodosum,Erythema nodosum,HP:0012219,http://purl.obolibrary.org/obo/HP_0012219,0.995,None
+7qJKvrMkPo,Oesophagitis,Esophagitis,HP:0100633,http://purl.obolibrary.org/obo/HP_0100633,0.99,None
+WZM589XFrA,Common variable immunodeficiency,common variable immunodeficiency,MONDO:0015517,http://purl.obolibrary.org/obo/MONDO_0015517,0.992,None
+nToHW4TJbw,Adrenogenital disorders,adrenogenital syndrome,MONDO:0015898,http://purl.obolibrary.org/obo/MONDO_0015898,0.95,None
+E2tXoxeTaN,Sickle cell disorders,sickle cell anemia,MONDO:0011382,http://purl.obolibrary.org/obo/MONDO_0011382,0.829,None
+dmwJF4oTuW,Congenital malformations of great veins,developmental defect during embryogenesis,MONDO:0019755,http://purl.obolibrary.org/obo/MONDO_0019755,0.641,None
+MRw2DvRTxr,Huntington s disease,Huntington disease,MONDO:0007739,http://purl.obolibrary.org/obo/MONDO_0007739,0.992,None
+RF6oqLHscP,Cystic fibrosis,cystic fibrosis,MONDO:0009061,http://purl.obolibrary.org/obo/MONDO_0009061,0.997,None
+vJQtNF3g8U,Hypertrichosis,hypertrichosis,MONDO:0019280,http://purl.obolibrary.org/obo/MONDO_0019280,0.993,None
+r4LQ7QWKup,Sarcoidosis,sarcoidosis,MONDO:0019338,http://purl.obolibrary.org/obo/MONDO_0019338,0.989,None
+ssjbsxwfjD,Turner s syndrome,Turner syndrome,MONDO:0019499,http://purl.obolibrary.org/obo/MONDO_0019499,0.964,None
+SwMGbqEBuu,Congenital malformations of great arteries,congenital anomaly of the great arteries,MONDO:0020292,http://purl.obolibrary.org/obo/MONDO_0020292,0.724,None
+PvNt2NYZtp,Hereditary factor VIII deficiency,hemophilia A,MONDO:0010602,http://purl.obolibrary.org/obo/MONDO_0010602,0.993,None
+yEB5vpVU8Y,Hereditary factor IX deficiency,hemophilia B,MONDO:0010604,http://purl.obolibrary.org/obo/MONDO_0010604,0.992,None
+8VX82anjBZ,Keratitis,keratitis,EFO:0009449,http://www.ebi.ac.uk/efo/EFO_0009449,0.991,None
+aCbYzqL5bp,Conjunctivitis,conjunctivitis,EFO:0009450,http://www.ebi.ac.uk/efo/EFO_0009450,0.996,None
+vwW8gEu5SM,Hypoparathyroidism,hypoparathyroidism,EFO:0009451,http://www.ebi.ac.uk/efo/EFO_0009451,0.996,None
+X8Qpfb8Ydj,Hyperaldosteronism,hyperaldosteronism,EFO:0009452,http://www.ebi.ac.uk/efo/EFO_0009452,0.997,None
+nb5q5Tjffn,Hemiplegia,hemiplegia,EFO:0009453,http://www.ebi.ac.uk/efo/EFO_0009453,0.991,None
+BgHPET5PYm,Gastric ulcer,gastric ulcer,EFO:0009454,http://www.ebi.ac.uk/efo/EFO_0009454,0.984,None
+UocKMYJBxQ,Disorders of lacrimal system,lacrimal apparatus disease,EFO:0009455,http://www.ebi.ac.uk/efo/EFO_0009455,0.953,None
+CHa2e5qTKt,Exfoliative dermatitis,exfoliative dermatitis,EFO:0009456,http://www.ebi.ac.uk/efo/EFO_0009456,0.987,None
+tcWFoxvLpm,Apocrine sweat disorders,apocrine sweat gland disease,EFO:1002046,http://www.ebi.ac.uk/efo/EFO_1002046,0.891,None
+N6yMDQ8H4H,Spotted fever,spotted fever,EFO:1002047,http://www.ebi.ac.uk/efo/EFO_1002047,0.996,None
+xZzBkzULyL,Unspecified nephritic syndrome,nephrotic syndrome,EFO:0004255,http://www.ebi.ac.uk/efo/EFO_0004255,0.779,None
+ALmCGS9VMc,Facial nerve disorders,facial nerve disease,EFO:1002051,http://www.ebi.ac.uk/efo/EFO_1002051,0.939,None
+zHh2F5jmTS,Essential primary hypertension,essential hypertension,MONDO:0001134,http://purl.obolibrary.org/obo/MONDO_0001134,0.83,None
+etUrbBpKme,Unspecified jaundice,Jaundice,HP:0000952,http://purl.obolibrary.org/obo/HP_0000952,0.995,None
+ZBCfXviHJi,Iridocyclitis,Iridocyclitis,HP:0001094,http://purl.obolibrary.org/obo/HP_0001094,0.991,None
+VxMHJ4p7R6,Hepatic failure,Hepatic failure,HP:0001399,http://purl.obolibrary.org/obo/HP_0001399,0.994,None
+rYGd9udKmx,Umbilical hernia,Umbilical hernia,HP:0001537,http://purl.obolibrary.org/obo/HP_0001537,0.987,None
+jsJiyXo4K9,Polyhydramnios,Polyhydramnios,HP:0001561,http://purl.obolibrary.org/obo/HP_0001561,0.983,None
+yhazKRwPoL,cardiac arrest,cardiac arrest,EFO:0009492,http://www.ebi.ac.uk/efo/EFO_0009492,0.997,None
+EhnXyy7kfL,Abnormality of red blood cells,Abnormal erythrocyte morphology,HP:0001877,http://purl.obolibrary.org/obo/HP_0001877,0.994,None
+9Cr2ctCwNv,Hypothermia,Hypothermia,HP:0002045,http://purl.obolibrary.org/obo/HP_0002045,0.996,None
+jqhEGKaQa2,Lymphadenopathy,Lymphadenopathy,HP:0002716,http://purl.obolibrary.org/obo/HP_0002716,0.989,None
+bKKP8K9N5W,Abnormal findings in cerebrospinal fluid,Abnormal cerebrospinal fluid morphology,HP:0002921,http://purl.obolibrary.org/obo/HP_0002921,0.766,None
+dDm7vJyDMB,Glycosuria,Glycosuria,HP:0003076,http://purl.obolibrary.org/obo/HP_0003076,0.988,None
+8aNomSb2TB,Abnormality of glycoprotein metabolism,glycoprotein metabolism disease,MONDO:0045010,http://purl.obolibrary.org/obo/MONDO_0045010,0.789,None
+9zCPNX6kDu,Abnormality of glycosaminoglycan metabolism,Abnormality of glycosaminoglycan metabolism,HP:0004371,http://purl.obolibrary.org/obo/HP_0004371,0.993,None
+FS7nWkWBLD,Congenital septal defect,heart septal defect,MONDO:0002078,http://purl.obolibrary.org/obo/MONDO_0002078,0.996,None
+EwA3DrgHwf,Paroxysmal tachycardia,paroxysmal tachycardia,EFO:0009493,http://www.ebi.ac.uk/efo/EFO_0009493,0.991,None
+aBvfbLRWV9,Congenital malformations of anterior segment of eye,Abnormal anterior eye segment morphology,HP:0004328,http://purl.obolibrary.org/obo/HP_0004328,0.617,None
+Pod6iFJF5w,Gynecomastia,Gynecomastia,HP:0000771,http://purl.obolibrary.org/obo/HP_0000771,0.989,None
+Ws5JSEcqDc,Polydactyly,polydactyly,MONDO:0021003,http://purl.obolibrary.org/obo/MONDO_0021003,0.996,None
+J2S5Q7M2sX,Mixed and other personality disorders,personality disorder,MONDO:0002028,http://purl.obolibrary.org/obo/MONDO_0002028,0.774,None
+hRru3JBBCk,Acquired pure red cell aplasia,Pure red cell aplasia,HP:0012410,http://purl.obolibrary.org/obo/HP_0012410,0.992,None
+bDYiKtA5sJ,Chorioretinitis,chorioretinitis,MONDO:0004674,http://purl.obolibrary.org/obo/MONDO_0004674,0.992,None
+bLs7udbpDZ,Congenital malformations of larynx,developmental defect during embryogenesis,MONDO:0019755,http://purl.obolibrary.org/obo/MONDO_0019755,0.715,None
+bzvZXnAA6Q,Portal vein thrombosis,Portal vein thrombosis,HP:0030242,http://purl.obolibrary.org/obo/HP_0030242,0.988,None
+CzUjgfJR3p,Other congenital malformations of ear,congenital heart malformation,EFO:0005269,http://www.ebi.ac.uk/efo/EFO_0005269,0.791,None
+UPsY4t3mBp,Eclampsia,Eclampsia,HP:0100601,http://purl.obolibrary.org/obo/HP_0100601,0.993,None
+8mvNQyyjdK,Other mosquito borne viral fevers,viral encephalitis,EFO:0007538,http://www.ebi.ac.uk/efo/EFO_0007538,0.636,None
+U6ZYuJfhCj,Fistulae involving female genital tract,female genital tract fistula,EFO:0009524,http://www.ebi.ac.uk/efo/EFO_0009524,0.759,None
+Z2Kr354f5E,Multiple gestation,multiple gestation,EFO:0009576,http://www.ebi.ac.uk/efo/EFO_0009576,0.997,None
+JkKGdUUT8x,Postpartum haemorrhage,postpartum hemorrhage,EFO:0009579,http://www.ebi.ac.uk/efo/EFO_0009579,0.987,None
+ryuoqF83BB,Retained placenta and membranes without haemorrhage,peptic ulcer disease,MONDO:0004247,http://purl.obolibrary.org/obo/MONDO_0004247,0.492,None
+4BmTAtyHgB,Faecal incontinence,fecal incontinence,EFO:0009523,http://www.ebi.ac.uk/efo/EFO_0009523,0.99,None
+RQ9LXMAGpm,Disturbances of skin sensation,disturbance of skin sensation,EFO:0009522,http://www.ebi.ac.uk/efo/EFO_0009522,0.937,None
+3SagjFMRGs,Abnormal results of function studies,abnormal result of function studies,EFO:0009628,http://www.ebi.ac.uk/efo/EFO_0009628,0.923,None
+n7u2fHP5i6,Injury of heart,heart injury,EFO:0009506,http://www.ebi.ac.uk/efo/EFO_0009506,0.963,None
+bWFmBZshWY,Fractures involving multiple body regions,multiple bone fractures,EFO:0009513,http://www.ebi.ac.uk/efo/EFO_0009513,0.991,None
+fVuE4Biscf,Fracture of upper limb level unspecified,upper extremity fracture,EFO:0009514,http://www.ebi.ac.uk/efo/EFO_0009514,0.862,None
+4Qy5ebfzfJ,Fracture of lower limb level unspecified,lower extremity fracture,EFO:0009512,http://www.ebi.ac.uk/efo/EFO_0009512,0.86,None
+6LxBgD8Uqn,Other injuries of lower limb level unspecified,Lower limb pain,HP:0012514,http://purl.obolibrary.org/obo/HP_0012514,0.571,None
+meKLjqpmeL,Foreign body in alimentary tract,foreign body in gastrointestinal tract,EFO:0009526,http://www.ebi.ac.uk/efo/EFO_0009526,0.974,None
+oMmL6m8yn2,Burns classified according to extent of body surface involved,body surface area,EFO:0022196,http://www.ebi.ac.uk/efo/EFO_0022196,0.448,None
+rxLZNt97jG,Unspecified fall,fall,EFO:0009631,http://www.ebi.ac.uk/efo/EFO_0009631,0.989,None
+dRETjkgc82,Routine general health check up of defined subpopulation,checkup,EFO:0009517,http://www.ebi.ac.uk/efo/EFO_0009517,0.431,None
+huqSrthVFx,Contraceptive management,contraception,EFO:0009520,http://www.ebi.ac.uk/efo/EFO_0009520,0.98,None
+mmEY5y36MQ,Prophylactic surgery,prophylactic surgery,EFO:0009580,http://www.ebi.ac.uk/efo/EFO_0009580,0.99,None
+uL3UTmuot7,Care involving use of rehabilitation procedures,rehabilitation,EFO:0009581,http://www.ebi.ac.uk/efo/EFO_0009581,0.566,None
+nL7tpGX2Zj,Disorders of mineral metabolism,mineral metabolism disease,EFO:0009556,http://www.ebi.ac.uk/efo/EFO_0009556,0.958,None
+GUPtA9HCVS,Other disorders of cornea,corneal disease,EFO:0009464,http://www.ebi.ac.uk/efo/EFO_0009464,0.936,None
+4HywpKVeWc,uremia,uremia,EFO:1001226,http://www.ebi.ac.uk/efo/EFO_1001226,0.97,None
+Whivf53yiz,Oesophageal varices,esophageal varices,EFO:0009545,http://www.ebi.ac.uk/efo/EFO_0009545,0.882,None
+pmAuukB7yU,Disorders of autonomic nervous system,autonomic nervous system disease,EFO:0009532,http://www.ebi.ac.uk/efo/EFO_0009532,0.961,None
+828587enHs,marasmus,marasmus,EFO:1001033,http://www.ebi.ac.uk/efo/EFO_1001033,0.983,None
+HyTifXVJBH,Inflammatory disease of uterus except cervix,uterine inflammatory disease,EFO:0009572,http://www.ebi.ac.uk/efo/EFO_0009572,0.745,None
+8evRiSASoJ,Disorders of trigeminal nerve,trigeminal nerve disease,EFO:0009569,http://www.ebi.ac.uk/efo/EFO_0009569,0.957,None
+Xki9KoxYBQ,Pulmonary valve disorders,pulmonary valve disease,EFO:0009564,http://www.ebi.ac.uk/efo/EFO_0009564,0.96,None
+xV2KortyHs,Other disorders of tympanic membrane,tympanic membrane disease,EFO:0009570,http://www.ebi.ac.uk/efo/EFO_0009570,0.956,None
+XYfAeUCQfq,Other diseases of oesophagus,esophageal disease,EFO:0009544,http://www.ebi.ac.uk/efo/EFO_0009544,0.94,None
+StqvvsvRgu,Other inflammation of eyelid,blepharitis,EFO:0009536,http://www.ebi.ac.uk/efo/EFO_0009536,0.997,None
+2SPBDJMd9Z,Otitis externa,otitis externa,EFO:0009560,http://www.ebi.ac.uk/efo/EFO_0009560,0.994,None
+G5NkvyL9vo,Other diseases of biliary tract,biliary tract disease,EFO:0009534,http://www.ebi.ac.uk/efo/EFO_0009534,0.922,None
+Z5YnrhxMyB,Haemorrhoids,hemorrhoid,EFO:0009552,http://www.ebi.ac.uk/efo/EFO_0009552,0.993,None
+TqbjVbSXjZ,HIV disease resulting in malignant neoplasms,cancer,MONDO:0004992,http://purl.obolibrary.org/obo/MONDO_0004992,0.725,None
+fMQ9vDXxaV,Anaemia due to enzyme disorders,anemia due to enzyme disorder,EFO:0009529,http://www.ebi.ac.uk/efo/EFO_0009529,0.848,None
+RyLqqkxkrn,Other disorders of peritoneum,disease of peritoneum,EFO:0009541,http://www.ebi.ac.uk/efo/EFO_0009541,0.944,None
+hfK23vsjfd,Other headache syndromes,Headache,HP:0002315,http://purl.obolibrary.org/obo/HP_0002315,0.721,None
+mCMLHykbah,Unspecified intestinal parasitism,parasitic intestinal disease,EFO:0009561,http://www.ebi.ac.uk/efo/EFO_0009561,0.817,None
+u4F5annsth,Nerve root and plexus disorders,nerve plexus disease,EFO:0009559,http://www.ebi.ac.uk/efo/EFO_0009559,0.797,None
+c2NCyfiJU8,Other diseases of appendix,disorder of appendix,EFO:0009542,http://www.ebi.ac.uk/efo/EFO_0009542,0.944,None
+YiFed6aZaB,Small kidney of unknown cause,small kidney,EFO:0009471,http://www.ebi.ac.uk/efo/EFO_0009471,0.694,None
+mRSJRV32dH,Perforation of tympanic membrane,tympanic membrane perforation,EFO:0009472,http://www.ebi.ac.uk/efo/EFO_0009472,0.979,None
+vCjgGUpcEX,Other spirochaetal infections,Spirochaetales Infections,EFO:0009567,http://www.ebi.ac.uk/efo/EFO_0009567,0.912,None
+PZpmj6ggfo,Disturbances of smell and taste,disturbances of sensation of smell and taste,EFO:0009543,http://www.ebi.ac.uk/efo/EFO_0009543,0.902,None
+ufrYLRpAjE,Other diseases of jaws,jaw disease,EFO:0009468,http://www.ebi.ac.uk/efo/EFO_0009468,0.605,None
+E2DMfVpRtX,Diseases of Bartholin s gland,Bartholin gland disease,EFO:0009469,http://www.ebi.ac.uk/efo/EFO_0009469,0.931,None
+uSpcQFDSmH,Waist circumference,waist circumference,EFO:0004342,http://www.ebi.ac.uk/efo/EFO_0004342,0.991,None
+LrqSdbjxnL,Hip circumference,hip circumference,EFO:0005093,http://www.ebi.ac.uk/efo/EFO_0005093,0.993,None
+2py4exb5bp,Standing height,body height,EFO:0004339,http://www.ebi.ac.uk/efo/EFO_0004339,0.706,None
+r94D83yvYU,Sleep duration,sleep duration,EFO:0005271,http://www.ebi.ac.uk/efo/EFO_0005271,0.993,None
+3uJWRJofuy,Morning/evening person (chronotype),chronotype measurement,EFO:0008328,http://www.ebi.ac.uk/efo/EFO_0008328,0.485,None
+mxCqnBRwLY,Sleeplessness / insomnia,insomnia,EFO:0004698,http://www.ebi.ac.uk/efo/EFO_0004698,0.557,None
+4T72oo99QL,Snoring,Snoring,HP:0025267,http://purl.obolibrary.org/obo/HP_0025267,0.991,None
+pbu3grQhAp,Alcohol intake frequency.,bowel opening frequency,EFO:0600084,http://www.ebi.ac.uk/efo/EFO_0600084,0.56,None
+z7iXy7mCfT,Mood swings,Emotional lability,HP:0000712,http://purl.obolibrary.org/obo/HP_0000712,0.994,None
+8Gd7JLkBPD,Irritability,Irritability,HP:0000737,http://purl.obolibrary.org/obo/HP_0000737,0.984,None
+Tf6w4Bafka,"Loneliness, isolation",loneliness measurement,EFO:0007865,http://www.ebi.ac.uk/efo/EFO_0007865,0.642,None
+yS74VmxrnV,Frequency of tiredness / lethargy in last 2 weeks,Fatigue,HP:0012378,http://purl.obolibrary.org/obo/HP_0012378,0.495,None
+DWsR5rv6di,Hearing difficulty/problems with background noise,Urinary hesitancy,HP:0000019,http://purl.obolibrary.org/obo/HP_0000019,0.466,None
+ezkVjsLhY9,Chest pain or discomfort,Chest pain,HP:0100749,http://purl.obolibrary.org/obo/HP_0100749,0.665,None
+ADt6jk9twB,Relative age voice broke,age at voice drop,EFO:0007888,http://www.ebi.ac.uk/efo/EFO_0007888,0.52,None
+UHHXYoUnX3,Age when periods started (menarche),age at menarche,EFO:0004703,http://www.ebi.ac.uk/efo/EFO_0004703,0.548,None
+uYoQ5LFQGG,Had menopause,menopause,EFO:0003922,http://www.ebi.ac.uk/efo/EFO_0003922,0.827,None
+sinF9jX88v,Forced vital capacity (FVC),vital capacity,EFO:0004312,http://www.ebi.ac.uk/efo/EFO_0004312,0.889,None
+un8iQ9WmfN,Length of menstrual cycle,menstrual cycle measurement,EFO:0007786,http://www.ebi.ac.uk/efo/EFO_0007786,0.732,None
+LRwgeog6uw,Stomach/abdominal pain for 3+ months,Abdominal pain,HP:0002027,http://purl.obolibrary.org/obo/HP_0002027,0.666,None
+N7vrquapo3,Gestational diabetes only,gestational diabetes,EFO:0004593,http://www.ebi.ac.uk/efo/EFO_0004593,0.994,None
+3axyJn8bd4,"Diastolic blood pressure, automated reading",diastolic blood pressure,EFO:0006336,http://www.ebi.ac.uk/efo/EFO_0006336,0.747,None
+Wr6Ry7kPpU,"Systolic blood pressure, automated reading",systolic blood pressure,EFO:0006335,http://www.ebi.ac.uk/efo/EFO_0006335,0.744,None
+8wzSi9rSow,Pulse rate,heart rate,EFO:0004326,http://www.ebi.ac.uk/efo/EFO_0004326,0.986,None
+LmSHnueaMZ,Maximum heart rate during fitness test,resting heart rate,EFO:0004351,http://www.ebi.ac.uk/efo/EFO_0004351,0.445,None
+jJkm6gKT3C,Fluid intelligence score,intelligence,EFO:0004337,http://www.ebi.ac.uk/efo/EFO_0004337,0.703,None
+ioAJqA5u2P,Birth weight,birth weight,EFO:0004344,http://www.ebi.ac.uk/efo/EFO_0004344,0.994,None
+DJosHUjFQX,Bipolar disorder status,bipolar disorder,MONDO:0004985,http://purl.obolibrary.org/obo/MONDO_0004985,0.807,None
+sYKjdTzL7B,Neuroticism score,neurotic disorder,EFO:0004257,http://www.ebi.ac.uk/efo/EFO_0004257,0.822,None
+wpN7eNBspF,"Forced vital capacity (FVC), Best measure",vital capacity,EFO:0004312,http://www.ebi.ac.uk/efo/EFO_0004312,0.744,None
+it8UnnQ9M3,Body mass index (BMI),body mass index,EFO:0004340,http://www.ebi.ac.uk/efo/EFO_0004340,0.839,None
+Un3w4a3oXq,Weight,body weight,EFO:0004338,http://www.ebi.ac.uk/efo/EFO_0004338,0.999,None
+Y5hh9LRgek,Pulse wave Arterial Stiffness index,arterial stiffness measurement,EFO:0004517,http://www.ebi.ac.uk/efo/EFO_0004517,0.718,None
+KENh6JHgUR,hayfever or allergic rhinitis,allergic rhinitis,EFO:0005854,http://www.ebi.ac.uk/efo/EFO_0005854,0.79,None
+BPiKM2XUVG,asthma,asthma,MONDO:0004979,http://purl.obolibrary.org/obo/MONDO_0004979,0.991,None
+SHyLKcxTAJ,emphysema,emphysema,EFO:0000464,http://www.ebi.ac.uk/efo/EFO_0000464,0.994,None
+VFPz3MhMiG,chronic bronchitis,chronic bronchitis,EFO:0006505,http://www.ebi.ac.uk/efo/EFO_0006505,0.995,None
+r4ePcP4TJF,COPD (chronic obstructive pulmonary disease),chronic obstructive pulmonary disease,EFO:0000341,http://www.ebi.ac.uk/efo/EFO_0000341,0.98,None
+dETDrRCaUN,sarcoidosis,sarcoidosis,MONDO:0019338,http://purl.obolibrary.org/obo/MONDO_0019338,0.989,None
+QAaR9xGNEh,bronchiectasis,Bronchiectasis,HP:0002110,http://purl.obolibrary.org/obo/HP_0002110,0.994,None
+3VrocK8qLF,idiopathic pulmonary fibrosis,idiopathic pulmonary fibrosis,EFO:0000768,http://www.ebi.ac.uk/efo/EFO_0000768,0.995,None
+4DRaAeLuGW,tuberculosis,tuberculosis,MONDO:0018076,http://purl.obolibrary.org/obo/MONDO_0018076,0.992,None
+uQwzP3r6Jn,Body fat percentage,body fat percentage,EFO:0007800,http://www.ebi.ac.uk/efo/EFO_0007800,0.992,None
+aHV2pBBN9k,Whole body fat mass,fat body mass,EFO:0005409,http://www.ebi.ac.uk/efo/EFO_0005409,0.813,None
+JKxrotGnRj,Whole body fat-free mass,fat body mass,EFO:0005409,http://www.ebi.ac.uk/efo/EFO_0005409,0.699,None
+8jvioXQcPX,Basal metabolic rate,base metabolic rate measurement,EFO:0007777,http://www.ebi.ac.uk/efo/EFO_0007777,0.901,None
+c52wbDxmxf,Potassium in urine,urinary potassium measurement,EFO:0010952,http://www.ebi.ac.uk/efo/EFO_0010952,0.884,None
+6T7jwoYPtb,Sodium in urine,urinary sodium measurement,EFO:0021522,http://www.ebi.ac.uk/efo/EFO_0021522,0.962,None
+XpBBWX6xk7,Age at death,age at death,EFO:0005056,http://www.ebi.ac.uk/efo/EFO_0005056,0.993,None
+cMsjqpAxyp,cancer of lip/mouth/pharynx/oral cavity,lip and oral cavity carcinoma,MONDO:0023644,http://purl.obolibrary.org/obo/MONDO_0023644,0.7,None
+PkCFSuCSez,rectal cancer,rectum cancer,EFO:1000657,http://www.ebi.ac.uk/efo/EFO_1000657,0.996,None
+wfHjsT4asQ,lymphoma,lymphoma,EFO:0000574,http://www.ebi.ac.uk/efo/EFO_0000574,0.995,None
+gL7UCyqGf9,leukaemia,Acute Leukemia,EFO:1000068,http://www.ebi.ac.uk/efo/EFO_1000068,0.772,None
+LjjzScZLZu,multiple myeloma,multiple myeloma,EFO:0001378,http://www.ebi.ac.uk/efo/EFO_0001378,0.996,None
+2jES5jqLaT,hodgkins lymphoma / hodgkins disease,Hodgkins lymphoma,EFO:0000183,http://www.ebi.ac.uk/efo/EFO_0000183,0.946,None
+2XM3bL7szz,non-hodgkins lymphoma,Hodgkins lymphoma,EFO:0000183,http://www.ebi.ac.uk/efo/EFO_0000183,0.922,None
+eQw4iMJxBx,chronic lymphocytic,chronic lymphocytic leukemia,EFO:0000095,http://www.ebi.ac.uk/efo/EFO_0000095,0.83,None
+7NEnBpYyHR,chronic myeloid,chronic myelogenous leukemia,EFO:0000339,http://www.ebi.ac.uk/efo/EFO_0000339,0.788,None
+vAEt9ftvDo,malignant melanoma,melanoma,EFO:0000756,http://www.ebi.ac.uk/efo/EFO_0000756,0.995,None
+xgiNLDRzCy,basal cell carcinoma,basal cell carcinoma,EFO:0004193,http://www.ebi.ac.uk/efo/EFO_0004193,0.986,None
+tuLwNuW6kC,squamous cell carcinoma,squamous cell carcinoma,EFO:0000707,http://www.ebi.ac.uk/efo/EFO_0000707,0.993,None
+Ucn7B2iFYS,hypertension,hypertension,EFO:0000537,http://www.ebi.ac.uk/efo/EFO_0000537,0.993,None
+oBMne4r6Ft,heart/cardiac problem,heart disease,EFO:0003777,http://www.ebi.ac.uk/efo/EFO_0003777,0.608,None
+JpCo5FJ9Ve,peripheral vascular disease,peripheral vascular disease,EFO:0003875,http://www.ebi.ac.uk/efo/EFO_0003875,0.996,None
+nzUqx2EHTj,venous thromboembolic disease,Thromboembolism,HP:0001907,http://purl.obolibrary.org/obo/HP_0001907,0.873,None
+Xiu4TKMsvK,essential hypertension,essential hypertension,MONDO:0001134,http://purl.obolibrary.org/obo/MONDO_0001134,0.992,None
+vd9F9VphWz,gestational hypertension/pre-eclampsia,preeclampsia,EFO:0000668,http://www.ebi.ac.uk/efo/EFO_0000668,0.747,None
+BMFuW4iu6e,angina,angina pectoris,EFO:0003913,http://www.ebi.ac.uk/efo/EFO_0003913,0.997,None
+umZDJxnQiT,heart attack/myocardial infarction,myocardial infarction,EFO:0000612,http://www.ebi.ac.uk/efo/EFO_0000612,0.77,None
+kDMvs5rSCY,heart failure/pulmonary odema,heart failure,EFO:0003144,http://www.ebi.ac.uk/efo/EFO_0003144,0.649,None
+STPBjrgL3C,heart arrhythmia,cardiac rhythm disease,MONDO:0007263,http://purl.obolibrary.org/obo/MONDO_0007263,0.871,None
+yazqPohXeb,cardiomyopathy,cardiomyopathy,EFO:0000318,http://www.ebi.ac.uk/efo/EFO_0000318,0.997,None
+tCLpTsfdEr,stroke,stroke,EFO:0000712,http://www.ebi.ac.uk/efo/EFO_0000712,0.991,None
+ApoZzRLrv2,transient ischaemic attack (tia),transient ischemic attack,EFO:0003764,http://www.ebi.ac.uk/efo/EFO_0003764,0.97,None
+4wiAFKsR6r,subdural haemorrhage/haematoma,Subdural hemorrhage,HP:0100309,http://purl.obolibrary.org/obo/HP_0100309,0.894,None
+mpbjDQMnti,subarachnoid haemorrhage,subarachnoid hemorrhage,EFO:0000713,http://www.ebi.ac.uk/efo/EFO_0000713,0.993,None
+NLu6vQmSqo,leg claudication/ intermittent claudication,intermittent vascular claudication,EFO:0003876,http://www.ebi.ac.uk/efo/EFO_0003876,0.93,None
+4UmEhEW3fH,pulmonary embolism +/- dvt,pulmonary embolism,EFO:0003827,http://www.ebi.ac.uk/efo/EFO_0003827,0.873,None
+BeumCtssjd,deep venous thrombosis (dvt),deep vein thrombosis,EFO:0003907,http://www.ebi.ac.uk/efo/EFO_0003907,0.888,None
+vhug54Mz9Q,asthma,asthma,MONDO:0004979,http://purl.obolibrary.org/obo/MONDO_0004979,0.991,None
+msgRKSVjfT,chronic obstructive airways disease/copd,chronic obstructive pulmonary disease,EFO:0000341,http://www.ebi.ac.uk/efo/EFO_0000341,0.914,None
+R5nkcbsVF5,emphysema/chronic bronchitis,chronic bronchitis,EFO:0006505,http://www.ebi.ac.uk/efo/EFO_0006505,0.775,None
+t3EV6NmcGP,bronchiectasis,Bronchiectasis,HP:0002110,http://purl.obolibrary.org/obo/HP_0002110,0.994,None
+RVkE4rthJT,interstitial lung disease,Abnormal pulmonary interstitial morphology,HP:0006530,http://purl.obolibrary.org/obo/HP_0006530,0.986,None
+iUaEJdoZbE,asbestosis,asbestosis,EFO:0007153,http://www.ebi.ac.uk/efo/EFO_0007153,0.989,None
+3Z9CnC67XM,pulmonary fibrosis,pulmonary fibrosis,EFO:0009448,http://www.ebi.ac.uk/efo/EFO_0009448,0.997,None
+cJWkGZbfYC,fibrosing alveolitis/unspecified alveolitis,hypersensitivity pneumonitis,MONDO:0017853,http://purl.obolibrary.org/obo/MONDO_0017853,0.916,None
+SyQrEJYDpu,sleep apnoea,Apnea,HP:0002104,http://purl.obolibrary.org/obo/HP_0002104,0.767,None
+AX43feN5Hj,pleurisy,pleurisy,EFO:1001825,http://www.ebi.ac.uk/efo/EFO_1001825,0.99,None
+MH3ZGSv89y,spontaneous pneumothorax/recurrent pneumothorax,Spontaneous pneumothorax,HP:0002108,http://purl.obolibrary.org/obo/HP_0002108,0.89,None
+58AsXhGAsH,gastro-oesophageal reflux (gord) / gastric reflux,gastroesophageal reflux disease,EFO:0003948,http://www.ebi.ac.uk/efo/EFO_0003948,0.889,None
+BeBEXohd2f,gastric/stomach ulcers,gastric ulcer,EFO:0009454,http://www.ebi.ac.uk/efo/EFO_0009454,0.716,None
+Xv3Hf7PhE6,gastritis/gastric erosions,chronic gastritis,EFO:0000337,http://www.ebi.ac.uk/efo/EFO_0000337,0.803,None
+nVdGYmc75B,irritable bowel syndrome,irritable bowel syndrome,EFO:0000555,http://www.ebi.ac.uk/efo/EFO_0000555,0.969,None
+Nr5y5UZecU,hepatitis,Hepatitis,HP:0012115,http://purl.obolibrary.org/obo/HP_0012115,0.992,None
+fjBedj5Ux3,infective/viral hepatitis,viral human hepatitis infection,EFO:0004196,http://www.ebi.ac.uk/efo/EFO_0004196,0.777,None
+HSaGYL2V3i,liver failure/cirrhosis,cirrhosis of liver,EFO:0001422,http://www.ebi.ac.uk/efo/EFO_0001422,0.805,None
+QSbt8n3Ucg,gall bladder disease,gallbladder disease,EFO:0003832,http://www.ebi.ac.uk/efo/EFO_0003832,0.996,None
+g3ny8QdsKr,cholecystitis,Cholecystitis,HP:0001082,http://purl.obolibrary.org/obo/HP_0001082,0.984,None
+iKZkQs2BUq,pancreatitis,pancreatitis,EFO:0000278,http://www.ebi.ac.uk/efo/EFO_0000278,0.99,None
+oWUG2nYdPG,peritonitis,peritonitis,EFO:0008588,http://www.ebi.ac.uk/efo/EFO_0008588,0.992,None
+9VuemzzRve,gastrointestinal bleeding,Gastrointestinal hemorrhage,HP:0002239,http://purl.obolibrary.org/obo/HP_0002239,0.992,None
+wqjJ4QHHR7,renal/kidney failure,kidney failure,EFO:1002048,http://www.ebi.ac.uk/efo/EFO_1002048,0.894,None
+qp7vorbUYE,urinary tract infection/kidney infection,urinary tract infection,EFO:0003103,http://www.ebi.ac.uk/efo/EFO_0003103,0.84,None
+SQEJgfEXok,ureteric obstruction/hydronephrosis,Ureteral obstruction,HP:0006000,http://purl.obolibrary.org/obo/HP_0006000,0.663,None
+RmXdTtAvmh,urinary frequency / incontinence,Urinary incontinence,HP:0000020,http://purl.obolibrary.org/obo/HP_0000020,0.788,None
+zXYuyXcTMS,diabetes,diabetes mellitus,EFO:0000400,http://www.ebi.ac.uk/efo/EFO_0000400,0.998,None
+KjF7qzVPMD,gestational diabetes,gestational diabetes,EFO:0004593,http://www.ebi.ac.uk/efo/EFO_0004593,0.994,None
+vxuHo2JDcf,type 1 diabetes,type 1 diabetes mellitus,MONDO:0005147,http://purl.obolibrary.org/obo/MONDO_0005147,0.958,None
+UAZPR7yAmf,type 2 diabetes,type 2 diabetes mellitus,MONDO:0005148,http://purl.obolibrary.org/obo/MONDO_0005148,0.962,None
+AaDkmgzRBV,parathyroid hyperplasia/adenoma,Parathyroid Hyperplasia,EFO:1000457,http://www.ebi.ac.uk/efo/EFO_1000457,0.859,None
+243Cc6cmq4,pituitary adenoma/tumour,Pituitary Gland Adenoma,EFO:1000478,http://www.ebi.ac.uk/efo/EFO_1000478,0.824,None
+ha2W5rRaVv,encephalitis,encephalomyelitis,EFO:0001423,http://www.ebi.ac.uk/efo/EFO_0001423,0.986,None
+jynAsQPN4r,bell's palsy/facial nerve palsy,Bell's palsy,EFO:0007167,http://www.ebi.ac.uk/efo/EFO_0007167,0.897,None
+oMBHsUrLCt,peripheral neuropathy,peripheral neuropathy,EFO:0003100,http://www.ebi.ac.uk/efo/EFO_0003100,0.993,None
+wzXAnSvDdi,acute infective polyneuritis/guillain-barre syndrome,Guillain-Barre syndrome,EFO:0007292,http://www.ebi.ac.uk/efo/EFO_0007292,0.71,None
+TpDZukAA42,multiple sclerosis,multiple sclerosis,MONDO:0005301,http://purl.obolibrary.org/obo/MONDO_0005301,0.997,None
+QT5na5WjC3,parkinsons disease,Parkinson disease,MONDO:0005180,http://purl.obolibrary.org/obo/MONDO_0005180,0.927,None
+sLrEDUqaCD,epilepsy,epilepsy,EFO:0000474,http://www.ebi.ac.uk/efo/EFO_0000474,0.997,None
+7jKoVpEfiY,migraine,migraine disorder,MONDO:0005277,http://purl.obolibrary.org/obo/MONDO_0005277,0.99,None
+4pNq5tq4eF,spinal injury,spinal injury,MONDO:0037747,http://purl.obolibrary.org/obo/MONDO_0037747,0.988,None
+DQmSYKAV3x,eye infection,eye infectious disorder,MONDO:0043885,http://purl.obolibrary.org/obo/MONDO_0043885,0.997,None
+MKBbi9XPot,retinal problem,retinal cancer,EFO:0005716,http://www.ebi.ac.uk/efo/EFO_0005716,0.556,None
+ygeMfJCJ6E,glaucoma,glaucoma,MONDO:0005041,http://purl.obolibrary.org/obo/MONDO_0005041,0.99,None
+Z6SuRLcEGQ,cataract,cataract,MONDO:0005129,http://purl.obolibrary.org/obo/MONDO_0005129,0.994,None
+RE8TuWzaVP,retinal detachment,retinal detachment,EFO:0005773,http://www.ebi.ac.uk/efo/EFO_0005773,0.982,None
+ou8LBPX4wy,schizophrenia,schizophrenia,MONDO:0005090,http://purl.obolibrary.org/obo/MONDO_0005090,0.99,None
+JpbRpTFAhu,deliberate self-harm/suicide attempt,attempted suicide,EFO:0004321,http://www.ebi.ac.uk/efo/EFO_0004321,0.602,None
+jgpokTgB9W,mania/bipolar disorder/manic depression,bipolar disorder,MONDO:0004985,http://purl.obolibrary.org/obo/MONDO_0004985,0.563,None
+hWwu8d3o4w,bone disorder,bone disease,EFO:0004260,http://www.ebi.ac.uk/efo/EFO_0004260,0.995,None
+6UcapJtUV8,joint disorder,joint disease,EFO:1000999,http://www.ebi.ac.uk/efo/EFO_1000999,0.99,None
+LbmkATkynJ,osteomyelitis,osteomyelitis,EFO:0003102,http://www.ebi.ac.uk/efo/EFO_0003102,0.996,None
+VRZ7yvyyDg,osteoporosis,osteoporosis,EFO:0003882,http://www.ebi.ac.uk/efo/EFO_0003882,0.994,None
+EUquehRkoi,ankylosing spondylitis,ankylosing spondylitis,EFO:0003898,http://www.ebi.ac.uk/efo/EFO_0003898,0.994,None
+QXh2QiXGpL,low platelets/platelet disorder,blood platelet disease,MONDO:0002245,http://purl.obolibrary.org/obo/MONDO_0002245,0.841,None
+FyfME3EmVL,iron deficiency anaemia,Iron deficiency anemia,HP:0001891,http://purl.obolibrary.org/obo/HP_0001891,0.986,None
+FpeoGvELum,pernicious anaemia,pernicious anemia,EFO:0005576,http://www.ebi.ac.uk/efo/EFO_0005576,0.99,None
+eFS3yBaAoC,thalassaemia,Alpha-thalassemia,ORPHANET.ORDO:846,http://www.orpha.net/ORDO/Orphanet_846,0.818,None
+JDWqHeKeTa,ovarian cyst or cysts,Ovarian cyst,HP:0000138,http://purl.obolibrary.org/obo/HP_0000138,0.893,None
+27knrY8xRW,polycystic ovaries/polycystic ovarian syndrome,polycystic ovary syndrome,EFO:0000660,http://www.ebi.ac.uk/efo/EFO_0000660,0.961,None
+K6YHdYisiu,uterine fibroids,Uterine leiomyoma,HP:0000131,http://purl.obolibrary.org/obo/HP_0000131,0.869,None
+q3zqTwTNu5,vaginal prolapse/uterine prolapse,uterine prolapse,EFO:1001864,http://www.ebi.ac.uk/efo/EFO_1001864,0.892,None
+CVuXeYDWjy,fibrocystic disease,breast fibrocystic disease,EFO:0003014,http://www.ebi.ac.uk/efo/EFO_0003014,0.995,None
+YE9gUa3ECP,breast cysts,breast cyst,EFO:1000848,http://www.ebi.ac.uk/efo/EFO_1000848,0.811,None
+xkvBv9sfRd,sarcoidosis,sarcoidosis,MONDO:0019338,http://purl.obolibrary.org/obo/MONDO_0019338,0.989,None
+CxY9DWqYUG,vasculitis,vasculitis,EFO:0006803,http://www.ebi.ac.uk/efo/EFO_0006803,0.994,None
+kqnQgLc7Fr,connective tissue disorder,connective tissue disease,EFO:1001986,http://www.ebi.ac.uk/efo/EFO_1001986,0.996,None
+DDxjpRWydi,giant cell/temporal arteritis,temporal arteritis,EFO:1001209,http://www.ebi.ac.uk/efo/EFO_1001209,0.798,None
+mCVuScCTQL,polymyalgia rheumatica,polymyalgia rheumatica,EFO:0008518,http://www.ebi.ac.uk/efo/EFO_0008518,0.995,None
+nxEFcPtPf9,wegners granulmatosis,Granulomatosis with Polyangiitis,EFO:0005297,http://www.ebi.ac.uk/efo/EFO_0005297,0.68,None
+dMwdKyLiBi,systemic lupus erythematosis/sle,systemic lupus erythematosus,MONDO:0007915,http://purl.obolibrary.org/obo/MONDO_0007915,0.868,None
+NwrvFs9Kfu,sjogren's syndrome/sicca syndrome,syndromic disease,MONDO:0002254,http://purl.obolibrary.org/obo/MONDO_0002254,0.771,None
+o3vDkyHRUx,allergy or anaphylactic reaction to food,non-allergic anaphylaxis,EFO:0020918,http://www.ebi.ac.uk/efo/EFO_0020918,0.647,None
+9DCkPjJ2af,pneumonia,pneumonia,EFO:0003106,http://www.ebi.ac.uk/efo/EFO_0003106,0.987,None
+Ext4VBZUTj,peptic ulcer,Peptic ulcer,HP:0004398,http://purl.obolibrary.org/obo/HP_0004398,0.986,None
+fY9KtHzZdh,endometriosis,endometriosis,EFO:0001065,http://www.ebi.ac.uk/efo/EFO_0001065,0.992,None
+Sci8nbZsR5,female infertility,female infertility,EFO:0008560,http://www.ebi.ac.uk/efo/EFO_0008560,0.994,None
+vBY8fdqjtU,alcohol dependency,alcohol dependence,MONDO:0007079,http://purl.obolibrary.org/obo/MONDO_0007079,0.908,None
+G7F5Fm5JcD,nasal polyps,Nasal polyposis,HP:0100582,http://purl.obolibrary.org/obo/HP_0100582,0.99,None
+iTVJ6nZZ8J,otosclerosis,otosclerosis,EFO:0004213,http://www.ebi.ac.uk/efo/EFO_0004213,0.993,None
+5SjuEjkXJR,meniere's disease,Meniere disease,EFO:0006862,http://www.ebi.ac.uk/efo/EFO_0006862,0.986,None
+kNLVRPk63j,cerebral aneurysm,brain aneurysm,EFO:0003870,http://www.ebi.ac.uk/efo/EFO_0003870,0.994,None
+E9zqvpw7hn,myocarditis,myocarditis,EFO:0009609,http://www.ebi.ac.uk/efo/EFO_0009609,0.992,None
+nQ2zt4JkjR,polycystic kidney,Polycystic Kidney Disease,EFO:0008620,http://www.ebi.ac.uk/efo/EFO_0008620,0.926,None
+9aVfU2sRMz,thyroiditis,thyroiditis,MONDO:0004126,http://purl.obolibrary.org/obo/MONDO_0004126,0.991,None
+EZVaqFzBVR,hypopituitarism,hypopituitarism,EFO:0001380,http://www.ebi.ac.uk/efo/EFO_0001380,0.998,None
+3kAQWMehpH,cerebral palsy,cerebral palsy,EFO:1000632,http://www.ebi.ac.uk/efo/EFO_1000632,0.993,None
+3DnvEdCMvk,optic neuritis,optic neuritis,EFO:0007405,http://www.ebi.ac.uk/efo/EFO_0007405,0.992,None
+E7ETsQSuNY,headaches (not migraine),migraine disorder,MONDO:0005277,http://purl.obolibrary.org/obo/MONDO_0005277,0.922,None
+FDsFVjgHPC,myasthenia gravis,Myasthenia gravis,EFO:0004991,http://www.ebi.ac.uk/efo/EFO_0004991,0.992,None
+rs8XZyuhHE,polycythaemia vera,polycythemia vera,EFO:0002429,http://www.ebi.ac.uk/efo/EFO_0002429,0.854,None
+7R8doyAQRE,tuberculosis (tb),tuberculosis,MONDO:0018076,http://purl.obolibrary.org/obo/MONDO_0018076,0.861,None
+fmTX75mRdk,malaria,malaria,EFO:0001068,http://www.ebi.ac.uk/efo/EFO_0001068,0.997,None
+mmg5M4JWQN,helicobacter pylori,Helicobacter pylori infectious disease,EFO:1000961,http://www.ebi.ac.uk/efo/EFO_1000961,0.897,None
+8F7VT2mzm3,anaemia,Aplastic anemia,HP:0001915,http://purl.obolibrary.org/obo/HP_0001915,0.737,None
+VQaUfmDiWY,eczema/dermatitis,atopic eczema,EFO:0000274,http://www.ebi.ac.uk/efo/EFO_0000274,0.882,None
+vgCbCaEq34,psoriasis,psoriasis,EFO:0000676,http://www.ebi.ac.uk/efo/EFO_0000676,0.995,None
+U4mojvZrgC,chronic skin ulcers,chronic ulcer of skin,EFO:0007066,http://www.ebi.ac.uk/efo/EFO_0007066,0.92,None
+k8sWdzTXuN,malabsorption/coeliac disease,Malabsorption,HP:0002024,http://purl.obolibrary.org/obo/HP_0002024,0.721,None
+t2aBs5YJsa,duodenal ulcer,duodenal ulcer,EFO:0004607,http://www.ebi.ac.uk/efo/EFO_0004607,0.984,None
+RmCSnRKkcJ,diverticular disease/diverticulitis,diverticular disease,EFO:0009959,http://www.ebi.ac.uk/efo/EFO_0009959,0.934,None
+K4EzG3m63D,colitis/not crohns or ulcerative colitis,ulcerative colitis,EFO:0000729,http://www.ebi.ac.uk/efo/EFO_0000729,0.793,None
+BkdJJcBhsA,rectal or colon adenoma/polyps,rectum adenoma,MONDO:0000530,http://purl.obolibrary.org/obo/MONDO_0000530,0.709,None
+c3pYPADYkQ,inflammatory bowel disease,inflammatory bowel disease,EFO:0003767,http://www.ebi.ac.uk/efo/EFO_0003767,0.996,None
+msWXiTzbnv,crohns disease,Crohn's disease,EFO:0000384,http://www.ebi.ac.uk/efo/EFO_0000384,0.983,None
+o56DDeZtmW,ulcerative colitis,ulcerative colitis,EFO:0000729,http://www.ebi.ac.uk/efo/EFO_0000729,0.989,None
+mKGKLi5u8V,rheumatoid arthritis,rheumatoid arthritis,EFO:0000685,http://www.ebi.ac.uk/efo/EFO_0000685,0.995,None
+gnwU76aEwy,osteoarthritis,osteoarthritis,MONDO:0005178,http://purl.obolibrary.org/obo/MONDO_0005178,0.997,None
+J7UjZX9rqE,gout,gout,EFO:0004274,http://www.ebi.ac.uk/efo/EFO_0004274,0.995,None
+x8Fxi9ffEb,post-traumatic stress disorder,post-traumatic stress disorder,EFO:0001358,http://www.ebi.ac.uk/efo/EFO_0001358,0.935,None
+3eNAt3DHjP,atrial fibrillation,atrial fibrillation,EFO:0000275,http://www.ebi.ac.uk/efo/EFO_0000275,0.997,None
+2mS75xVatn,emphysema,emphysema,EFO:0000464,http://www.ebi.ac.uk/efo/EFO_0000464,0.994,None
+WaghtgDZuL,high cholesterol,high density lipoprotein cholesterol measurement,EFO:0004612,http://www.ebi.ac.uk/efo/EFO_0004612,0.663,None
+BcFH3Yevxm,hiatus hernia,Hiatus hernia,HP:0002036,http://purl.obolibrary.org/obo/HP_0002036,0.992,None
+ALik5FTugG,sciatica,Sciatica,HP:0011868,http://purl.obolibrary.org/obo/HP_0011868,0.996,None
+tiSTVfMdJx,psoriatic arthropathy,joint disease,EFO:1000999,http://www.ebi.ac.uk/efo/EFO_1000999,0.742,None
+SaPRmSKQZj,rheumatic fever,rheumatic fever,EFO:1001160,http://www.ebi.ac.uk/efo/EFO_1001160,0.996,None
+GTh6DGJ6cf,chronic fatigue syndrome,chronic fatigue syndrome,EFO:0004540,http://www.ebi.ac.uk/efo/EFO_0004540,0.978,None
+dFAVXhSRJf,irregular heart beat,irregular respiration,EFO:0009841,http://www.ebi.ac.uk/efo/EFO_0009841,0.625,None
+PEjx8RL9L7,brain haemorrhage,intracranial hemorrhage,EFO:0000551,http://www.ebi.ac.uk/efo/EFO_0000551,0.853,None
+6w3uLgaSqU,varicose veins,Varicose veins,HP:0002619,http://purl.obolibrary.org/obo/HP_0002619,0.993,None
+uNjBJyHRNF,lymphoedema,lymphedema,MONDO:0019297,http://purl.obolibrary.org/obo/MONDO_0019297,0.992,None
+diMdZBLy79,pneumothorax,pneumothorax,MONDO:0002076,http://purl.obolibrary.org/obo/MONDO_0002076,0.988,None
+NkxSUMjHYf,labyrinthitis,labyrinthitis,EFO:0009604,http://www.ebi.ac.uk/efo/EFO_0009604,0.992,None
+X9B58m9xwo,vertigo,Vertigo,HP:0002321,http://purl.obolibrary.org/obo/HP_0002321,0.994,None
+dpXi7wRZwo,pyloric stenosis,pyloric stenosis,EFO:0009626,http://www.ebi.ac.uk/efo/EFO_0009626,0.995,None
+P6mrpz3zVL,appendicitis,appendicitis,EFO:0007149,http://www.ebi.ac.uk/efo/EFO_0007149,0.995,None
+YXrCBU7q7A,anal fissure,Anal fissure,HP:0012390,http://purl.obolibrary.org/obo/HP_0012390,0.983,None
+gpCsXtAMuN,haemorrhoids / piles,hemorrhoid,EFO:0009552,http://www.ebi.ac.uk/efo/EFO_0009552,0.829,None
+tVkcdqNih2,jaundice (unknown cause),Jaundice,HP:0000952,http://purl.obolibrary.org/obo/HP_0000952,0.665,None
+FjpFoPaz7r,dyspepsia / indigestion,dyspepsia,EFO:0008533,http://www.ebi.ac.uk/efo/EFO_0008533,0.935,None
+LJkq9WiMiN,abdominal hernia,Hernia of the abdominal wall,HP:0004299,http://purl.obolibrary.org/obo/HP_0004299,0.795,None
+iKwZfCumuu,umbilical hernia,Umbilical hernia,HP:0001537,http://purl.obolibrary.org/obo/HP_0001537,0.987,None
+hUebEvVRyZ,inguinal hernia,Inguinal hernia,HP:0000023,http://purl.obolibrary.org/obo/HP_0000023,0.994,None
+6GbQsP3Z8z,cystitis,cystitis,EFO:1000025,http://www.ebi.ac.uk/efo/EFO_1000025,0.992,None
+YippYzN7qg,bph / benign prostatic hypertrophy,benign prostatic hyperplasia,EFO:0000284,http://www.ebi.ac.uk/efo/EFO_0000284,0.964,None
+DEoB2BwJoz,prostatitis,prostatitis,EFO:0003830,http://www.ebi.ac.uk/efo/EFO_0003830,0.992,None
+pknMcQExz8,erectile dysfunction / impotence,erectile dysfunction,EFO:0004234,http://www.ebi.ac.uk/efo/EFO_0004234,0.802,None
+MMPoipykTZ,grave's disease,Graves disease,EFO:0004237,http://www.ebi.ac.uk/efo/EFO_0004237,0.849,None
+qfyxYh8c94,trigemminal neuralgia,trigeminal neuralgia,EFO:1001219,http://www.ebi.ac.uk/efo/EFO_1001219,0.883,None
+kULks4pm8h,benign / essential tremor,essential tremor,EFO:0003108,http://www.ebi.ac.uk/efo/EFO_0003108,0.987,None
+hCNt35QNdf,polio / poliomyelitis,poliomyelitis,EFO:0007450,http://www.ebi.ac.uk/efo/EFO_0007450,0.908,None
+afJv4AdgX8,dry eyes,dry eye syndrome,EFO:1000906,http://www.ebi.ac.uk/efo/EFO_1000906,0.787,None
+93cBCSCQTS,iritis,iritis,EFO:1000997,http://www.ebi.ac.uk/efo/EFO_1000997,0.995,None
+ChbQn3d7Ju,post-natal depression,postpartum depression,EFO:0007453,http://www.ebi.ac.uk/efo/EFO_0007453,0.775,None
+Q4ecqzeKHK,disc degeneration,Intervertebral disc degeneration,HP:0008419,http://purl.obolibrary.org/obo/HP_0008419,0.813,None
+dhjmbBrnwr,back pain,Back pain,HP:0003418,http://purl.obolibrary.org/obo/HP_0003418,0.994,None
+w5bDHGcGoZ,scoliosis,scoliosis,EFO:0004273,http://www.ebi.ac.uk/efo/EFO_0004273,0.996,None
+xQR3Abvj3W,spinal stenosis,spinal stenosis,EFO:0007490,http://www.ebi.ac.uk/efo/EFO_0007490,0.996,None
+hUMJPzkMdt,joint pain,Arthralgia,HP:0002829,http://purl.obolibrary.org/obo/HP_0002829,0.989,None
+R6qCK8p4TC,arthritis (nos),arthritis,EFO:0005856,http://www.ebi.ac.uk/efo/EFO_0005856,0.786,None
+3uUgr4hNa8,plantar fascitis,Plantar Fasciitis,EFO:1001909,http://www.ebi.ac.uk/efo/EFO_1001909,0.774,None
+kxiAex6hpc,carpal tunnel syndrome,carpal tunnel syndrome,EFO:0004143,http://www.ebi.ac.uk/efo/EFO_0004143,0.971,None
+g77Wg8MyaD,fibromyalgia,fibromyalgia,EFO:0005687,http://www.ebi.ac.uk/efo/EFO_0005687,0.988,None
+HxvPFshWKn,dupuytren's contracture,Palmar Fibromatosis,EFO:1000438,http://www.ebi.ac.uk/efo/EFO_1000438,0.983,None
+NJmBkCTArP,acne/acne vulgaris,acne,EFO:0003894,http://www.ebi.ac.uk/efo/EFO_0003894,0.941,None
+QUE2ovzV3y,lichen planus,lichen planus,EFO:1000726,http://www.ebi.ac.uk/efo/EFO_1000726,0.998,None
+KMiFHYAk6P,cervical intra-epithelial neoplasia (cin) / precancerous cells cervix,cervical intraepithelial neoplasia,MONDO:0022394,http://purl.obolibrary.org/obo/MONDO_0022394,0.688,None
+Q6zd4udjSE,menorrhagia (unknown cause),Menorrhagia,HP:0000132,http://purl.obolibrary.org/obo/HP_0000132,0.644,None
+Q3DKL2pkPb,ectopic pregnancy,Ectopic pregnancy,HP:0031456,http://purl.obolibrary.org/obo/HP_0031456,0.991,None
+VzsSZg9vH6,breast fibroadenoma,Fibroadenoma,EFO:1000254,http://www.ebi.ac.uk/efo/EFO_1000254,0.834,None
+fGVpWuPZQ4,raynaud's phenomenon/disease,Raynaud disease,EFO:1001145,http://www.ebi.ac.uk/efo/EFO_1001145,0.79,None
+eqqGgTPXv3,food intolerance,food allergy,EFO:1001890,http://www.ebi.ac.uk/efo/EFO_1001890,0.996,None
+6YwGLUVJUh,urticaria,urticaria,EFO:0005531,http://www.ebi.ac.uk/efo/EFO_0005531,0.994,None
+XduSH5A96K,measles / morbillivirus,measles,EFO:1002025,http://www.ebi.ac.uk/efo/EFO_1002025,0.838,None
+CZP9SDz6q5,mumps / epidemic parotitis,Mumps virus infectious disease,EFO:0007383,http://www.ebi.ac.uk/efo/EFO_0007383,0.826,None
+ufy6NtGsrh,rubella / german measles,rubella,EFO:1002026,http://www.ebi.ac.uk/efo/EFO_1002026,0.74,None
+sdGpBMnrGf,chickenpox,chickenpox,EFO:0007204,http://www.ebi.ac.uk/efo/EFO_0007204,0.993,None
+D3s9gwVqE4,whooping cough / pertussis,whooping cough,EFO:0000650,http://www.ebi.ac.uk/efo/EFO_0000650,0.802,None
+W6HviD5qCV,shingles,Herpes Zoster,EFO:0006510,http://www.ebi.ac.uk/efo/EFO_0006510,0.994,None
+PrMexeqjJj,herpes simplex,genital herpes,EFO:0007282,http://www.ebi.ac.uk/efo/EFO_0007282,0.885,None
+pMn6LjfMkL,hepatitis a,hepatitis A virus infection,EFO:0007305,http://www.ebi.ac.uk/efo/EFO_0007305,0.993,None
+XukCMMCUa3,hepatitis b,hepatitis B virus infection,EFO:0004197,http://www.ebi.ac.uk/efo/EFO_0004197,0.993,None
+WAyh9XdLAJ,hepatitis c,hepatitis C virus infection,EFO:0003047,http://www.ebi.ac.uk/efo/EFO_0003047,0.993,None
+EotRTrNRRv,aortic regurgitation / incompetence,aortic valve insufficiency,EFO:0007148,http://www.ebi.ac.uk/efo/EFO_0007148,0.775,None
+mTUrgW4JyE,hypertrophic cardiomyopathy (hcm / hocm),hypertrophic cardiomyopathy,EFO:0000538,http://www.ebi.ac.uk/efo/EFO_0000538,0.903,None
+kRe6k9cMdF,pericarditis,pericarditis,EFO:0007427,http://www.ebi.ac.uk/efo/EFO_0007427,0.994,None
+GCxncUwHNN,tinnitus / tiniitis,Tinnitus,HP:0000360,http://purl.obolibrary.org/obo/HP_0000360,0.774,None
+x5iotdN5ae,tonsiltis,tonsillitis,MONDO:0001039,http://purl.obolibrary.org/obo/MONDO_0001039,0.71,None
+UBRhrFJcMk,constipation,Constipation,HP:0002019,http://purl.obolibrary.org/obo/HP_0002019,0.998,None
+8Eqz8MKNpz,rectal prolapse,Rectal prolapse,HP:0002035,http://purl.obolibrary.org/obo/HP_0002035,0.992,None
+F4P8ZvC5AS,femoral hernia,femoral hernia,EFO:1001791,http://www.ebi.ac.uk/efo/EFO_1001791,0.993,None
+jgmnXHokbR,incisional hernia,Incisional hernia,HP:0004872,http://purl.obolibrary.org/obo/HP_0004872,0.996,None
+7DSPFdzZYL,nephritis,nephritis,EFO:1002050,http://www.ebi.ac.uk/efo/EFO_1002050,0.992,None
+b6DxArGr3E,thyroid goitre,nontoxic goiter,MONDO:0001658,http://purl.obolibrary.org/obo/MONDO_0001658,0.814,None
+fy6NbU7Jjw,blepharitis / eyelid infection,hordeolum,EFO:0007315,http://www.ebi.ac.uk/efo/EFO_0007315,0.774,None
+ABGzLrQzHa,obsessive compulsive disorder (ocd),obsessive-compulsive disorder,EFO:0004242,http://www.ebi.ac.uk/efo/EFO_0004242,0.907,None
+cZCnCpqXNb,insomnia,insomnia,EFO:0004698,http://www.ebi.ac.uk/efo/EFO_0004698,0.975,None
+nxCabJ4aFp,osteopenia,Osteopenia,HP:0000938,http://purl.obolibrary.org/obo/HP_0000938,0.997,None
+XEmZWgkpiS,bursitis,bursitis,MONDO:0002471,http://purl.obolibrary.org/obo/MONDO_0002471,0.996,None
+tcLEHiHN4C,tennis elbow / lateral epicondylitis,lateral epicondylitis,EFO:1001896,http://www.ebi.ac.uk/efo/EFO_1001896,0.734,None
+ThZV36RDRa,cellulitis,cellulitis,EFO:0003035,http://www.ebi.ac.uk/efo/EFO_0003035,0.989,None
+tFgpHXuAsy,fracture skull / head,Skull Fractures,EFO:1001425,http://www.ebi.ac.uk/efo/EFO_1001425,0.801,None
+KWTKLrB35Q,fracture radius,radius fracture,EFO:0003957,http://www.ebi.ac.uk/efo/EFO_0003957,0.99,None
+vw7CmdWMEK,fracture ulna,ulna fracture,EFO:0003950,http://www.ebi.ac.uk/efo/EFO_0003950,0.992,None
+tcrdehNrZj,fracture tibia,tibia fracture,EFO:0003944,http://www.ebi.ac.uk/efo/EFO_0003944,0.986,None
+xXhbLYBh8y,septicaemia / sepsis,Sepsis,HP:0100806,http://purl.obolibrary.org/obo/HP_0100806,0.727,None
+9S2SnPdrfa,meningioma / benign meningeal tumour,meningeal neoplasm,EFO:0003851,http://www.ebi.ac.uk/efo/EFO_0003851,0.796,None
+3iZTNEf6XH,rosacea,rosacea,EFO:1000760,http://www.ebi.ac.uk/efo/EFO_1000760,0.994,None
+UR47r4NKXX,vitiligo,Vitiligo,EFO:0004208,http://www.ebi.ac.uk/efo/EFO_0004208,0.986,None
+VyA2du92of,cervical erosion,cervix erosion,EFO:1000862,http://www.ebi.ac.uk/efo/EFO_1000862,0.838,None
+mDNTan8Vu3,dysmenorrhoea / dysmenorrhea,Dysmenorrhea,HP:0100607,http://purl.obolibrary.org/obo/HP_0100607,0.914,None
+BWXUGWKpg2,menopausal symptoms / menopause,menopause,EFO:0003922,http://www.ebi.ac.uk/efo/EFO_0003922,0.821,None
+MWuJ47cX5S,alopecia / hair loss,alopecia,MONDO:0004907,http://purl.obolibrary.org/obo/MONDO_0004907,0.732,None
+YAKQcovkro,scarlet fever / scarlatina,scarlet fever,EFO:0007477,http://www.ebi.ac.uk/efo/EFO_0007477,0.849,None
+myLYRtcZLw,undescended testicle,cryptorchidism,EFO:0004562,http://www.ebi.ac.uk/efo/EFO_0004562,0.996,None
+hKgqy8AGQS,Hearing difficulty/problems: Yes,Difficulty standing,HP:0003698,http://purl.obolibrary.org/obo/HP_0003698,0.563,None
+eo38AmDQji,Overall health rating,mental health,EFO:0003935,http://www.ebi.ac.uk/efo/EFO_0003935,0.512,None
+NmxAx2NCPV,General pain for 3+ months,pain,EFO:0003843,http://www.ebi.ac.uk/efo/EFO_0003843,0.447,None
+TquBWBbu3a,Number of spontaneous miscarriages,Miscarriage,HP:0005268,http://purl.obolibrary.org/obo/HP_0005268,0.596,None
+QAzrz3gorw,Pulse wave reflection index,pulse wave reflection index measurement,EFO:0009804,http://www.ebi.ac.uk/efo/EFO_0009804,0.931,None
+5iTdQyNjRF,Cough on most days,Cough,HP:0012735,http://purl.obolibrary.org/obo/HP_0012735,0.636,None
+MynfKzTCEn,Years of cough on most days,Cough,HP:0012735,http://purl.obolibrary.org/obo/HP_0012735,0.53,None
+7JYgawfga9,head injury,head injury,EFO:0009505,http://www.ebi.ac.uk/efo/EFO_0009505,0.993,None
+vYojzAeeCJ,gynaecological disorder (not cancer),"Genital neoplasm, female",EFO:1001331,http://www.ebi.ac.uk/efo/EFO_1001331,0.71,None
+YKyiCtq6Dx,peripheral nerve injury,peripheral nerve injury,EFO:0009510,http://www.ebi.ac.uk/efo/EFO_0009510,0.991,None
+ntnepcAzeH,fracture jaw,jaw fracture,EFO:0009612,http://www.ebi.ac.uk/efo/EFO_0009612,0.994,None
+FRYugeiT6H,fracture nose,bone fracture,EFO:0003931,http://www.ebi.ac.uk/efo/EFO_0003931,0.748,None
+rgQB8dE8xS,fracture clavicle / collar bone,clavicle fracture,EFO:0009614,http://www.ebi.ac.uk/efo/EFO_0009614,0.785,None
+HAsVHsr5Ky,fracture shoulder / scapula,shoulder fracture,EFO:0009621,http://www.ebi.ac.uk/efo/EFO_0009621,0.801,None
+YiCduTURnw,fracture forearm / wrist,wrist fracture,EFO:0009515,http://www.ebi.ac.uk/efo/EFO_0009515,0.765,None
+4igqWdtp2o,fracture wrist / colles fracture,wrist fracture,EFO:0009515,http://www.ebi.ac.uk/efo/EFO_0009515,0.851,None
+ofCGGRAgiP,fracture hand,Fractured hand bones,HP:0004277,http://purl.obolibrary.org/obo/HP_0004277,0.754,None
+wnrAEoiJLz,fracture finger,finger fracture,EFO:0009616,http://www.ebi.ac.uk/efo/EFO_0009616,0.988,None
+MfZHWcfEkd,fracture rib,rib fracture,EFO:0009620,http://www.ebi.ac.uk/efo/EFO_0009620,0.99,None
+d3VrupWfNP,fracture pelvis,fracture of pelvis,EFO:0009622,http://www.ebi.ac.uk/efo/EFO_0009622,0.973,None
+UqcmXtkZE3,fracture patella / knee,knee fracture,EFO:0009617,http://www.ebi.ac.uk/efo/EFO_0009617,0.8,None
+ejDBLBZpnA,fracture fibula,fibula fracture,EFO:0009613,http://www.ebi.ac.uk/efo/EFO_0009613,0.986,None
+YoYE9e6Tbs,fracture foot,foot fracture,EFO:0009618,http://www.ebi.ac.uk/efo/EFO_0009618,0.989,None
+vRg9GQhXJb,Hand grip strength (left),grip strength measurement,EFO:0006941,http://www.ebi.ac.uk/efo/EFO_0006941,0.692,None
+D8q77ogL93,Hand grip strength (right),grip strength measurement,EFO:0006941,http://www.ebi.ac.uk/efo/EFO_0006941,0.671,None
+gRCinQKobv,"Heel bone mineral density (BMD) T-score, automated",heel bone mineral density,EFO:0009270,http://www.ebi.ac.uk/efo/EFO_0009270,0.694,None
+i6Lz7PFzh9,Age completed full time education,time,EFO:0000721,http://www.ebi.ac.uk/efo/EFO_0000721,0.406,None
+S3xp5NZaXj,Worrier / anxious feelings,feeling nervous measurement,EFO:0009597,http://www.ebi.ac.uk/efo/EFO_0009597,0.392,None
+JeSewQZ484,Diabetes diagnosed by doctor,diabetes mellitus,EFO:0000400,http://www.ebi.ac.uk/efo/EFO_0000400,0.562,None
+sbZpZ39cte,Cancer diagnosed by doctor,age at breast cancer diagnosis,EFO:0005603,http://www.ebi.ac.uk/efo/EFO_0005603,0.51,None
+dcnwmpk7fs,Fractured/broken bones in last 5 years,bone fracture,EFO:0003931,http://www.ebi.ac.uk/efo/EFO_0003931,0.628,None
+gHynLmhdVP,Ever used hormone-replacement therapy (HRT),hormone replacement therapy,EFO:0003961,http://www.ebi.ac.uk/efo/EFO_0003961,0.81,None
+kvYJdX3Bhr,Longest period of depression,depressive disorder,MONDO:0002050,http://purl.obolibrary.org/obo/MONDO_0002050,0.606,None
+XB9Fsq9SYU,Number of depression episodes,depressive episode measurement,EFO:0007704,http://www.ebi.ac.uk/efo/EFO_0007704,0.61,None
+shxHYHe9Ca,Creatinine (enzymatic) in urine,creatinine measurement,EFO:0004518,http://www.ebi.ac.uk/efo/EFO_0004518,0.582,None
+YrD2dJKH49,cin/pre-cancer cells cervix,cervical cancer,MONDO:0002974,http://purl.obolibrary.org/obo/MONDO_0002974,0.722,None
+Ksb5dcyERM,heart valve problem/heart murmur,Heart murmur,HP:0030148,http://purl.obolibrary.org/obo/HP_0030148,0.778,None
+WCT7NvHs2a,pericardial problem,neoplasm of pericardium,MONDO:0021381,http://purl.obolibrary.org/obo/MONDO_0021381,0.673,None
+EurZpeBgbL,other respiratory problems,respiratory process,EFO:0009834,http://www.ebi.ac.uk/efo/EFO_0009834,0.688,None
+S8oT9e7pCZ,oesophageal disorder,esophageal disease,EFO:0009544,http://www.ebi.ac.uk/efo/EFO_0009544,0.855,None
+oKjJ9kFntX,stomach disorder,stomach disease,EFO:0009608,http://www.ebi.ac.uk/efo/EFO_0009608,0.993,None
+WyYHUND96n,parathyroid gland problem (not cancer),malignant tumor of parathyroid gland,MONDO:0021311,http://purl.obolibrary.org/obo/MONDO_0021311,0.88,None
+zuCKtVSRYV,chronic/degenerative neurological problem,nervous system disease,EFO:0000618,http://www.ebi.ac.uk/efo/EFO_0000618,0.711,None
+DZpJRnBMbJ,muscle/soft tissue problem,Soft Tissue Neoplasm,EFO:1000541,http://www.ebi.ac.uk/efo/EFO_1000541,0.655,None
+h5obW5dvwY,other renal/kidney problem,kidney neoplasm,EFO:0003865,http://www.ebi.ac.uk/efo/EFO_0003865,0.593,None
+uwdndM638J,other joint disorder,joint disease,EFO:1000999,http://www.ebi.ac.uk/efo/EFO_1000999,0.99,None
+StWL9nycXA,diabetic neuropathy/ulcers,diabetic neuropathy,EFO:1000783,http://www.ebi.ac.uk/efo/EFO_1000783,0.868,None
+Vv2F5GDpCH,cervical spondylosis,cervical spondylosis,EFO:0009610,http://www.ebi.ac.uk/efo/EFO_0009610,0.997,None
+rY7e2g8Fdq,svt / supraventricular tachycardia,Supraventricular tachycardia,HP:0004755,http://purl.obolibrary.org/obo/HP_0004755,0.914,None
+6W6mMNFz3o,anal problem,vertebral joint disease,EFO:0009477,http://www.ebi.ac.uk/efo/EFO_0009477,0.634,None
+msfwfZ6Yfz,macular degeneration,age-related macular degeneration,EFO:0001365,http://www.ebi.ac.uk/efo/EFO_0001365,0.997,None
+FFPFfoKqT4,bowel / intestinal obstruction,intestinal obstruction,MONDO:0004565,http://purl.obolibrary.org/obo/MONDO_0004565,0.859,None
+NWUpS5izJq,benign neuroma,benign,EFO:0002751,http://www.ebi.ac.uk/efo/EFO_0002751,0.709,None
+Cxs4garPQn,Hearing difficulty/problems: I am completely deaf,Difficulty standing,HP:0003698,http://purl.obolibrary.org/obo/HP_0003698,0.43,None
+jWUpUEtngk,Which eye(s) are affected by cataract: Right eye,eye infection,EFO:1001888,http://www.ebi.ac.uk/efo/EFO_1001888,0.435,None
+XtVsCTVMBJ,Which eye(s) are affected by cataract: Left eye,eye infection,EFO:1001888,http://www.ebi.ac.uk/efo/EFO_1001888,0.443,None
+i7fstLUFWr,Number of self-reported cancers,"number of cancers, self-reported",EFO:0009800,http://www.ebi.ac.uk/efo/EFO_0009800,0.804,None
+4PD9qU3Dt3,Number of self-reported non-cancer illnesses,"number of non-cancer illnesses, self-reported",EFO:0009801,http://www.ebi.ac.uk/efo/EFO_0009801,0.822,None
+L2zbwQVALV,"Number of operations, self-reported","number of operations, self-reported",EFO:0009802,http://www.ebi.ac.uk/efo/EFO_0009802,0.815,None
+3hSApPoVxC,Number of treatments/medications taken,"number of treatments or medications taken, self-reported",EFO:0009803,http://www.ebi.ac.uk/efo/EFO_0009803,0.757,None
+ekpqKjLK2N,Getting up in morning,"ease of getting up in the morning, self-reported",EFO:0009817,http://www.ebi.ac.uk/efo/EFO_0009817,0.61,None
+TzqkenRQrn,Nap during day,"nap during day, self-reported",EFO:0009818,http://www.ebi.ac.uk/efo/EFO_0009818,0.576,None
+sFkmPsw4Hp,Comparative body size at age 10,"comparative body size at age 10, self-reported",EFO:0009819,http://www.ebi.ac.uk/efo/EFO_0009819,0.688,None
+bqd5FHykeN,Father's age at death,father's age at death,EFO:0009712,http://www.ebi.ac.uk/efo/EFO_0009712,0.843,None
+DFLJEisAYJ,Suffer from 'nerves',pain,EFO:0003843,http://www.ebi.ac.uk/efo/EFO_0003843,0.48,None
+7Fumeg9zno,"Seen doctor (GP) for nerves, anxiety, tension or depression","seeing a general practitioner for nerves, anxiety, tension or depression, self-reported",EFO:0009820,http://www.ebi.ac.uk/efo/EFO_0009820,0.568,None
+7VJHNuLbDj,"Seen a psychiatrist for nerves, anxiety, tension or depression","seeing a psychiatrist for nerves, anxiety, tension or depression, self-reported",EFO:0009821,http://www.ebi.ac.uk/efo/EFO_0009821,0.732,None
+pnWzohKbQQ,Relative age of first facial hair,age at first facial hair,EFO:0009716,http://www.ebi.ac.uk/efo/EFO_0009716,0.814,None
+a2PXiu4ABg,Number of children fathered,number of children fathered measurement,EFO:0009814,http://www.ebi.ac.uk/efo/EFO_0009814,0.918,None
+sgCmYFC66Y,Age at first live birth,age at first birth measurement,EFO:0009101,http://www.ebi.ac.uk/efo/EFO_0009101,0.833,None
+WsoTDfq3PU,Bilateral oophorectomy (both ovaries removed),bilateral oophorectomy,EFO:0009717,http://www.ebi.ac.uk/efo/EFO_0009717,0.716,None
+Nv6DYuHUtv,Peak expiratory flow (PEF),peak expiratory flow,EFO:0009718,http://www.ebi.ac.uk/efo/EFO_0009718,0.912,None
+ntgHAiDEkH,Pace-maker,artificial cardiac pacemaker,EFO:0009719,http://www.ebi.ac.uk/efo/EFO_0009719,0.819,None
+awAV7C4qry,Mother's age at death,mother's age at death,EFO:0009721,http://www.ebi.ac.uk/efo/EFO_0009721,0.836,None
+BhdpjvJ2KL,Number of stillbirths,number of stillbirths,EFO:0009722,http://www.ebi.ac.uk/efo/EFO_0009722,0.994,None
+vaYsSK7z9c,Age of primiparous women at birth of child,interstitial lung disease specific to childhood,MONDO:0017014,http://purl.obolibrary.org/obo/MONDO_0017014,0.409,None
+7u53YV3dSR,Pulse wave reflection index,pulse wave reflection index measurement,EFO:0009804,http://www.ebi.ac.uk/efo/EFO_0009804,0.931,None
+6LjmtM2crk,Work/job satisfaction,job satisfaction measurement,EFO:0009723,http://www.ebi.ac.uk/efo/EFO_0009723,0.859,None
+MFZMipVRCk,Health satisfaction,health satisfaction measurement,EFO:0009724,http://www.ebi.ac.uk/efo/EFO_0009724,0.901,None
+L3YXwXv5nP,Friendships satisfaction,friendship satisfaction measurement,EFO:0009725,http://www.ebi.ac.uk/efo/EFO_0009725,0.844,None
+L5sS5cwfez,Financial situation satisfaction,financial situation satisfaction measurement,EFO:0009726,http://www.ebi.ac.uk/efo/EFO_0009726,0.927,None
+Sw6RTqkqxo,Ever manic/hyper for 2 days,manic or hypomanic episode,EFO:0007706,http://www.ebi.ac.uk/efo/EFO_0007706,0.401,None
+85PWK8qbD6,Ever highly irritable/argumentative for 2 days,Irritability,HP:0000737,http://purl.obolibrary.org/obo/HP_0000737,0.46,None
+eqUZy46bjw,Cochlear implant,cochlear implant,EFO:0009728,http://www.ebi.ac.uk/efo/EFO_0009728,0.993,None
+zxn5SfQKmr,Able to walk or cycle unaided for 10 minutes,"ability to walk or cycle unaided for 10 minutes, self-reported",EFO:0009822,http://www.ebi.ac.uk/efo/EFO_0009822,0.718,None
+YmXuv8GaWs,Target heart rate achieved,"achievement of target heart rate, self-reported",EFO:0009823,http://www.ebi.ac.uk/efo/EFO_0009823,0.651,None
+3wKn8L66fM,Sitting height,sitting height measurement,EFO:0011011,http://www.ebi.ac.uk/efo/EFO_0011011,0.895,None
+bYPmfwDXx7,Cascot confidence score,CASCOT confidence score measurement,EFO:0009815,http://www.ebi.ac.uk/efo/EFO_0009815,0.93,None
+FHunKEd27i,Bring up phlegm/sputum/mucus on most days,"bringing up phlegm, sputum or mucus on most days, self-reported",EFO:0009824,http://www.ebi.ac.uk/efo/EFO_0009824,0.709,None
+a3DUo4zjVu,Whole body water mass,whole body water mass,EFO:0009805,http://www.ebi.ac.uk/efo/EFO_0009805,0.993,None
+Jf4euVvscL,Reported occurrences of cancer,cancer,MONDO:0004992,http://purl.obolibrary.org/obo/MONDO_0004992,0.445,None
+cgs7KQt6hz,oesophageal stricture,Esophageal stricture,HP:0002043,http://purl.obolibrary.org/obo/HP_0002043,0.89,None
+5MEzNaKfR7,bladder problem (not cancer),gallbladder cancer,MONDO:0005411,http://purl.obolibrary.org/obo/MONDO_0005411,0.723,None
+3pvceLzjih,prostate problem (not cancer),prostate cancer,MONDO:0008315,http://purl.obolibrary.org/obo/MONDO_0008315,0.842,None
+hnz4ZvYhHx,testicular problems (not cancer),testicular carcinoma,EFO:0005088,http://www.ebi.ac.uk/efo/EFO_0005088,0.796,None
+Gj58GgzkLL,thyroid problem (not cancer),thyroid cancer,MONDO:0002108,http://purl.obolibrary.org/obo/MONDO_0002108,0.812,None
+uz5iSfGUVF,thyroid radioablation therapy,thyroid radioablation therapy,EFO:0009600,http://www.ebi.ac.uk/efo/EFO_0009600,0.985,None
+jQE95qUBDa,adrenocortical insufficiency/addison's disease,adrenocortical insufficiency,EFO:0009491,http://www.ebi.ac.uk/efo/EFO_0009491,0.854,None
+GNvBaAHbwi,neurological injury/trauma,nervous system injury,EFO:0009490,http://www.ebi.ac.uk/efo/EFO_0009490,0.869,None
+Whzt6yhb6C,cranial nerve problem/palsy,cranial nerve palsy,EFO:0009489,http://www.ebi.ac.uk/efo/EFO_0009489,0.871,None
+eUp9obUoUx,spinal cord disorder,spinal cord disease,EFO:0009488,http://www.ebi.ac.uk/efo/EFO_0009488,0.996,None
+AU4NLa4ZMA,peripheral nerve disorder,peripheral nervous system disease,EFO:0009387,http://www.ebi.ac.uk/efo/EFO_0009387,0.997,None
+jmTtuKa3aE,trapped nerve/compressed nerve,nerve compression syndrome,EFO:0009487,http://www.ebi.ac.uk/efo/EFO_0009487,0.847,None
+jG9qZ7Svxf,diabetic eye disease,diabetic eye disease,EFO:0009486,http://www.ebi.ac.uk/efo/EFO_0009486,0.992,None
+VS8a9Yuc4e,eye trauma,injury,EFO:0000546,http://www.ebi.ac.uk/efo/EFO_0000546,0.805,None
+ugzQDJVfQY,back problem,vertebral joint disease,EFO:0009477,http://www.ebi.ac.uk/efo/EFO_0009477,0.561,None
+odXDBiDihZ,uterine polyps,uterine polyp,EFO:0009484,http://www.ebi.ac.uk/efo/EFO_0009484,0.797,None
+FRx6VsvaeL,allergy or anaphylactic reaction to drug,drug allergy,EFO:0009482,http://www.ebi.ac.uk/efo/EFO_0009482,0.645,None
+uUZRjY5h6P,enlarged prostate,benign prostatic hyperplasia,EFO:0000284,http://www.ebi.ac.uk/efo/EFO_0000284,0.857,None
+WWXaBEwBHb,burns,Eye Burns,EFO:1001788,http://www.ebi.ac.uk/efo/EFO_1001788,0.824,None
+tjuYvPBFMc,nasal/sinus disorder,paranasal sinus disease,EFO:0009481,http://www.ebi.ac.uk/efo/EFO_0009481,0.971,None
+4C7LvWZLBm,throat or larynx disorder,throat disease,EFO:0009479,http://www.ebi.ac.uk/efo/EFO_0009479,0.96,None
+SjMT63V7NA,vocal cord polyp,vocal cord polyp,EFO:0009478,http://www.ebi.ac.uk/efo/EFO_0009478,0.992,None
+s6vSLCEbc5,other neurological problem,nervous system disease,EFO:0000618,http://www.ebi.ac.uk/efo/EFO_0000618,0.987,None
+ncPn46k9dG,clotting disorder/excessive bleeding,blood coagulation disease,EFO:0009314,http://www.ebi.ac.uk/efo/EFO_0009314,0.768,None
+Ps5dJ4JQrQ,disc problem,vertebral joint disease,EFO:0009477,http://www.ebi.ac.uk/efo/EFO_0009477,0.994,None
+XvQE7inXqj,cervical polyps,cervical polyp,EFO:0009475,http://www.ebi.ac.uk/efo/EFO_0009475,0.819,None
+qJ9WGSbbDA,abnormal smear (cervix),abnormal PAP smear,EFO:0009511,http://www.ebi.ac.uk/efo/EFO_0009511,0.695,None
+3HmxgVn3Pf,benign breast lump,Breast mass,HP:0032408,http://purl.obolibrary.org/obo/HP_0032408,0.819,None
+EbPnX3dZJD,Volume_depletion,volume,EFO:0001715,http://www.ebi.ac.uk/efo/EFO_0001715,0.722,None
+wscnxxtuuU,Perineal_laceration_during_delivery,perineal laceration during delivery,EFO:0009816,http://www.ebi.ac.uk/efo/EFO_0009816,0.996,None
+DGucEAmpFB,Intrauterine_hypoxia,fetal hypoxia,EFO:1001793,http://www.ebi.ac.uk/efo/EFO_1001793,0.99,None
+PzMtSu9HTq,Abnormal_serum_enzyme_levels,abnormality of serum enzyme levels,EFO:0009826,http://www.ebi.ac.uk/efo/EFO_0009826,0.937,None
+pBunWrGnrn,Injury_of_other_intrathoracic_organs,intrathoracic organ injury,EFO:0009887,http://www.ebi.ac.uk/efo/EFO_0009887,0.935,None
+LxWxcGP6GU,Other_fluke_infections,paragonimiasis,EFO:0007418,http://www.ebi.ac.uk/efo/EFO_0007418,0.805,None
+AbHTBrFWrQ,Hereditary_ataxia,hereditary ataxia,EFO:0009671,http://www.ebi.ac.uk/efo/EFO_0009671,0.997,None
+yS7DD4T2f2,Mycetoma,eumycotic mycetoma,EFO:0007265,http://www.ebi.ac.uk/efo/EFO_0007265,0.997,None
+xiyLTkW8BM,Viral_warts,anogenital venereal wart,EFO:0007147,http://www.ebi.ac.uk/efo/EFO_0007147,0.666,None
+cDDcXRqE5C,Convalescence,convalescence,EFO:0009630,http://www.ebi.ac.uk/efo/EFO_0009630,0.996,None
+d8KGQrCJRc,Other_disorders_of_nervous_system,nervous system disease,EFO:0000618,http://www.ebi.ac.uk/efo/EFO_0000618,0.95,None
+fZMg7MXPPm,Hypertensive_renal_disease,hypertensive nephropathy,MONDO:0024633,http://purl.obolibrary.org/obo/MONDO_0024633,0.993,None
+adXLCRmnnb,Headache,Headache,HP:0002315,http://purl.obolibrary.org/obo/HP_0002315,0.985,None
+rJ3RgsRZrR,Fever of unknown origin,fever of unknown origin,EFO:0003952,http://www.ebi.ac.uk/efo/EFO_0003952,0.977,None
+Ppgqgjda9P,Dysphagia,Dysphagia,HP:0002015,http://purl.obolibrary.org/obo/HP_0002015,0.987,None
+gvqYFjWBHF,Cough,Cough,HP:0012735,http://purl.obolibrary.org/obo/HP_0012735,0.995,None
+vQbT3wkFa2,Other arthritis,arthritis,EFO:0005856,http://www.ebi.ac.uk/efo/EFO_0005856,0.997,None
+4qZxVPb8n6,Systemic lupus erythematosus,systemic lupus erythematosus,MONDO:0007915,http://purl.obolibrary.org/obo/MONDO_0007915,0.991,None
+7Vgg4GXJyH,Systemic sclerosis,systemic scleroderma,EFO:0000717,http://www.ebi.ac.uk/efo/EFO_0000717,0.994,None
+sgF97pm8tU,Psoriasis,psoriasis,EFO:0000676,http://www.ebi.ac.uk/efo/EFO_0000676,0.995,None
+cE7HxX85mj,Other disorders of pigmentation,pigmentation disease,EFO:1000755,http://www.ebi.ac.uk/efo/EFO_1000755,0.82,None
+BK9rm8NvN3,"Ulcer of lower limb, not elsewhere classified",ulcer of lower limb,EFO:0007068,http://www.ebi.ac.uk/efo/EFO_0007068,0.993,None
+4vpWfTTYLe,Dyspepsia,dyspepsia,EFO:0008533,http://www.ebi.ac.uk/efo/EFO_0008533,0.988,None
+YrrdemByQY,Inguinal hernia,Inguinal hernia,HP:0000023,http://purl.obolibrary.org/obo/HP_0000023,0.994,None
+XMEcRBAncb,"Bacterial pneumonia, not elsewhere classified",bacterial pneumonia,EFO:1001272,http://www.ebi.ac.uk/efo/EFO_1001272,0.991,None
+LRsQFSxHXL,"Pneumonia, organism unspecified",bronchiolitis obliterans,EFO:0007183,http://www.ebi.ac.uk/efo/EFO_0007183,0.898,None
+4hER3Q5YxJ,Nasal polyp,Nasal Cavity Polyp,EFO:1000391,http://www.ebi.ac.uk/efo/EFO_1000391,0.995,None
+avwMdZL2xY,Peritonsillar abscess,peritonsillar abscess,EFO:0007429,http://www.ebi.ac.uk/efo/EFO_0007429,0.996,None
+yB7u2PK6zZ,Emphysema,emphysema,EFO:0000464,http://www.ebi.ac.uk/efo/EFO_0000464,0.994,None
+PB3aGTiYYM,Other chronic obstructive pulmonary disease,chronic obstructive pulmonary disease,EFO:0000341,http://www.ebi.ac.uk/efo/EFO_0000341,0.995,None
+B2EFspHRJj,Asthma,asthma,MONDO:0004979,http://purl.obolibrary.org/obo/MONDO_0004979,0.991,None
+JHF92Q465E,Bronchiectasis,Bronchiectasis,HP:0002110,http://purl.obolibrary.org/obo/HP_0002110,0.994,None
+kdrvCu9yJ8,Other interstitial pulmonary diseases,Abnormal pulmonary interstitial morphology,HP:0006530,http://purl.obolibrary.org/obo/HP_0006530,0.952,None
+wn3tmpf96F,Other respiratory disorders,respiratory system disease,EFO:0000684,http://www.ebi.ac.uk/efo/EFO_0000684,0.947,None
+DsSp2W8pdq,Bipolar affective disorder,bipolar disorder,MONDO:0004985,http://purl.obolibrary.org/obo/MONDO_0004985,0.74,None
+qGmLbBLWms,"Sexual dysfunction, not caused by organic disorder or disease",sexual dysfunction,EFO:0004714,http://www.ebi.ac.uk/efo/EFO_0004714,0.678,None
+o8dr3NCFzD,Other hypothyroidism,hypothyroidism,EFO:0004705,http://www.ebi.ac.uk/efo/EFO_0004705,0.997,None
+Pjqea2CsJJ,Melanoma in situ,melanoma,EFO:0000756,http://www.ebi.ac.uk/efo/EFO_0000756,0.777,None
+psdYpdziXr,Benign neoplasm of ovary,Benign Ovarian Neoplasm,EFO:1000116,http://www.ebi.ac.uk/efo/EFO_1000116,0.997,None
+TENEk85mdH,Benign neoplasm of thyroid gland,Benign Thyroid Gland Neoplasm,EFO:1000122,http://www.ebi.ac.uk/efo/EFO_1000122,0.995,None
+D6x2JkSFMh,Polycythaemia vera,polycythemia vera,EFO:0002429,http://www.ebi.ac.uk/efo/EFO_0002429,0.854,None
+gr4wDqk2kE,Myelodysplastic syndromes,myelodysplastic syndrome,EFO:0000198,http://www.ebi.ac.uk/efo/EFO_0000198,0.985,None
+mS77wrVdKa,Malignant neoplasm of colon,malignant colon neoplasm,MONDO:0021063,http://purl.obolibrary.org/obo/MONDO_0021063,0.995,None
+X5y7nhDFwY,Malignant neoplasm of larynx,Malignant Laryngeal Neoplasm,EFO:1000354,http://www.ebi.ac.uk/efo/EFO_1000354,0.99,None
+Df6EdBWPd3,Mesothelioma,mesothelioma,EFO:0000588,http://www.ebi.ac.uk/efo/EFO_0000588,0.994,None
+ezHCNeDFo9,Hodgkin's disease,Hodgkins lymphoma,EFO:0000183,http://www.ebi.ac.uk/efo/EFO_0000183,0.991,None
+enSWpttkhd,Lymphoid leukaemia,acute lymphoblastic leukemia,EFO:0000220,http://www.ebi.ac.uk/efo/EFO_0000220,0.885,None
+cTwL2MezZK,Myeloid leukaemia,myeloid leukemia,MONDO:0004643,http://purl.obolibrary.org/obo/MONDO_0004643,0.994,None
+CK27pzEiBd,Other disorders of bladder,bladder disease,EFO:1000018,http://www.ebi.ac.uk/efo/EFO_1000018,0.919,None
+NWLBY9WnZG,Other inflammation of vagina and vulva,vaginitis,MONDO:0002234,http://purl.obolibrary.org/obo/MONDO_0002234,0.813,None
+rh9oHfdTeL,Other rheumatoid arthritis,rheumatoid arthritis,EFO:0000685,http://www.ebi.ac.uk/efo/EFO_0000685,0.995,None
+HC6wiyyZWL,"Other joint disorders, not elsewhere classified",joint disease,EFO:1000999,http://www.ebi.ac.uk/efo/EFO_1000999,0.917,None
+HHDHryauYr,"Other disorders of skin and subcutaneous tissue, not elsewhere classified",skin disease,EFO:0000701,http://www.ebi.ac.uk/efo/EFO_0000701,0.95,None
+oHcjmggx84,Other aneurysm,aneurysm,EFO:0009659,http://www.ebi.ac.uk/efo/EFO_0009659,0.994,None
+VeX3EHNBjc,Other hearing loss,hearing loss,EFO:0004238,http://www.ebi.ac.uk/efo/EFO_0004238,0.998,None
+Jdtp4fzuk4,Acute and transient psychotic disorders,mental or behavioural disorder,EFO:0000677,http://www.ebi.ac.uk/efo/EFO_0000677,0.716,None
+W6dLEBAXCG,Other anxiety disorders,anxiety disorder,EFO:0006788,http://www.ebi.ac.uk/efo/EFO_0006788,0.987,None
+U4ftcEVvaT,Other disorders of thyroid,thyroid disease,EFO:1000627,http://www.ebi.ac.uk/efo/EFO_1000627,0.831,None
+Z4ihRWFtZf,Neoplasm of uncertain or unknown behaviour of female genital organs,"Genital neoplasm, female",EFO:1001331,http://www.ebi.ac.uk/efo/EFO_1001331,0.566,None
+Yd2SXatBfU,Neoplasm of uncertain or unknown behaviour of endocrine glands,endocrine neoplasm,EFO:0003769,http://www.ebi.ac.uk/efo/EFO_0003769,0.606,None
+YxXevKvJ6X,Malignant neoplasm of tonsil,tonsil cancer,EFO:1001214,http://www.ebi.ac.uk/efo/EFO_1001214,0.992,None
+S5A9LA5nJc,Malignant neoplasm of rectum,rectum cancer,EFO:1000657,http://www.ebi.ac.uk/efo/EFO_1000657,0.992,None
+jVB3aY8qku,Malignant melanoma of skin,cutaneous melanoma,EFO:0000389,http://www.ebi.ac.uk/efo/EFO_0000389,0.993,None
+tbSSQLrnik,Other septicaemia,Pasteurella hemorrhagic septicemia,EFO:1001091,http://www.ebi.ac.uk/efo/EFO_1001091,0.46,None
+mTCVme35id,Family history of malignant neoplasm,family history of cancer,EFO:0009640,http://www.ebi.ac.uk/efo/EFO_0009640,0.994,None
+MDjXHEoVB9,Abnormal findings on diagnostic imaging of other body structures,abnormal result of diagnostic imaging,EFO:0009827,http://www.ebi.ac.uk/efo/EFO_0009827,0.658,None
+M5xihyNUmh,Symptoms and signs concerning food and fluid intake,sign or symptom concerning food and fluid intake,EFO:0009825,http://www.ebi.ac.uk/efo/EFO_0009825,0.868,None
+3csJmDKFrU,Pregnancy examination and test,pregnancy test,EFO:0009643,http://www.ebi.ac.uk/efo/EFO_0009643,0.707,None
+bchxEmuNh8,"Adverse effects, not elsewhere classified",adverse effect,EFO:0009658,http://www.ebi.ac.uk/efo/EFO_0009658,0.888,None
+y7CNRveEkF,Injury of unspecified body region,injury,EFO:0000546,http://www.ebi.ac.uk/efo/EFO_0000546,0.599,None
+8cucpZzftJ,"Dislocation, sprain and strain of joints and ligaments at neck level",Joint dislocation,HP:0001373,http://purl.obolibrary.org/obo/HP_0001373,0.468,None
+7F46v7dHqG,Other general symptoms and signs,sign or symptom,EFO:0003765,http://www.ebi.ac.uk/efo/EFO_0003765,0.845,None
+7gz37VUVuj,"Oedema, not elsewhere classified",edema,EFO:0009373,http://www.ebi.ac.uk/efo/EFO_0009373,0.991,None
+uFs98kY4RZ,Syncope and collapse,Syncope,HP:0001279,http://purl.obolibrary.org/obo/HP_0001279,0.678,None
+ibwJDJbHcP,Malaise and fatigue,Fatigue,HP:0012378,http://purl.obolibrary.org/obo/HP_0012378,0.734,None
+vWVgJUhJuP,Voice disturbances,Gait disturbance,HP:0001288,http://purl.obolibrary.org/obo/HP_0001288,0.642,None
+e4TScFwPFZ,Other symptoms and signs involving the urinary system,sign or symptom,EFO:0003765,http://www.ebi.ac.uk/efo/EFO_0003765,0.656,None
+G4zYXjWibs,Other skin changes,Emotional lability,HP:0000712,http://purl.obolibrary.org/obo/HP_0000712,0.589,None
+UTTC8PaeQh,Flatulence and related conditions,flatulence,EFO:0009669,http://www.ebi.ac.uk/efo/EFO_0009669,0.701,None
+GrMSZVyw7L,Ectopic pregnancy,Ectopic pregnancy,HP:0031456,http://purl.obolibrary.org/obo/HP_0031456,0.991,None
+P9w7Qjqghu,Other disorders of amniotic fluid and membranes,amniotic fluid embolism,EFO:1001263,http://www.ebi.ac.uk/efo/EFO_1001263,0.649,None
+AfCbGzpMHf,"Antepartum haemorrhage, not elsewhere classified",Antepartum hemorrhage,HP:0025328,http://purl.obolibrary.org/obo/HP_0025328,0.981,None
+EQJpavVXH5,False labour,Braxton-Hicks contractions,EFO:0009639,http://www.ebi.ac.uk/efo/EFO_0009639,0.987,None
+t3u7NWtfap,Prolonged pregnancy,post term pregnancy,EFO:0009681,http://www.ebi.ac.uk/efo/EFO_0009681,0.988,None
+zzdaGNCCg2,Single spontaneous delivery,spontaneous mutation,EFO:0004018,http://www.ebi.ac.uk/efo/EFO_0004018,0.532,None
+iXJgAz3rKi,"Complications of the puerperium, not elsewhere classified",puerperal disorder,EFO:0009683,http://www.ebi.ac.uk/efo/EFO_0009683,0.654,None
+urvmA6Fvm8,"Other maternal diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium",pregnancy disorder,EFO:0009682,http://www.ebi.ac.uk/efo/EFO_0009682,0.6,None
+uRZDR5zenK,Calculus of lower urinary tract,lower urinary tract calculus,MONDO:0004828,http://purl.obolibrary.org/obo/MONDO_0004828,0.983,None
+i3EmFEozej,"Neuromuscular dysfunction of bladder, not elsewhere classified",neuromuscular junction disease,MONDO:0020124,http://purl.obolibrary.org/obo/MONDO_0020124,0.623,None
+WdMm96EJm7,Other disorders of urethra,urethral disease,EFO:0009689,http://www.ebi.ac.uk/efo/EFO_0009689,0.94,None
+sXTRiWUkTn,Other disorders of urinary system,urinary system disease,EFO:0009690,http://www.ebi.ac.uk/efo/EFO_0009690,0.948,None
+agXD3hFLsz,Hyperplasia of prostate,benign prostatic hyperplasia,EFO:0000284,http://www.ebi.ac.uk/efo/EFO_0000284,0.994,None
+EpCCJt2oob,Other disorders of prostate,prostate disease,EFO:0009602,http://www.ebi.ac.uk/efo/EFO_0009602,0.897,None
+qWyqegWfML,Other disorders of breast,breast disease,EFO:0009483,http://www.ebi.ac.uk/efo/EFO_0009483,0.922,None
+tpdLHMcM5L,Erosion and ectropion of cervix uteri,cervix erosion,EFO:1000862,http://www.ebi.ac.uk/efo/EFO_1000862,0.682,None
+x5MPjRM9RA,Other abnormal uterine and vaginal bleeding,Metrorrhagia,HP:0100608,http://purl.obolibrary.org/obo/HP_0100608,0.741,None
+ALQRBpcRF8,Other arthrosis,Hemarthrosis,EFO:1001344,http://www.ebi.ac.uk/efo/EFO_1001344,0.733,None
+vLfWzc5YtD,Other acquired deformities of limbs,congenital deformities of limbs,MONDO:0017427,http://purl.obolibrary.org/obo/MONDO_0017427,0.877,None
+sJgXpGXr66,Disorders of patella,disorder of patella,EFO:0009665,http://www.ebi.ac.uk/efo/EFO_0009665,0.928,None
+LKYwaKmqyo,Other disorders of muscle,muscular disease,EFO:0002970,http://www.ebi.ac.uk/efo/EFO_0002970,0.95,None
+ZQDKtHQsdW,Other disorders of synovium and tendon,synovium disorder,MONDO:0056799,http://purl.obolibrary.org/obo/MONDO_0056799,0.789,None
+d6m4UKVqTQ,Other enthesopathies,enthesopathy,EFO:0009666,http://www.ebi.ac.uk/efo/EFO_0009666,0.797,None
+3BtdafbToQ,"Other soft tissue disorders, not elsewhere classified",soft tissue disease,EFO:0009470,http://www.ebi.ac.uk/efo/EFO_0009470,0.84,None
+n4KUUnxTvQ,Other disorders of bone,bone disease,EFO:0004260,http://www.ebi.ac.uk/efo/EFO_0004260,0.869,None
+afzCXwTCpN,Other disorders of cartilage,cartilage disease,EFO:0005802,http://www.ebi.ac.uk/efo/EFO_0005802,0.922,None
+hZsvdbf4Ni,Other acquired deformities of musculoskeletal system and connective tissue,musculoskeletal system disease,EFO:0009676,http://www.ebi.ac.uk/efo/EFO_0009676,0.645,None
+qyFCEjeC2V,Other epidermal thickening,Epidermal thickening,HP:0011368,http://purl.obolibrary.org/obo/HP_0011368,0.992,None
+JBr3EwntHz,Embedded and impacted teeth,Impacted tooth,HP:0011079,http://purl.obolibrary.org/obo/HP_0011079,0.521,None
+EZSoU3oUY6,Other disorders of teeth and supporting structures,periodontal disorder,MONDO:0002635,http://purl.obolibrary.org/obo/MONDO_0002635,0.905,None
+exCwtevK5H,Stomatitis and related lesions,stomatitis,EFO:0009688,http://www.ebi.ac.uk/efo/EFO_0009688,0.564,None
+dbGGfCctQx,Other diseases of anus and rectum,rectal disease,EFO:0009685,http://www.ebi.ac.uk/efo/EFO_0009685,0.754,None
+fmYCLyUBrf,Other diseases of pancreas,pancreas disease,EFO:0009605,http://www.ebi.ac.uk/efo/EFO_0009605,0.934,None
+fRkYhuZhgZ,Other diseases of digestive system,digestive system disease,EFO:0000405,http://www.ebi.ac.uk/efo/EFO_0000405,0.974,None
+ZZT9i9zCP6,Acute pharyngitis,acute pharyngitis,EFO:0009657,http://www.ebi.ac.uk/efo/EFO_0009657,0.994,None
+WF6vxLtJ4G,"Diseases of vocal cords and larynx, not elsewhere classified",laryngeal disease,EFO:0009673,http://www.ebi.ac.uk/efo/EFO_0009673,0.657,None
+AwarDsNuYN,"Bronchitis, not specified as acute or chronic",chronic bronchitis,EFO:0006505,http://www.ebi.ac.uk/efo/EFO_0006505,0.831,None
+r5k9MMfXK2,Pyothorax,pleural empyema,EFO:0009680,http://www.ebi.ac.uk/efo/EFO_0009680,0.991,None
+fetyLtFSCa,"Pleural effusion, not elsewhere classified",pleural effusion,EFO:0009637,http://www.ebi.ac.uk/efo/EFO_0009637,0.989,None
+TCioyx3Gza,"Respiratory failure, not elsewhere classified",respiratory failure,EFO:0009686,http://www.ebi.ac.uk/efo/EFO_0009686,0.994,None
+hShgo8VTpB,Other diseases of pericardium,pericardium disorder,MONDO:0000474,http://purl.obolibrary.org/obo/MONDO_0000474,0.94,None
+7L7skDWmkL,Other conduction disorders,conduct disorder,EFO:0004216,http://www.ebi.ac.uk/efo/EFO_0004216,0.809,None
+M7yaNYawB5,Other cardiac arrhythmias,cardiac arrhythmia,EFO:0004269,http://www.ebi.ac.uk/efo/EFO_0004269,0.996,None
+PUBkoAFNKS,"Occlusion and stenosis of precerebral arteries, not resulting in cerebral infarction",occlusion precerebral artery,EFO:0009677,http://www.ebi.ac.uk/efo/EFO_0009677,0.763,None
+yF6T92Gmmy,Other venous embolism and thrombosis,Venous thrombosis,HP:0004936,http://purl.obolibrary.org/obo/HP_0004936,0.828,None
+43Q33veVGn,Other non-infective disorders of lymphatic vessels and lymph nodes,lymphatic system disease,EFO:0007352,http://www.ebi.ac.uk/efo/EFO_0007352,0.666,None
+M9aYiiu5ZX,Other disorders of eyelid,eyelid disease,EFO:0009547,http://www.ebi.ac.uk/efo/EFO_0009547,0.935,None
+RHfqFZMHYe,Disorders of orbit,orbit neoplasm,MONDO:0024611,http://purl.obolibrary.org/obo/MONDO_0024611,0.732,None
+TjpTbEKyaB,Other disorders of conjunctiva,Conjunctival Disorder,EFO:1000203,http://www.ebi.ac.uk/efo/EFO_1000203,0.956,None
+VwGFNQJ9vV,Other disorders of lens,lens disease,EFO:0009674,http://www.ebi.ac.uk/efo/EFO_0009674,0.877,None
+KALzegwyZm,Paralytic strabismus,paralytic strabismus,EFO:0009678,http://www.ebi.ac.uk/efo/EFO_0009678,0.989,None
+yrzKPM5ugK,Other strabismus,Strabismus,HP:0000486,http://purl.obolibrary.org/obo/HP_0000486,0.99,None
+tE8nCc8tYE,Other disorders of eye and adnexa,eye adnexa disease,EFO:0009546,http://www.ebi.ac.uk/efo/EFO_0009546,0.942,None
+VwroC6c2CA,Other disorders of external ear,external ear disease,EFO:0009668,http://www.ebi.ac.uk/efo/EFO_0009668,0.952,None
+WXSownL8mb,Other disorders of Eustachian tube,eustachian tube disease,EFO:0009667,http://www.ebi.ac.uk/efo/EFO_0009667,0.951,None
+TnQXh3mVsr,Disorders of vestibular function,vestibular disease,EFO:0009691,http://www.ebi.ac.uk/efo/EFO_0009691,0.774,None
+bHGpoH69Zj,Other diseases of inner ear,inner ear disease,EFO:0009672,http://www.ebi.ac.uk/efo/EFO_0009672,0.902,None
+Z7tL4sZTL4,Otalgia and effusion of ear,Ear pain,HP:0030766,http://purl.obolibrary.org/obo/HP_0030766,0.619,None
+8qcTkHh5SJ,"Other disorders of ear, not elsewhere classified",disorder of ear,MONDO:0021205,http://purl.obolibrary.org/obo/MONDO_0021205,0.899,None
+wUzRbPYJ4u,Other mononeuropathies,mononeuropathy,EFO:0009558,http://www.ebi.ac.uk/efo/EFO_0009558,0.818,None
+jmjbAunezS,Other polyneuropathies,polyneuropathy,EFO:0009562,http://www.ebi.ac.uk/efo/EFO_0009562,0.823,None
+vAAQKaojga,Paraplegia and tetraplegia,quadriplegia,EFO:0009684,http://www.ebi.ac.uk/efo/EFO_0009684,0.917,None
+FfXTqDCrCo,Other disorders of brain,brain disease,EFO:0005774,http://www.ebi.ac.uk/efo/EFO_0005774,0.919,None
+nFQukTvA8P,Other diseases of spinal cord,spinal cord disease,EFO:0009488,http://www.ebi.ac.uk/efo/EFO_0009488,0.931,None
+duTEC9eEGv,Somatoform disorders,somatoform disorder,EFO:0009687,http://www.ebi.ac.uk/efo/EFO_0009687,0.941,None
+PdHXyp2eWJ,Thyrotoxicosis [hyperthyroidism],Thyrotoxicosis,EFO:0009190,http://www.ebi.ac.uk/efo/EFO_0009190,0.803,None
+FWLAAhVPJy,"Other disorders of fluid, electrolyte and acid-base balance",Abnormal blood ion concentration,HP:0003111,http://purl.obolibrary.org/obo/HP_0003111,0.631,None
+PCX2PvMZKz,Benign lipomatous neoplasm,benign lipomatous neoplasm,MONDO:0044983,http://purl.obolibrary.org/obo/MONDO_0044983,0.997,None
+EKHob7TX3L,Melanocytic naevi,large congenital melanocytic nevus,MONDO:0044792,http://purl.obolibrary.org/obo/MONDO_0044792,0.7,None
+kTNQbJEqs6,Benign neoplasm of other and unspecified endocrine glands,benign endocrine neoplasm,MONDO:0000627,http://purl.obolibrary.org/obo/MONDO_0000627,0.936,None
+VLsn248a3e,Benign neoplasm of other and unspecified sites,benign neoplasm,EFO:0002422,http://www.ebi.ac.uk/efo/EFO_0002422,0.831,None
+LKN9PNj5hk,Neoplasm of uncertain or unknown behaviour of oral cavity and digestive organs,mouth neoplasm,EFO:0003868,http://www.ebi.ac.uk/efo/EFO_0003868,0.578,None
+2hGjSA6zBV,Other aplastic anaemias,Aplastic anemia,HP:0001915,http://purl.obolibrary.org/obo/HP_0001915,0.894,None
+KojCh4MojB,Other diseases of blood and blood-forming organs,hematologic disease,EFO:0005803,http://www.ebi.ac.uk/efo/EFO_0005803,0.839,None
+VNWsKFi85c,"Other disorders involving the immune mechanism, not elsewhere classified",immune system disease,EFO:0000540,http://www.ebi.ac.uk/efo/EFO_0000540,0.964,None
+uSazyQ9GEW,Other and unspecified types of non-Hodgkin's lymphoma,Hodgkins lymphoma,EFO:0000183,http://www.ebi.ac.uk/efo/EFO_0000183,0.799,None
+gk2UTFmARk,Other disorders of adrenal gland,adrenal gland disease,EFO:0005539,http://www.ebi.ac.uk/efo/EFO_0005539,0.961,None

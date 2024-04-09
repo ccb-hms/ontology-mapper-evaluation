@@ -1,0 +1,900 @@
+Source Term ID	Source Term	t2t.Mapping	t2t.MappingLabel	Benchmark.Mapping	Benchmark.MappingLabel	Classification	IsDisease	IsMeasurement	IsPhenotype	IsAmount	IsProcess			Total	%	IsDisease	IsMeasurement	IsPhenotype	IsAmount	IsProcess	
+gydiudZPXk	Alzheimer s disease	MONDO:0004975	Alzheimer disease	EFO:0000249	Alzheimer's disease	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE		Same	658	73%	470	41	115	0	15	641
+7xszpiWKQG	Endocarditis valve unspecified	EFO:0000465	endocarditis	EFO:0000465	endocarditis	Same	TRUE	FALSE	FALSE	FALSE	FALSE		More General	20	2%						0
+FTwVa6sEcd	Family history of other conditions	EFO:0000493	family history	EFO:0000493	family history	Same	FALSE	FALSE	FALSE	FALSE	FALSE		More Specific	36	4%						0
+ZRBv8pSgif	Unspecified maternal hypertension	EFO:0000537	hypertension	EFO:0000668	preeclampsia	More General	TRUE	FALSE	FALSE	FALSE	FALSE		Sibling	13	1%						0
+LSuML35oA9	Stroke not specified as haemorrhage or infarction	EFO:0020921	hemorrhagic stroke	EFO:0000712	stroke	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE		Unrelated	172	19%	57	9				
+c6TXyKfpeD	Subarachnoid haemorrhage	EFO:0000713	subarachnoid hemorrhage	EFO:0000713	subarachnoid hemorrhage	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+eNsG7WeTjw	Unspecified human immunodeficiency virus	EFO:0000764	HIV infection	EFO:0000764	HIV infection	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+gQudZ7dpjs	Other endocrine disorders	EFO:0001379	endocrine system disease	EFO:0001379	endocrine system disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+youNCqRhNg	Other diseases of liver	EFO:0001421	liver disease	EFO:0001421	liver disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+3j6et9xhRk	Primary disorders of muscles	EFO:0002970	muscular disease	EFO:0002970	muscular disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+yNBZ4nABdj	Pervasive developmental disorders	EFO:0003756	autism spectrum disorder	EFO:0003759	pervasive developmental disorder - not otherwise specified	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+vRLVvDEtNk	Other cerebrovascular diseases	EFO:0003763	cerebrovascular disorder	EFO:0003763	cerebrovascular disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+LyLtsMjKT9	Other diseases of gallbladder	EFO:0003832	gallbladder disease	EFO:0003832	gallbladder disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+6TBvUqhL2L	Pain	EFO:0003843	pain	EFO:0003843	pain	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+yUHqUAtpSW	Fracture of spine level unspecified	EFO:0003902	spinal fracture	EFO:0003902	spinal fracture'	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+VBVVJD3SWN	Acute hepatitis B	HP:0200119	Acute hepatitis	EFO:0004197	hepatitis B infection	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+hjzB9MsjWY	Abnormalities of heart beat	HP:0001627	Abnormal heart morphology	EFO:0004269	cardiac arrythmia	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+WnG9JhTJrD	Scoliosis	EFO:0004273	scoliosis	EFO:0004273	scoliosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+cHGS3XxCA9	Other congenital malformations of heart	EFO:0005269	congenital heart malformation	EFO:0005269	congenital heart malformation	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+wQh2Qs7kjx	Disorders of tooth development and eruption	MONDO:0002145	disorder of sexual differentiation	EFO:0005410	tooth agenesis	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+GYikyfvzQR	Intracerebral haemorrhage	EFO:0005669	intracerebral hemorrhage	EFO:0005669	intracerebral hemorrhage	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+qRB8QL4T4n	Retinal detachments and breaks	EFO:0005773	retinal detachment	EFO:0005773	retinal detachment	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+MxnWctDJNb	Tuberculosis of nervous system	EFO:0007199	central nervous system tuberculosis	EFO:0007199	central nervous system tuberculosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+PGydDudQiX	Acute hepatitis A	HP:0200119	Acute hepatitis	EFO:0007305	hepatitis A	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+zvFVMmeqBV	Hookworm diseases	EFO:0007314	hookworm infectious disease	EFO:0007314	hookworm infectious disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+482ohbvcCA	Female infertility	EFO:0008560	female infertility	EFO:0008560	female infertility	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+T4CDmQBCdn	Sleep disorders	EFO:0008568	Sleep Disorder	EFO:0008568	sleep disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+HJbdCH48Gj	Thiamine deficiency	EFO:0008569	Thiamine deficiency	EFO:0008569	Thiamine deficiency	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+CKydXwEQVi	Viral conjunctivitis	EFO:0008571	viral conjunctivitis	EFO:0008571	viral conjunctivitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+cTL9YiRqTF	Alcoholic liver disease	EFO:0008573	alcoholic liver disease	EFO:0008573	alcoholic liver disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+D35MxA9iVS	Spinal osteochondrosis	EFO:0008576	Spinal Osteochondrosis	EFO:0008576	Spinal Osteochondrosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Y5yitadvwt	Diseases of salivary glands	EFO:0008581	salivary gland disease	EFO:0008581	salivary gland disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+p8YrWjRKT6	Gender identity disorders	EFO:0008587	gender identity disorder	EFO:0008587	gender identity disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+odoqnofcPT	Status asthmaticus	EFO:0008590	Status Asthmaticus	EFO:0008590	status asthmaticus	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+cumwHseRiv	Cystic kidney disease	EFO:0008615	Cystic Kidney Disease	EFO:0008615	cystic kidney disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+iHnHeSimrE	Polyp of female genital tract	EFO:0008622	female genital tract polyp	EFO:0008622	female genital tract polyp	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+FjsENfm58V	Persistent mood	EFO:0008623	dysthymic disorder	EFO:0008623	dysthymic disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Yz7De9vmu7	Disorders of vitreous body	EFO:0008624	vitreous body disease	EFO:0008624	vitreous body disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+a8h9C63829	Ovarian dysfunction	EFO:0009003	ovarian dysfunction	EFO:0009003	ovarian dysfunction	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+2rbS69NxGm	Other coagulation defects	EFO:0009314	blood coagulation disease	EFO:0009314	blood coagulation disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+wZAy4Kmr5e	Granulomatous disorders of skin and subcutaneous tissue	EFO:0000701	skin disease	EFO:1000705	granulomatous dermatitis	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+RjJJxvYtS6	Excessive vomiting in pregnancy	EFO:0002950	pregnancy	EFO:1000971	hyperemesis gravidarum	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+aMPzm53Dyk	Hyperfunction of pituitary gland	MONDO:0003429	functioning pituitary gland adenoma	EFO:1000973	hyperpituitarism	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+U4HFUuxuZa	Other nutritional deficiencies	EFO:1001067	nutritional deficiency disease	EFO:1001067	nutritional deficiency disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+HwrUgXs6m5	Other rheumatic heart diseases	EFO:1001161	rheumatic heart disease	EFO:1001161	rheumatic heart disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+2Kecmcs7KB	Other helminthiases	EFO:1001342	Helminthiasis	EFO:1001342	Helminthiasis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+K6hMas5xAE	Unspecified viral infection of CNS	EFO:0000763	viral disease	EFO:1001456	central nervous system infection	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+JgivKcEfGw	Diverticular disease of intestine	EFO:0009959	diverticular disease	EFO:1001460	diverticulitis	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+MME9MCUdyA	Premature separation of placenta	EFO:1001754	Abruptio Placentae	EFO:1001754	Abruptio Placentae	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+fsNmt4zc2K	Retention of urine	HP:0000016	Urinary retention	HP:0000016	Urinary retention	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+iEfCTuH4Sg	Unspecified urinary incontinence	HP:0000020	Urinary incontinence	HP:0000020	Urinary incontinence	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+s4WqMGoLsb	Isolated proteinuria	HP:0000093	Proteinuria	HP:0000093	proteinuria	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+QhsEQZzDYW	Cleft palate	MONDO:0016064	cleft palate	HP:0000175	cleft palate	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+Lj4ykzpLBh	Hydrocephalus	HP:0000238	Hydrocephalus	HP:0000238	hydrocephalus	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+UP3z2KR2Ty	Visual disturbances	HP:0001288	Gait disturbance	HP:0000505	Visual impairment	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+RDWtYzpD7a	Unspecified dementia	MONDO:0001627	dementia	HP:0000726	dementia	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+pJSUqngb6P	Unspecified haematuria	HP:0000790	Hematuria	HP:0000790	hematuria	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+PvnmzU8FUV	Cholecystitis	HP:0001082	Cholecystitis	HP:0001082	Cholecystitis	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+uTGZBwy3wm	Dystonia	HP:0001332	Dystonia	HP:0001332	Dystonia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+G7agJX39GF	Ascites	HP:0001541	Ascites	HP:0001541	Ascites	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+bXojFejvYE	Iron deficiency anaemia	HP:0001891	Iron deficiency anemia	HP:0001891	Iron deficiency anemia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+ezybavupTo	Acute renal failure	HP:0001919	Acute kidney injury	HP:0001919	acute kidney injury	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+FrBnmas85g	Nonspecific lymphadenitis	HP:0002840	Lymphadenitis	HP:0002840	lymphadenitis	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+94kNGHaNPS	Cachexia	HP:0004326	Cachexia	HP:0004326	cachexia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+VGKPydV4US	Disseminated intravascular coagulation	HP:0005521	Disseminated intravascular coagulation	HP:0005521	Disseminated intravascular coagulation	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+ek9JJctb5i	Senile cataract	MONDO:0004847	senile cataract	HP:0011141	age-related cataract	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+DxrUnHZtS6	Agranulocytosis	HP:0012234	Agranulocytosis	HP:0012234	Agranulocytosis	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+AEN5ed4287	Helicobacter pylori	EFO:1000961	Helicobacter pylori infectious disease	NCBITaxon:210	Helicobacter pylori	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+GuXAYdi2zJ	Reduction defects of lower limb	ORPHANET.ORDO:404574	Genetic syndrome with limb reduction defects	ORDO:2130	Hemimelia	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+85aT7VMFSH	Congenital hydrocephalus	MONDO:0016349	congenital hydrocephalus	ORDO:2185	Congenital hydrocephalus	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+HB8dauNAao	Immunodeficiency with predominantly antibody defects	ORPHANET.ORDO:331244	Other immunodeficiency syndrome with predominantly antibody defects	ORDO:331244	Other immunodeficiency syndrome with predominantly antibody defects	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+BuupACMv9i	Congenital malformations of oesophagus	MONDO:0019755	developmental defect during embryogenesis	ORDO:88993	Esophageal malformation	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+E4a6bUDAQ4	Syndactyly	MONDO:0021002	syndactyly	ORDO:90025	Syndactyly	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+ZDxjbvfuxE	Other congenital malformations of intestine	MONDO:0019755	developmental defect during embryogenesis	ORDO:97945	Intestinal malformation	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+q9GrCoNZCv	Other disorders of peripheral nervous system	EFO:0009387	peripheral nervous system disease	EFO:0009387	peripheral nervous system disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+jM2D9E5zXT	Spondylosis	MONDO:0002253	spondylosis	EFO:0000706	spondyloarthropathy	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+LApDFRrdFc	Other retinal disorders	EFO:0003839	retinopathy	EFO:0003839	retinopathy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+htqFbfZFsD	Arterial embolism and thrombosis	HP:0004420	Arterial thrombosis	EFO:0004286	venous thromboembolism	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+nzVQL2irzU	Juvenile osteochondrosis of hip and pelvis	MONDO:0007885	Legg-Calve-Perthes disease	ORDO:2380	Legg-Calvé-Perthes disease	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+FFFQGvXaRr	Encephalitis myelitis and encephalomyelitis	EFO:0001423	encephalomyelitis	EFO:0007364	meningoencephalitis	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+tSCMcaDpy2	Atrial fibrillation and flutter	EFO:0000275	atrial fibrillation	EFO:0000275	atrial fibrillation	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+CQyxDJERpL	Dermatopolymyositis	EFO:0000398	dermatomyositis	EFO:0000398	dermatomyositis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+8uYKjDSNwq	Lack of food	EFO:0008572	malnutrition	EFO:0008572	malnutrition	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+pVKwFBtKfV	Inflammatory diseases of prostate	EFO:0009903	inflammatory disease	EFO:0003830	prostatitis	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+jpukekFHXj	Chronic renal failure	EFO:0009909	stage 5 chronic kidney disease	EFO:0003884	chronic kidney disease	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+EAAJkKQBbH	Postpolio syndrome	EFO:0007454	postpoliomyelitis syndrome	EFO:0007454	postpoliomyelitis syndrome	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+BLzirCr3UB	Atopic dermatitis	EFO:0000274	atopic eczema	EFO:0000274	atopic aczema	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+npmWitNKR7	Cardiomyopathy	EFO:0000318	cardiomyopathy	EFO:0000318	cardiomyopathy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+3eDrd427ay	other disorders of circulatory system	EFO:0000319	cardiovascular disease	EFO:0000319	cardiovascular disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+56RVGCi9cN	Crohn s disease	EFO:0000384	Crohn's disease	EFO:0000384	Crohn's disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+WThPUCuFoF	Unspecified diabetes mellitus	EFO:0000400	diabetes mellitus	EFO:0000400	diabetes mellitus	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+4PvCoSt8bX	Other specified diabetes mellitus	EFO:0000400	diabetes mellitus	EFO:0000400	diabetes mellitus	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+bTKEhxsdva	Epilepsy	EFO:0000474	epilepsy	EFO:0000474	epilepsy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+XYMVJwg6zy	Glaucoma	MONDO:0005041	glaucoma	EFO:0000516	glaucoma	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+55V9A38Jo8	Irritable bowel syndrome	EFO:0000555	irritable bowel syndrome	EFO:0000555	irritable bowel syndrome	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Chkg3fErjs	Schizophrenia	MONDO:0005090	schizophrenia	EFO:0000692	schizophrenia	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+zhBZoXSgDN	Ulcerative colitis	EFO:0000729	ulcerative colitis	EFO:0000729	ulcerative colitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+VRCDw7eqxP	Viral infection of unspecified site	EFO:0000763	viral disease	EFO:0000763	viral disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+rnbbkbYdkb	Myositis	EFO:0000783	myositis	EFO:0000783	myositis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+LawGtEeQHU	Other cataract	MONDO:0005129	cataract	EFO:0001059	cataract	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+tZpeAt8gUw	Cytomegaloviral disease	EFO:0001062	cytomegalovirus infection	EFO:0001062	cytomegalovirus infection	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+27RPsfoqGp	Endometriosis	EFO:0001065	endometriosis	EFO:0001065	endometriosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+iYBu5K9zCw	Obesity	EFO:0001073	obesity	EFO:0001073	obesity	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+rpsjf9xitQ	Insulin dependent diabetes mellitus	MONDO:0005147	type 1 diabetes mellitus	EFO:0001359	type I diabetes mellitus	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+yxydiumNye	Non insulin dependent diabetes mellitus	MONDO:0005148	type 2 diabetes mellitus	EFO:0001360	type II diabetes mellitus	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+goBhA3L7ki	Parkinson s disease	MONDO:0005180	Parkinson disease	EFO:0002508	Parkinson's disease	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+P6MmuVxj9V	Juvenile arthritis	EFO:0002609	juvenile idiopathic arthritis	EFO:0002609	chronic childhood arthritis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+V6vKgKCWTR	Cellulitis	EFO:0003035	cellulitis	EFO:0003035	cellulitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+GbcnFBYdjX	Cushing s syndrome	EFO:0003099	Cushing syndrome	EFO:0003099	Cushing syndrome	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+R5km9GxBHC	Osteomyelitis	EFO:0003102	osteomyelitis	EFO:0003102	osteomyelitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+qy3u4hhDoW	Spina bifida	EFO:0003105	spina bifida	EFO:0003105	spina bifida	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+zdLf7sC7QG	Heart failure	EFO:0003144	heart failure	EFO:0003144	heart failure	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+b89zKgf5zy	Vitamin D deficiency	EFO:0003762	vitamin D deficiency	EFO:0003762	vitamin D deficiency	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+FHBfoqZCR6	Dental caries	EFO:0003819	dental caries	EFO:0003819	dental caries	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+YX369hHBti	Migraine	MONDO:0005277	migraine disorder	EFO:0003821	migraine disorder	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+8tnhndmViz	Pulmonary embolism	EFO:0003827	pulmonary embolism	EFO:0003827	pulmonary embolism	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+7uyUUSsGyX	Other peripheral vascular diseases	EFO:0003875	peripheral vascular disease	EFO:0003875	peripheral vascular disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+KAmN4jN83X	Multiple sclerosis	MONDO:0005301	multiple sclerosis	EFO:0003885	multiple sclerosis	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+JALrUDq6NL	Acne	EFO:0003894	acne	EFO:0003894	acne	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+6vNv7C38sf	Ankylosing spondylitis	EFO:0003898	ankylosing spondylitis	EFO:0003898	ankylosing spondylitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+vnnyMMpZm8	Angina pectoris	EFO:0003913	angina pectoris	EFO:0003913	angina pectoris	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+iHciUedq2t	Atherosclerosis	EFO:0003914	atherosclerosis	EFO:0003914	atherosclerosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+FDnehhGaPA	Gastro oesophageal reflux disease	EFO:0003948	gastroesophageal reflux disease	EFO:0003948	gastroesophageal reflux disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+8GtXz4iN74	Sunburn	EFO:0003958	sunburn	EFO:0003958	sunburn	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+gUqd2krW6Z	Cleft lip	EFO:0003959	cleft lip	EFO:0003959	cleft lip	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+fTv7v6ZCYt	Androgenic alopecia	EFO:0004191	androgenetic alopecia	EFO:0004191	androgenic alopecia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+vPxqqRZnaN	Alopecia areata	EFO:0004192	alopecia areata	EFO:0004192	alopecia areata	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+zkPgwfmzhj	Vitiligo	EFO:0004208	Vitiligo	EFO:0004208	vitiligo	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+zyVYvW39DB	Hypospadias	EFO:0004209	hypospadias	EFO:0004209	hypospadias	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+wnEJAjZ7Bv	Otosclerosis	EFO:0004213	otosclerosis	EFO:0004213	otosclerosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ZQ5Qwp2zPK	Conduct disorders	EFO:0004216	conduct disorder	EFO:0004216	conduct disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+JUtbiaXb4h	Male infertility	EFO:0004248	male infertility	EFO:0004248	male infertility	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+jT2jnkfRRx	Meningococcal infection	EFO:0004249	meningococcal infection	EFO:0004249	meningococcal infection	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+bWYLqCciyw	Calculus of kidney and ureter	EFO:0004253	nephrolithiasis	EFO:0004253	nephrolithiasis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+V9aKGWKhsx	Nephrotic syndrome	EFO:0004255	nephrotic syndrome	EFO:0004255	nephrotic syndrome	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+JHePyhnAqE	Osteonecrosis	EFO:0004259	osteonecrosis	EFO:0004259	osteonecrosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+97iXotGBnb	Paget s disease of bone	EFO:0004261	osteitis deformans	EFO:0004261	osteitis deformans	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+GgxoKCkRT9	Other anaemias	HP:0001915	Aplastic anemia	EFO:0004272	anemia	More Specific	FALSE	FALSE	TRUE	FALSE	FALSE										
+E4NTZLYN6v	Gout	EFO:0004274	gout	EFO:0004274	gout	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+QWE5rdx5CA	Diabetes mellitus in pregnancy	EFO:0004593	gestational diabetes	EFO:0004593	gestational diabetes	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Zu6fTuCqkE	Duodenal ulcer	EFO:0004607	duodenal ulcer	EFO:0004607	duodenal ulcer	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+gJc58zmdSS	Cholelithiasis	EFO:0004799	cholelithiasis	EFO:0004799	cholelithiasis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ewzSXcxGoZ	Leishmaniasis	EFO:0005044	Leishmaniasis	EFO:0005044	Leishmaniasis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ZD7xSpmkMX	Eating disorders	EFO:0005203	eating disorder	EFO:0005203	eating disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+BwcRKgEop3	Hypotension	EFO:0005251	hypotension	EFO:0005251	hypotension	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+rS2apQ6eRV	Unspecified contact dermatitis	EFO:0005319	contact dermatitis	EFO:0005319	contact dermatitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+iransn6DhY	Schizoaffective disorders	EFO:0005411	schizoaffective disorder	EFO:0005411	schizoaffective disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+9ejZ8HbTzW	Urticaria	EFO:0005531	urticaria	EFO:0005531	urticaria	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+EoSWSBZtsU	Seborrhoeic keratosis	EFO:0005584	seborrheic keratosis	EFO:0005584	seborrheic keratosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+zDdeGnxqxn	Shigellosis	EFO:0005585	shigellosis	EFO:0005585	shingellosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+UEfS254QLw	Other vitamin deficiencies	EFO:0003762	vitamin D deficiency	EFO:0005878	vitamin deficiency	More Specific	FALSE	FALSE	TRUE	FALSE	FALSE										
+dXQaGP5fAS	Zoster	EFO:0006510	Herpes Zoster	EFO:0006510	Herpes Zoster	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ZN9WoyhfgW	Pyoderma gangrenosum	EFO:0006835	pyoderma gangrenosum	EFO:0006835	pyoderma gangrenosum	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+Ncs4qEpd88	Decubitus ulcer	EFO:0007067	decubitus ulcer	EFO:0007067	decubitus ulcer	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+zs4KdWqBkX	Actinomycosis	EFO:0007128	actinomycosis	EFO:0007128	actinomycosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+HVadFQuhfp	Amoebiasis	EFO:0007144	amebiasis	EFO:0007144	amebiasis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+imCfxUwNyC	Unspecified appendicitis	EFO:0007149	appendicitis	EFO:0007149	appendicitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+J9FMBBUUUD	Ascariasis	EFO:0007154	ascariasis	EFO:0007154	ascariasis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ZxJWkju6ck	Aspergillosis	EFO:0007157	aspergillosis	EFO:0007157	aspergillosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+RqXGZ2Z3ML	Varicella	EFO:0007204	chickenpox	EFO:0007204	chickenpox	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+c9kF9qV7RB	Cryptococcosis	EFO:0007229	cryptococcosis	EFO:0007229	cryptococcosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+5taxKte9Nb	Echinococcosis	EFO:0007245	echinococcosis	EFO:0007245	echinococcosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+sUM7Eyuo5G	Enterobiasis	EFO:0007254	enterobiasis	EFO:0007254	enterobiasis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ZcCcNFKidK	Granuloma inguinale	EFO:0007291	granuloma inguinale	EFO:0007291	granuloma inguinale	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+FRx3rJTxNj	Histoplasmosis	EFO:0007310	histoplasmosis	EFO:0007310	histoplasmosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Cjeuyew5n9	Infectious mononucleosis	EFO:0007326	infectious mononucleosis	EFO:0007326	infectious mononucleosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+KdhZjBawYX	Leptospirosis	EFO:0007344	leptospirosis	EFO:0007344	leptospirosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+m24dCobZyz	Listeriosis	EFO:0007347	listeriosis	EFO:0007347	listeriosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+FJcW4irmxt	Miliary tuberculosis	EFO:0007368	miliary tuberculosis	EFO:0007368	miliary tuberculosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Md6PCxSVT2	Myiasis	EFO:0007389	myiasis	EFO:0007389	myiasis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+3o6YLctKPi	Optic neuritis	EFO:0007405	optic neuritis	EFO:0007405	optic neuritis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+JMUjbfLKvm	Placenta praevia	EFO:0007442	placenta praevia	EFO:0007442	placenta praevia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+RwFECEBHpM	Plasmodium falciparum malaria	EFO:0007444	Plasmodium falciparum malaria	EFO:0007444	Plasmodium falciparum malaria	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Wk5uUFeTEf	Plasmodium vivax malaria	EFO:0007445	Plasmodium vivax malaria	EFO:0007445	Plasmodium vivax malaria	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+V5oxXSfC4T	Acute poliomyelitis	EFO:0007450	poliomyelitis	EFO:0007450	poliomyelitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+uJwjCqcDXQ	Scarlet fever	EFO:0007477	scarlet fever	EFO:0007477	scarlet fever	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Jbm3LscudE	Strongyloidiasis	EFO:0007501	strongyloidiasis	EFO:0007501	strongyloidiasis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+cCh9F4ZRcK	Suppurative and unspecified otitis media	EFO:0007503	suppurative otitis media	EFO:0007503	suppurative otitis media	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+tJgVr7Kigh	other syphilis	EFO:0007504	syphilis	EFO:0007504	syphilis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+5Spmyhhhv2	Toxoplasmosis	EFO:0007517	toxoplasmosis	EFO:0007517	toxoplasmosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+kbzJhNdRKD	Yaws	EFO:0007548	yaws	EFO:0007548	yaws	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+CmcF4Usyzi	Status epilepticus	EFO:0008526	status epilepticus	EFO:0008526	status epilepticus	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+KpezWbqebK	Fracture of femur	EFO:0008553	femur fracture	EFO:0008553	femur fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+XQ2WZ4X7YB	Diaphragmatic hernia	EFO:0008561	diaphragmatic hernia	EFO:0008561	diaphragmatic hernia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+KQGoR8fir6	Niacin deficiency	EFO:0008570	Vitamin B3 deficiency	EFO:0008570	vitamin B3 deficiency	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+ZNcuSeiBVP	Gangrene	EFO:0008574	gangrene	EFO:0008574	gangrene	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+PvSdteghk7	Acute myocardial infarction	EFO:0008583	acute myocardial infarction	EFO:0008583	acute myocardial infarction	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+usxtPxM6yz	Subsequent myocardial infarction	EFO:0000612	myocardial infarction	EFO:0008584	Subsequent ST elevation (STEMI) and non-ST elevation (NSTEMI) myocardian infarction	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+EbSfsJTcqf	Peritonitis	EFO:0008588	peritonitis	EFO:0008588	peritonitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+5f9mE5jr2t	Diseases of spleen	EFO:0009002	splenic disease	EFO:0009002	splenic disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+FR38zELDGb	Typhus fever	EFO:0009117	typhus	EFO:0009117	typhus	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+AgyqJm9AKB	Other diseases of intestine	EFO:0009431	intestinal disease	EFO:0009431	intestinal disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+PvdcEKUxH3	Fibroblastic disorders	EFO:0009432	fibroblastic disorder	EFO:0009432	fibroblastic disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+hcZ7JXFj8t	Unspecified acute lower respiratory infection	HP:0002783	Recurrent lower respiratory tract infections	EFO:0009433	lower respiratory tract disease	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+DozJ6hkBUP	Other ill defined and unspecified causes of mortality	EFO:0004352	mortality	EFO:0009434	death by undetermined cause	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+LjMt2MwcJ6	Cystitis	EFO:1000025	cystitis	EFO:1000025	cystitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+cg9GRrFivn	Lactose intolerance	EFO:1000062	lactose intolerance	EFO:1000062	lactose intolerance	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+nnjqbQgpVV	Thyroiditis	MONDO:0004126	thyroiditis	EFO:1000627	thyroid disease	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+izkRGhMeNg	Acute pancreatitis	EFO:1000652	acute pancreatitis	EFO:1000652	acute pancreatitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+U7vnj86BMT	Acanthosis nigricans	EFO:1000660	acanthosis nigricans	EFO:1000660	acanthosis nigricans	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+K9qUMRxYsL	Allergic contact dermatitis	EFO:1000668	allergic contact dermatitis	EFO:1000668	allergic contact dermatitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+53dYiXP7yo	Cholesteatoma of middle ear	EFO:1000678	cholesteatoma of middle ear	EFO:1000678	cholesteatoma of middle ear	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+87YREuQ7UT	Erythema multiforme	EFO:1000694	erythema multiforme	EFO:1000694	erythema multiforme	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+eB5xGRqEzD	Hyperhidrosis	HP:0000975	Hyperhidrosis	EFO:1000712	hypohidrosis	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+7QoZmmVkV5	Impetigo	EFO:1000714	impetigo	EFO:1000714	impetigo	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+zBFtwc3fr8	Irritant contact dermatitis	EFO:1000718	irritant dermatitis	EFO:1000718	irritant dermatitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+vZWyoUCbgj	Lichen planus	EFO:1000726	lichen planus	EFO:1000726	lichen planus	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+XH3ZC23HGR	Parapsoriasis	EFO:1000747	parapsoriasis	EFO:1000747	parapsoriasis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+v7gyd3si7o	Pemphigus	EFO:1000749	pemphigus	EFO:1000749	pemphigus	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+pSpq4Yk9e9	Pityriasis rosea	EFO:1000756	pityriasis rosea	EFO:1000756	pityriasis rosea	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+EcTyfZB3LN	Rosacea	EFO:1000760	rosacea	EFO:1000760	rosacea	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+D6nmgNa4L8	Seborrhoeic dermatitis	EFO:1000764	seborrheic dermatitis	EFO:1000764	seborrheic dermatitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ube3Ag33hB	Atrophic disorders of skin	EFO:1000766	skin atrophy	EFO:1000766	skin atrophy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+uZCx7b89yw	Coxarthrosis	EFO:1000786	"osteoarthritis, hip"	EFO:1000786	"osteoarthritis, hip"	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+HonGm9Mq2R	Coalworker s pneumoconiosis	EFO:1000814	anthracosis	EFO:1000814	anthracosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ggk5eoizZN	Ascorbic acid deficiency	EFO:1000822	ascorbic acid deficiency	EFO:1000822	ascorbic acid deficiency	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+XmrdY2xamE	Bacterial meningitis	EFO:1000831	bacterial meningitis	EFO:1000831	bacterial meningitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+h8Tpw5WdmR	Dysplasia of cervix uteri	EFO:1000910	dysplasia of cervix	EFO:1000910	dysplasia of cervix	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+bJXVJewHYC	Habitual aborter	EFO:1000954	habitual abortion	EFO:1000954	habitual abortion	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+J3rjb8ADdq	Other rickettsioses	EFO:1001162	rickettsiosis	EFO:1001162	rickettsiosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+jd39qTJRRs	Secondary parkinsonism	EFO:1001175	secondary Parkinson disease	EFO:1001175	secondary Parkinson disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+XYDPcg4oRs	Viral meningitis	EFO:1001236	viral meningitis	EFO:1001236	viral meningitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+qkCNnikw6Y	Vitamin A deficiency	EFO:1001237	vitamin A deficiency	EFO:1001237	vitamin A deficiency	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+4jg7kADKxL	Spontaneous abortion	EFO:1001255	spontaneous abortion	EFO:1001255	spontaneous abortion	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+mqFEoz2e6y	Unspecified renal colic	EFO:1001412	renal colic	EFO:1001412	renal colic	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+9pmsmF7RX2	Taeniasis	EFO:1001433	Taeniasis	EFO:1001433	taeniasis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+6sopNAjo5n	Synovitis and tenosynovitis	EFO:1001435	tenosynovitis	EFO:1001435	tenosynovitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+EWXtQpQzza	Schistosomiasis	EFO:1001475	schistosomiasis	EFO:1001475	schistosomiasis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+JWwk55ogHP	Unspecified abortion	EFO:1001491	abortion	EFO:1001491	abortion	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+oyLfP7hxRN	Femoral hernia	EFO:1001791	femoral hernia	EFO:1001791	femoral hernia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+NF6iWxt7BX	Ventral hernia	EFO:1001866	ventral hernia	EFO:1001866	ventral hernia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+oFU4ZqqNWM	Amyloidosis	EFO:1001875	amyloidosis	EFO:1001875	amyloidosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+yuqJES9UyN	Cicatricial alopecia	EFO:1002028	cicatricial alopecia	EFO:1002028	cicatrical alopecia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+xm9dvbZ7F4	Other disorders of nervous system	EFO:0000618	nervous system disease	EFO:0000618	nervous system disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+adRB3JnxNr	Polyuria	HP:0000103	Polyuria	HP:0000103	polyuria	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+CWSv4AWUqs	Pruritus	HP:0000989	Pruritus	HP:0000989	prutitus	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+QmdUF2UHA5	Nausea and vomiting	HP:0002017	Nausea and vomiting	HP:0002017	nausea and vomiting	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+fKbNWz3LhP	Peptic ulcer site unspecified	HP:0004398	Peptic ulcer	HP:0004398	peptic ulcer	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+6eSyohamPK	Erythema nodosum	HP:0012219	Erythema nodosum	HP:0012219	erythema nodosum	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+7qJKvrMkPo	Oesophagitis	HP:0100633	Esophagitis	HP:0100633	esophagitis	Same	TRUE	FALSE	TRUE	FALSE	FALSE										
+WZM589XFrA	Common variable immunodeficiency	MONDO:0015517	common variable immunodeficiency	ORDO:1572	common variable immunodeficiency	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+nToHW4TJbw	Adrenogenital disorders	MONDO:0015898	adrenogenital syndrome	ORDO:181412	adrenogenital syndrome	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+E2tXoxeTaN	Sickle cell disorders	MONDO:0011382	sickle cell anemia	ORDO:232	sickle cell anemia	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+dmwJF4oTuW	Congenital malformations of great veins	MONDO:0019755	developmental defect during embryogenesis	ORDO:363189	congenital anomaly of the great veins	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+MRw2DvRTxr	Huntington s disease	MONDO:0007739	Huntington disease	ORDO:399	Huntington disease	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+RF6oqLHscP	Cystic fibrosis	MONDO:0009061	cystic fibrosis	ORDO:586	cystic fibrosis	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+vJQtNF3g8U	Hypertrichosis	MONDO:0019280	hypertrichosis	ORDO:79365	Hypertrichosis	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+r4LQ7QWKup	Sarcoidosis	MONDO:0019338	sarcoidosis	ORDO:797	sarcoidosis	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+ssjbsxwfjD	Turner s syndrome	MONDO:0019499	Turner syndrome	ORDO:881	Turner syndrome	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+SwMGbqEBuu	Congenital malformations of great arteries	MONDO:0020292	congenital anomaly of the great arteries	ORDO:98724	congenital anomaly of the great arteries	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+PvNt2NYZtp	Hereditary factor VIII deficiency	MONDO:0010602	hemophilia A	ORDO:98878	hemophilia A	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+yEB5vpVU8Y	Hereditary factor IX deficiency	MONDO:0010604	hemophilia B	ORDO:98879	hemophilia B	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+8VX82anjBZ	Keratitis	EFO:0009449	keratitis	EFO:0009449	keratitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+aCbYzqL5bp	Conjunctivitis	EFO:0009450	conjunctivitis	EFO:0009450	conjunctivitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+vwW8gEu5SM	Hypoparathyroidism	EFO:0009451	hypoparathyroidism	EFO:0009451	hypoparathyroidism	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+X8Qpfb8Ydj	Hyperaldosteronism	EFO:0009452	hyperaldosteronism	EFO:0009452	hyperaldosteonism	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+nb5q5Tjffn	Hemiplegia	EFO:0009453	hemiplegia	EFO:0009453	hemiplagia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+BgHPET5PYm	Gastric ulcer	EFO:0009454	gastric ulcer	EFO:0009454	gastric ulcer	Same	TRUE	FALSE	TRUE	FALSE	FALSE										
+UocKMYJBxQ	Disorders of lacrimal system	EFO:0009455	lacrimal apparatus disease	EFO:0009455	lacrimal apparatus disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+CHa2e5qTKt	Exfoliative dermatitis	EFO:0009456	exfoliative dermatitis	EFO:0009456	exfoliative dermatitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+tcWFoxvLpm	Apocrine sweat disorders	EFO:1002046	apocrine sweat gland disease	EFO:1002046	apocrine sweat gland disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+N6yMDQ8H4H	Spotted fever	EFO:1002047	spotted fever	EFO:1002047	spotted fever	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+xZzBkzULyL	Unspecified nephritic syndrome	EFO:0004255	nephrotic syndrome	EFO:1002050	nephritis	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+ALmCGS9VMc	Facial nerve disorders	EFO:1002051	facial nerve disease	EFO:1002051	facial nerve disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+zHh2F5jmTS	Essential primary hypertension	MONDO:0001134	essential hypertension	EFO:1002032	primary hypertension	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+etUrbBpKme	Unspecified jaundice	HP:0000952	Jaundice	HP:0000952	jaundice	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+ZBCfXviHJi	Iridocyclitis	HP:0001094	Iridocyclitis	HP:0001094	iridocyclitis	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+VxMHJ4p7R6	Hepatic failure	HP:0001399	Hepatic failure	HP:0001399	hepatic failure	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+rYGd9udKmx	Umbilical hernia	HP:0001537	Umbilical hernia	HP:0001537	umbilical hernia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+jsJiyXo4K9	Polyhydramnios	HP:0001561	Polyhydramnios	HP:0001561	polyhydramnios	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+yhazKRwPoL	cardiac arrest	EFO:0009492	cardiac arrest	EFO:0009492	cardiac arrest	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+EhnXyy7kfL	Abnormality of red blood cells	HP:0001877	Abnormal erythrocyte morphology	HP:0001877	abnormal erythrocyte morphology	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+9Cr2ctCwNv	Hypothermia	HP:0002045	Hypothermia	HP:0002045	hypothermia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+jqhEGKaQa2	Lymphadenopathy	HP:0002716	Lymphadenopathy	HP:0002716	lymphadenopathy	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+bKKP8K9N5W	Abnormal findings in cerebrospinal fluid	HP:0002921	Abnormal cerebrospinal fluid morphology	HP:0002921	abnormality of the cerebrospinal fluid	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+dDm7vJyDMB	Glycosuria	HP:0003076	Glycosuria	HP:0003076	glycosuria	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+8aNomSb2TB	Abnormality of glycoprotein metabolism	MONDO:0045010	glycoprotein metabolism disease	HP:0004367	abnormality of glycoprotein metabolism	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+9zCPNX6kDu	Abnormality of glycosaminoglycan metabolism	HP:0004371	Abnormality of glycosaminoglycan metabolism	HP:0004371	abnormality of glycosaminoglycan metabolism	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+FS7nWkWBLD	Congenital septal defect	MONDO:0002078	heart septal defect	HP:0001671	Abnormal cardiac septum morphology	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+EwA3DrgHwf	Paroxysmal tachycardia	EFO:0009493	paroxysmal tachycardia	EFO:0009493	paroxysmal tachycardia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+aBvfbLRWV9	Congenital malformations of anterior segment of eye	HP:0004328	Abnormal anterior eye segment morphology	HP:0007700	Anterior segment developmental abnormality	More General	FALSE	FALSE	TRUE	FALSE	FALSE										
+Pod6iFJF5w	Gynecomastia	HP:0000771	Gynecomastia	HP:0010313	breast hypertrophy	Sibling	FALSE	FALSE	TRUE	FALSE	FALSE										
+Ws5JSEcqDc	Polydactyly	MONDO:0021003	polydactyly	ORDO:2913	polydactyly	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+J2S5Q7M2sX	Mixed and other personality disorders	MONDO:0002028	personality disorder	HP:0012075	Personality disorder	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+hRru3JBBCk	Acquired pure red cell aplasia	HP:0012410	Pure red cell aplasia	HP:0012410	Pure red cell aplasia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+bDYiKtA5sJ	Chorioretinitis	MONDO:0004674	chorioretinitis	HP:0012424	chorioretinitis	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+bLs7udbpDZ	Congenital malformations of larynx	MONDO:0019755	developmental defect during embryogenesis	HP:0025423	Abnormal larynx morphology	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+bzvZXnAA6Q	Portal vein thrombosis	HP:0030242	Portal vein thrombosis	HP:0030242	portal vein thrombosis	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+CzUjgfJR3p	Other congenital malformations of ear	EFO:0005269	congenital heart malformation	HP:0031703	Abnormal ear morphology	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+UPsY4t3mBp	Eclampsia	HP:0100601	Eclampsia	HP:0100601	eclampsia	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+8mvNQyyjdK	Other mosquito borne viral fevers	EFO:0007538	viral encephalitis	EFO:0009575	mosquito-borne hemorragic fever	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+U6ZYuJfhCj	Fistulae involving female genital tract	EFO:0009524	female genital tract fistula	EFO:0009524	female genital tract fistula	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Z2Kr354f5E	Multiple gestation	EFO:0009576	multiple gestation	EFO:0009576	multiple gestation	Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+JkKGdUUT8x	Postpartum haemorrhage	EFO:0009579	postpartum hemorrhage	EFO:0009579	postpartum hemorrhage	Same	TRUE	FALSE	TRUE	FALSE	FALSE										
+ryuoqF83BB	Retained placenta and membranes without haemorrhage	MONDO:0004247	peptic ulcer disease	EFO:0009578	placental retention	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+4BmTAtyHgB	Faecal incontinence	EFO:0009523	fecal incontinence	EFO:0009523	fecal incontinence	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+RQ9LXMAGpm	Disturbances of skin sensation	EFO:0009522	disturbance of skin sensation	EFO:0009522	disturbance of skin sensation	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+3SagjFMRGs	Abnormal results of function studies	EFO:0009628	abnormal result of function studies	EFO:0009628		Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+n7u2fHP5i6	Injury of heart	EFO:0009506	heart injury	EFO:0009506	heart injury	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+bWFmBZshWY	Fractures involving multiple body regions	EFO:0009513	multiple bone fractures	EFO:0009513	multiple bone fractures	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+fVuE4Biscf	Fracture of upper limb level unspecified	EFO:0009514	upper extremity fracture	EFO:0009514	upper extremity fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+4Qy5ebfzfJ	Fracture of lower limb level unspecified	EFO:0009512	lower extremity fracture	EFO:0009512	lower extremity fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+6LxBgD8Uqn	Other injuries of lower limb level unspecified	HP:0012514	Lower limb pain	EFO:0009508	leg injury	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+meKLjqpmeL	Foreign body in alimentary tract	EFO:0009526	foreign body in gastrointestinal tract	EFO:0009526	foreign body in gastrointestinal tract	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+oMmL6m8yn2	Burns classified according to extent of body surface involved	EFO:0022196	body surface area	EFO:0009516	burn	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+rxLZNt97jG	Unspecified fall	EFO:0009631	fall	EFO:0009631		Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+dRETjkgc82	Routine general health check up of defined subpopulation	EFO:0009517	checkup	EFO:0009517	checkup	Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+huqSrthVFx	Contraceptive management	EFO:0009520	contraception	EFO:0009520	contraception	Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+mmEY5y36MQ	Prophylactic surgery	EFO:0009580	prophylactic surgery	EFO:0009580	prophylactic surgery	Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+uL3UTmuot7	Care involving use of rehabilitation procedures	EFO:0009581	rehabilitation	EFO:0009581	rehabilitation	Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+nL7tpGX2Zj	Disorders of mineral metabolism	EFO:0009556	mineral metabolism disease	EFO:0009556	mineral metabolism disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+GUPtA9HCVS	Other disorders of cornea	EFO:0009464	corneal disease	EFO:0009464	corneal disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+4HywpKVeWc	uremia	EFO:1001226	uremia	EFO:1002048	kidney failure	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+Whivf53yiz	Oesophageal varices	EFO:0009545	esophageal varices	EFO:0009545	esophageal varices	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+pmAuukB7yU	Disorders of autonomic nervous system	EFO:0009532	autonomic nervous system disease	EFO:0009532	autonomic nervous system disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+828587enHs	marasmus	EFO:1001033	marasmus	EFO:0009563	protein energy malnutrition	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+HyTifXVJBH	Inflammatory disease of uterus except cervix	EFO:0009572	uterine inflammatory disease	EFO:0009572	uterine inflammatory disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+8evRiSASoJ	Disorders of trigeminal nerve	EFO:0009569	trigeminal nerve disease	EFO:0009569	trigeminal nerve disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Xki9KoxYBQ	Pulmonary valve disorders	EFO:0009564	pulmonary valve disease	EFO:0009564	pulmonary valve disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+xV2KortyHs	Other disorders of tympanic membrane	EFO:0009570	tympanic membrane disease	EFO:0009570	tympanic membrane disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+XYfAeUCQfq	Other diseases of oesophagus	EFO:0009544	esophageal disease	EFO:0009544	esophageal disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+StqvvsvRgu	Other inflammation of eyelid	EFO:0009536	blepharitis	EFO:0009536	blepharitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+2SPBDJMd9Z	Otitis externa	EFO:0009560	otitis externa	EFO:0009560	otitis externa	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+G5NkvyL9vo	Other diseases of biliary tract	EFO:0009534	biliary tract disease	EFO:0009534	biliary tract disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Z5YnrhxMyB	Haemorrhoids	EFO:0009552	hemorrhoid	EFO:0009552	hemorrhoid	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+TqbjVbSXjZ	HIV disease resulting in malignant neoplasms	MONDO:0004992	cancer	EFO:0009553	HIV-associated cancer	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+fMQ9vDXxaV	Anaemia due to enzyme disorders	EFO:0009529	anemia due to enzyme disorder	EFO:0009529	anemia due to enzyme disorder	Same	TRUE	FALSE	TRUE	FALSE	FALSE										
+RyLqqkxkrn	Other disorders of peritoneum	EFO:0009541	disease of peritoneum	EFO:0009541	disease of peritoneum	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+hfK23vsjfd	Other headache syndromes	HP:0002315	Headache	EFO:0009550	headache disorder	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+mCMLHykbah	Unspecified intestinal parasitism	EFO:0009561	parasitic intestinal disease	EFO:0009561	parasitic intestinal disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+u4F5annsth	Nerve root and plexus disorders	EFO:0009559	nerve plexus disease	EFO:0009559	nerve plexus disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+c2NCyfiJU8	Other diseases of appendix	EFO:0009542	disorder of appendix	EFO:0009542	disorder of appendix	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+YiFed6aZaB	Small kidney of unknown cause	EFO:0009471	small kidney	EFO:0009471	small kidney	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+mRSJRV32dH	Perforation of tympanic membrane	EFO:0009472	tympanic membrane perforation	EFO:0009472	tympanic membrane perforation	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+vCjgGUpcEX	Other spirochaetal infections	EFO:0009567	Spirochaetales Infections	EFO:0009567	Spirochaetales Infections	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+PZpmj6ggfo	Disturbances of smell and taste	EFO:0009543	disturbances of sensation of smell and taste	EFO:0009543	disturbances of sensation of smell and taste	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+ufrYLRpAjE	Other diseases of jaws	EFO:0009468	jaw disease	EFO:0009468	jaw disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+E2DMfVpRtX	Diseases of Bartholin s gland	EFO:0009469	Bartholin gland disease	EFO:0009469	Bartholin's gland disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+uSpcQFDSmH	Waist circumference	EFO:0004342	waist circumference	EFO:0004342	waist circumference	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+LrqSdbjxnL	Hip circumference	EFO:0005093	hip circumference	EFO:0005093	hip circumference	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+2py4exb5bp	Standing height	EFO:0004339	body height	EFO:0004339	body height	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+r94D83yvYU	Sleep duration	EFO:0005271	sleep duration	EFO:0005271	sleep duration	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+3uJWRJofuy	Morning/evening person (chronotype)	EFO:0008328	chronotype measurement	EFO:0008328	chronotype measurement	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+mxCqnBRwLY	Sleeplessness / insomnia	EFO:0004698	insomnia	EFO:0004698	insomnia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+4T72oo99QL	Snoring	HP:0025267	Snoring	EFO:0008341	snoring measurement	Unrelated	FALSE	TRUE	FALSE	FALSE	FALSE										
+pbu3grQhAp	Alcohol intake frequency.	EFO:0600084	bowel opening frequency	EFO:0007878	alcohol consumption measurement	Sibling	FALSE	TRUE	FALSE	FALSE	FALSE										
+z7iXy7mCfT	Mood swings	HP:0000712	Emotional lability	HP:0000720	mood swings	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+8Gd7JLkBPD	Irritability	HP:0000737	Irritability	HP:0000737	irritability	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+Tf6w4Bafka	"Loneliness, isolation"	EFO:0007865	loneliness measurement	EFO:0007865	loneliness measurement	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+yS74VmxrnV	Frequency of tiredness / lethargy in last 2 weeks	HP:0012378	Fatigue	EFO:0007946	tiredness measurement	Unrelated	FALSE	TRUE	FALSE	FALSE	FALSE										
+DWsR5rv6di	Hearing difficulty/problems with background noise	HP:0000019	Urinary hesitancy	EFO:0004238	hearing loss	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+ezkVjsLhY9	Chest pain or discomfort	HP:0100749	Chest pain	HP:0100749	chest pain	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+ADt6jk9twB	Relative age voice broke	EFO:0007888	age at voice drop	EFO:0007888	age at voice drop	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+UHHXYoUnX3	Age when periods started (menarche)	EFO:0004703	age at menarche	EFO:0004703	age at menarche	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+uYoQ5LFQGG	Had menopause	EFO:0003922	menopause	EFO:0003922	menopause	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+sinF9jX88v	Forced vital capacity (FVC)	EFO:0004312	vital capacity	EFO:0004312	vital capacity	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+un8iQ9WmfN	Length of menstrual cycle	EFO:0007786	menstrual cycle measurement	EFO:0007786	menstrual cycle measurement	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+LRwgeog6uw	Stomach/abdominal pain for 3+ months	HP:0002027	Abdominal pain	EFO:0003766	pain in abdomen	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+N7vrquapo3	Gestational diabetes only	EFO:0004593	gestational diabetes	EFO:0004593	gestational diabetes	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+3axyJn8bd4	"Diastolic blood pressure, automated reading"	EFO:0006336	diastolic blood pressure	EFO:0006336	diastolic blood pressure	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+Wr6Ry7kPpU	"Systolic blood pressure, automated reading"	EFO:0006335	systolic blood pressure	EFO:0006335	systolic blood pressure	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+8wzSi9rSow	Pulse rate	EFO:0004326	heart rate	EFO:0004326	heart rate	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+LmSHnueaMZ	Maximum heart rate during fitness test	EFO:0004351	resting heart rate	EFO:0009184	heart rate response to exercise	Sibling	FALSE	TRUE	FALSE	FALSE	FALSE										
+jJkm6gKT3C	Fluid intelligence score	EFO:0004337	intelligence	EFO:0004337	intelligence	Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+ioAJqA5u2P	Birth weight	EFO:0004344	birth weight	EFO:0004344	birth weight	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+DJosHUjFQX	Bipolar disorder status	MONDO:0004985	bipolar disorder	EFO:0000289	bipolar disorder	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+sYKjdTzL7B	Neuroticism score	EFO:0004257	neurotic disorder	EFO:0007660	neuroticism measurement	Unrelated	FALSE	TRUE	FALSE	FALSE	FALSE										
+wpN7eNBspF	"Forced vital capacity (FVC), Best measure"	EFO:0004312	vital capacity	EFO:0004312	vital capacity	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+it8UnnQ9M3	Body mass index (BMI)	EFO:0004340	body mass index	EFO:0004340	body mass index	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+Un3w4a3oXq	Weight	EFO:0004338	body weight	EFO:0004338	body weight	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+Y5hh9LRgek	Pulse wave Arterial Stiffness index	EFO:0004517	arterial stiffness measurement	EFO:0004517	arterial stiffness measurement	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+KENh6JHgUR	hayfever or allergic rhinitis	EFO:0005854	allergic rhinitis	EFO:0003956	seasonal allergic rhinitis	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+BPiKM2XUVG	asthma	MONDO:0004979	asthma	EFO:0000270	asthma	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+SHyLKcxTAJ	emphysema	EFO:0000464	emphysema	EFO:0000464	emphysema	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+VFPz3MhMiG	chronic bronchitis	EFO:0006505	chronic bronchitis	EFO:0006505	chronic bronchitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+r4ePcP4TJF	COPD (chronic obstructive pulmonary disease)	EFO:0000341	chronic obstructive pulmonary disease	EFO:0000341	chronic obstructive pulmonary disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+dETDrRCaUN	sarcoidosis	MONDO:0019338	sarcoidosis	ORDO:797	sarcoidosis	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+QAaR9xGNEh	bronchiectasis	HP:0002110	Bronchiectasis	HP:0002110	bronchiectasis	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+3VrocK8qLF	idiopathic pulmonary fibrosis	EFO:0000768	idiopathic pulmonary fibrosis	EFO:0000768	idiopathic pulmonary fibrosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+4DRaAeLuGW	tuberculosis	MONDO:0018076	tuberculosis	ORDO:3389	tuberculosis	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+uQwzP3r6Jn	Body fat percentage	EFO:0007800	body fat percentage	EFO:0007800	body fat percentage	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+aHV2pBBN9k	Whole body fat mass	EFO:0005409	fat body mass	EFO:0005409	fat body mass	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+JKxrotGnRj	Whole body fat-free mass	EFO:0005409	fat body mass	EFO:0004995	lean body mass	Sibling	FALSE	TRUE	FALSE	FALSE	FALSE										
+8jvioXQcPX	Basal metabolic rate	EFO:0007777	base metabolic rate measurement	EFO:0007777	base metabolic rate measurement	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+c52wbDxmxf	Potassium in urine	EFO:0010952	urinary potassium measurement	HP:0012598	abnormal urine potassium concentration	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+6T7jwoYPtb	Sodium in urine	EFO:0021522	urinary sodium measurement	HP:0012603	abnormal urine sodium concentration	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+XpBBWX6xk7	Age at death	EFO:0005056	age at death	EFO:0005056	age at death	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+cMsjqpAxyp	cancer of lip/mouth/pharynx/oral cavity	MONDO:0023644	lip and oral cavity carcinoma	EFO:0005570	oral cavity cancer	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+PkCFSuCSez	rectal cancer	EFO:1000657	rectum cancer	EFO:1000657	rectal cancer	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+wfHjsT4asQ	lymphoma	EFO:0000574	lymphoma	EFO:0000574	lymphoma	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+gL7UCyqGf9	leukaemia	EFO:1000068	Acute Leukemia	EFO:0000565	leukemia	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+LjjzScZLZu	multiple myeloma	EFO:0001378	multiple myeloma	EFO:0001378	multiple myeloma	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+2jES5jqLaT	hodgkins lymphoma / hodgkins disease	EFO:0000183	Hodgkins lymphoma	EFO:0000183	Hodgkins lymphoma	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+2XM3bL7szz	non-hodgkins lymphoma	EFO:0000183	Hodgkins lymphoma	EFO:0005952	non-Hodgkins lymphoma	Sibling	TRUE	FALSE	FALSE	FALSE	FALSE										
+eQw4iMJxBx	chronic lymphocytic	EFO:0000095	chronic lymphocytic leukemia	EFO:0000095	chronic lymphocytic leukemia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+7NEnBpYyHR	chronic myeloid	EFO:0000339	chronic myelogenous leukemia	EFO:0000339	chronic myelogenous leukemia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+vAEt9ftvDo	malignant melanoma	EFO:0000756	melanoma	EFO:0000756	melanoma	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+xgiNLDRzCy	basal cell carcinoma	EFO:0004193	basal cell carcinoma	EFO:0004193	basal cell carcinoma	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+tuLwNuW6kC	squamous cell carcinoma	EFO:0000707	squamous cell carcinoma	EFO:0000707	squamous cell carcinoma	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Ucn7B2iFYS	hypertension	EFO:0000537	hypertension	EFO:0000537	hypertension	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+oBMne4r6Ft	heart/cardiac problem	EFO:0003777	heart disease	EFO:0003777	heart disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+JpCo5FJ9Ve	peripheral vascular disease	EFO:0003875	peripheral vascular disease	EFO:0003875	peripheral vascular disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+nzUqx2EHTj	venous thromboembolic disease	HP:0001907	Thromboembolism	HP:0004936	venous thrombosis	Sibling	FALSE	FALSE	TRUE	FALSE	FALSE										
+Xiu4TKMsvK	essential hypertension	MONDO:0001134	essential hypertension	EFO:1002032	primary hypertension	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+vd9F9VphWz	gestational hypertension/pre-eclampsia	EFO:0000668	preeclampsia	EFO:0000668	preeclampsia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+BMFuW4iu6e	angina	EFO:0003913	angina pectoris	EFO:0003913	angina pectoris	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+umZDJxnQiT	heart attack/myocardial infarction	EFO:0000612	myocardial infarction	EFO:0000612	myocardial infarction	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+kDMvs5rSCY	heart failure/pulmonary odema	EFO:0003144	heart failure	EFO:0003144	heart failure	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+STPBjrgL3C	heart arrhythmia	MONDO:0007263	cardiac rhythm disease	EFO:0004269	cardiac arrhythmia	Sibling	TRUE	FALSE	FALSE	FALSE	FALSE										
+yazqPohXeb	cardiomyopathy	EFO:0000318	cardiomyopathy	EFO:0000318	cardiomyopathy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+tCLpTsfdEr	stroke	EFO:0000712	stroke	EFO:0000712	stroke	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ApoZzRLrv2	transient ischaemic attack (tia)	EFO:0003764	transient ischemic attack	EFO:0003764	transient ischemic attack	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+4wiAFKsR6r	subdural haemorrhage/haematoma	HP:0100309	Subdural hemorrhage	HP:0100309	subdural hemorrhage	Same	TRUE	FALSE	TRUE	FALSE	FALSE										
+mpbjDQMnti	subarachnoid haemorrhage	EFO:0000713	subarachnoid hemorrhage	EFO:0000713	subarachnoid hemorrhage	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+NLu6vQmSqo	leg claudication/ intermittent claudication	EFO:0003876	intermittent vascular claudication	EFO:0003876	intermittent vascular claudication	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+4UmEhEW3fH	pulmonary embolism +/- dvt	EFO:0003827	pulmonary embolism	EFO:0003827	pulmonary embolism	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+BeumCtssjd	deep venous thrombosis (dvt)	EFO:0003907	deep vein thrombosis	EFO:0003907	deep vein thrombosis	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+vhug54Mz9Q	asthma	MONDO:0004979	asthma	EFO:0000270	asthma	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+msgRKSVjfT	chronic obstructive airways disease/copd	EFO:0000341	chronic obstructive pulmonary disease	EFO:0000341	chronic obstructive pulmonary disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+R5nkcbsVF5	emphysema/chronic bronchitis	EFO:0006505	chronic bronchitis	EFO:0000464	emphysema	Sibling	TRUE	FALSE	FALSE	FALSE	FALSE										
+t3EV6NmcGP	bronchiectasis	HP:0002110	Bronchiectasis	HP:0002110	bronchiectasis	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+RVkE4rthJT	interstitial lung disease	HP:0006530	Abnormal pulmonary interstitial morphology	EFO:0004244	interstitial lung disease	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+iUaEJdoZbE	asbestosis	EFO:0007153	asbestosis	EFO:0007153	asbestosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+3Z9CnC67XM	pulmonary fibrosis	EFO:0009448	pulmonary fibrosis	EFO:0009448	pulmonary fibrosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+cJWkGZbfYC	fibrosing alveolitis/unspecified alveolitis	MONDO:0017853	hypersensitivity pneumonitis	EFO:0009624	pulmonary alveolitis	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+SyQrEJYDpu	sleep apnoea	HP:0002104	Apnea	EFO:0003877	sleep apnea	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+AX43feN5Hj	pleurisy	EFO:1001825	pleurisy	EFO:1001825	pleurisy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+MH3ZGSv89y	spontaneous pneumothorax/recurrent pneumothorax	HP:0002108	Spontaneous pneumothorax	HP:0002108	spontaneous pneumothorax	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+58AsXhGAsH	gastro-oesophageal reflux (gord) / gastric reflux	EFO:0003948	gastroesophageal reflux disease	EFO:0003948	gastroesophageal reflux disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+BeBEXohd2f	gastric/stomach ulcers	EFO:0009454	gastric ulcer	HP:0004398	peptic ulcer	More Specific	FALSE	FALSE	TRUE	FALSE	FALSE										
+Xv3Hf7PhE6	gastritis/gastric erosions	EFO:0000337	chronic gastritis	EFO:0000217	gastritis	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+nVdGYmc75B	irritable bowel syndrome	EFO:0000555	irritable bowel syndrome	EFO:0000555	irritable bowel syndrome	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Nr5y5UZecU	hepatitis	HP:0012115	Hepatitis	HP:0012115	hepatitis	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+fjBedj5Ux3	infective/viral hepatitis	EFO:0004196	viral human hepatitis infection	EFO:0004196	viral human hepatitis infection	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+HSaGYL2V3i	liver failure/cirrhosis	EFO:0001422	cirrhosis of liver	EFO:0001422	cirrhosis of liver	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+QSbt8n3Ucg	gall bladder disease	EFO:0003832	gallbladder disease	EFO:0003832	gallbladder disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+g3ny8QdsKr	cholecystitis	HP:0001082	Cholecystitis	HP:0001082	cholecystitis	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+iKZkQs2BUq	pancreatitis	EFO:0000278	pancreatitis	EFO:0000278	pancreatitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+oWUG2nYdPG	peritonitis	EFO:0008588	peritonitis	EFO:0008588	peritonitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+9VuemzzRve	gastrointestinal bleeding	HP:0002239	Gastrointestinal hemorrhage	HP:0002239	gastrointestinal hemorrhage	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+wqjJ4QHHR7	renal/kidney failure	EFO:1002048	kidney failure	EFO:1002048	kidney failure	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+qp7vorbUYE	urinary tract infection/kidney infection	EFO:0003103	urinary tract infection	EFO:0003103	urinary tract infection	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+SQEJgfEXok	ureteric obstruction/hydronephrosis	HP:0006000	Ureteral obstruction	EFO:0005562	hydronephrosis	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+RmXdTtAvmh	urinary frequency / incontinence	HP:0000020	Urinary incontinence	EFO:0006865	urgency urinary incontinence	More General	FALSE	FALSE	TRUE	FALSE	FALSE										
+zXYuyXcTMS	diabetes	EFO:0000400	diabetes mellitus	EFO:0000400	diabetes	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+KjF7qzVPMD	gestational diabetes	EFO:0004593	gestational diabetes	EFO:0004593	gestational diabetes	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+vxuHo2JDcf	type 1 diabetes	MONDO:0005147	type 1 diabetes mellitus	EFO:0001359	type i diabetes mellitus	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+UAZPR7yAmf	type 2 diabetes	MONDO:0005148	type 2 diabetes mellitus	EFO:0001360	type ii diabetes mellitus	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+AaDkmgzRBV	parathyroid hyperplasia/adenoma	EFO:1000457	Parathyroid Hyperplasia	EFO:1000457	parathyroid hyperplasia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+243Cc6cmq4	pituitary adenoma/tumour	EFO:1000478	Pituitary Gland Adenoma	EFO:1000478	pituitary gland adenoma	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ha2W5rRaVv	encephalitis	EFO:0001423	encephalomyelitis	EFO:0001423	encephalomyelitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+jynAsQPN4r	bell's palsy/facial nerve palsy	EFO:0007167	Bell's palsy	EFO:0007167	Bell's palsy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+oMBHsUrLCt	peripheral neuropathy	EFO:0003100	peripheral neuropathy	EFO:0003100	peripheral neuropathy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+wzXAnSvDdi	acute infective polyneuritis/guillain-barre syndrome	EFO:0007292	Guillain-Barre syndrome	EFO:0007292	Guillain-Barre syndrome	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+TpDZukAA42	multiple sclerosis	MONDO:0005301	multiple sclerosis	EFO:0003885	multiple sclerosis	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+QT5na5WjC3	parkinsons disease	MONDO:0005180	Parkinson disease	EFO:0002508	Parkinson's disease	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+sLrEDUqaCD	epilepsy	EFO:0000474	epilepsy	EFO:0000474	epilepsy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+7jKoVpEfiY	migraine	MONDO:0005277	migraine disorder	EFO:0003821	migraine disorder	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+4pNq5tq4eF	spinal injury	MONDO:0037747	spinal injury	EFO:1001919	spinal cord injury	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+DQmSYKAV3x	eye infection	MONDO:0043885	eye infectious disorder	EFO:1001888	eye infection	Sibling	TRUE	FALSE	FALSE	FALSE	FALSE										
+MKBbi9XPot	retinal problem	EFO:0005716	retinal cancer	EFO:0003839	retinopathy	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+ygeMfJCJ6E	glaucoma	MONDO:0005041	glaucoma	EFO:0000516	glaucoma	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+Z6SuRLcEGQ	cataract	MONDO:0005129	cataract	EFO:0001059	cataract	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+RE8TuWzaVP	retinal detachment	EFO:0005773	retinal detachment	EFO:0005773	retinal detachment	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ou8LBPX4wy	schizophrenia	MONDO:0005090	schizophrenia	EFO:0000692	schizophrenia	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+JpbRpTFAhu	deliberate self-harm/suicide attempt	EFO:0004321	attempted suicide	EFO:0004321	attempted suicide	Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+jgpokTgB9W	mania/bipolar disorder/manic depression	MONDO:0004985	bipolar disorder	EFO:0000289	bipolar disorder	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+hWwu8d3o4w	bone disorder	EFO:0004260	bone disease	EFO:0004260	bone disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+6UcapJtUV8	joint disorder	EFO:1000999	joint disease	EFO:1000999	joint disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+LbmkATkynJ	osteomyelitis	EFO:0003102	osteomyelitis	EFO:0003102	osteomyelitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+VRZ7yvyyDg	osteoporosis	EFO:0003882	osteoporosis	EFO:0003882	osteoporosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+EUquehRkoi	ankylosing spondylitis	EFO:0003898	ankylosing spondylitis	EFO:0003898	ankylosing spondylitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+QXh2QiXGpL	low platelets/platelet disorder	MONDO:0002245	blood platelet disease	HP:0001873	thrombocytopenia	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+FyfME3EmVL	iron deficiency anaemia	HP:0001891	Iron deficiency anemia	HP:0001891	iron deficiency anemia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+FpeoGvELum	pernicious anaemia	EFO:0005576	pernicious anemia	EFO:0005576	pernicious anemia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+eFS3yBaAoC	thalassaemia	ORPHANET.ORDO:846	Alpha-thalassemia	EFO:1001996	thalassemia	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+JDWqHeKeTa	ovarian cyst or cysts	HP:0000138	Ovarian cyst	HP:0000138	ovarian cyst	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+27knrY8xRW	polycystic ovaries/polycystic ovarian syndrome	EFO:0000660	polycystic ovary syndrome	EFO:0000660	polycystic ovary syndrome	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+K6YHdYisiu	uterine fibroids	HP:0000131	Uterine leiomyoma	EFO:0000731	uterine fibroid	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+q3zqTwTNu5	vaginal prolapse/uterine prolapse	EFO:1001864	uterine prolapse	EFO:1001864	uterine prolapse	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+CVuXeYDWjy	fibrocystic disease	EFO:0003014	breast fibrocystic disease	EFO:0003014	breast fibrocystic disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+YE9gUa3ECP	breast cysts	EFO:1000848	breast cyst	EFO:1000848	breast cyst	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+xkvBv9sfRd	sarcoidosis	MONDO:0019338	sarcoidosis	ORDO:797	sarcoidosis	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+CxY9DWqYUG	vasculitis	EFO:0006803	vasculitis	EFO:0006803	vasculitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+kqnQgLc7Fr	connective tissue disorder	EFO:1001986	connective tissue disease	EFO:1001986	connective tissue disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+DDxjpRWydi	giant cell/temporal arteritis	EFO:1001209	temporal arteritis	EFO:1001209	temporal arteritis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+mCVuScCTQL	polymyalgia rheumatica	EFO:0008518	polymyalgia rheumatica	EFO:0008518	polymyalgia rheumatica	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+nxEFcPtPf9	wegners granulmatosis	EFO:0005297	Granulomatosis with Polyangiitis	EFO:0005297	granulomatosis with polyangiitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+dMwdKyLiBi	systemic lupus erythematosis/sle	MONDO:0007915	systemic lupus erythematosus	EFO:0002690	systemic lupus erythematosus	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+NwrvFs9Kfu	sjogren's syndrome/sicca syndrome	MONDO:0002254	syndromic disease	EFO:0000699	Sjogren syndrome	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+o3vDkyHRUx	allergy or anaphylactic reaction to food	EFO:0020918	non-allergic anaphylaxis	EFO:1001890	food allergy	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+9DCkPjJ2af	pneumonia	EFO:0003106	pneumonia	EFO:0003106	pneumonia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Ext4VBZUTj	peptic ulcer	HP:0004398	Peptic ulcer	HP:0004398	peptic ulcer	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+fY9KtHzZdh	endometriosis	EFO:0001065	endometriosis	EFO:0001065	endometriosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Sci8nbZsR5	female infertility	EFO:0008560	female infertility	EFO:0008560	female infertility	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+vBY8fdqjtU	alcohol dependency	MONDO:0007079	alcohol dependence	EFO:0003829	alcohol dependence	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+G7F5Fm5JcD	nasal polyps	HP:0100582	Nasal polyposis	EFO:1000391	nasal cavity polyp	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+iTVJ6nZZ8J	otosclerosis	EFO:0004213	otosclerosis	EFO:0004213	otosclerosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+5SjuEjkXJR	meniere's disease	EFO:0006862	Meniere disease	EFO:0006862	Meniere disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+kNLVRPk63j	cerebral aneurysm	EFO:0003870	brain aneurysm	EFO:0003870	brain aneurysm	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+E9zqvpw7hn	myocarditis	EFO:0009609	myocarditis	EFO:0009609	myocarditis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+nQ2zt4JkjR	polycystic kidney	EFO:0008620	Polycystic Kidney Disease	EFO:0008620	polycystic kidney disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+9aVfU2sRMz	thyroiditis	MONDO:0004126	thyroiditis	EFO:1000627	thyroid disease	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+EZVaqFzBVR	hypopituitarism	EFO:0001380	hypopituitarism	EFO:0001380	hypopituitarism	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+3kAQWMehpH	cerebral palsy	EFO:1000632	cerebral palsy	EFO:1000632	cerebral palsy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+3DnvEdCMvk	optic neuritis	EFO:0007405	optic neuritis	EFO:0007405	optic neuritis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+E7ETsQSuNY	headaches (not migraine)	MONDO:0005277	migraine disorder	HP:0002315	headache	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+FDsFVjgHPC	myasthenia gravis	EFO:0004991	Myasthenia gravis	EFO:0004991	myasthenia gravis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+rs8XZyuhHE	polycythaemia vera	EFO:0002429	polycythemia vera	EFO:0002429	polycythemia vera	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+7R8doyAQRE	tuberculosis (tb)	MONDO:0018076	tuberculosis	ORDO:3389	tuberculosis	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+fmTX75mRdk	malaria	EFO:0001068	malaria	EFO:0001068	malaria	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+mmg5M4JWQN	helicobacter pylori	EFO:1000961	Helicobacter pylori infectious disease	NCBITaxon:210	Helicobacter pylori	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+8F7VT2mzm3	anaemia	HP:0001915	Aplastic anemia	EFO:0004272	anemia	More Specific	FALSE	FALSE	TRUE	FALSE	FALSE										
+VQaUfmDiWY	eczema/dermatitis	EFO:0000274	atopic eczema	HP:0000964	eczema	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+vgCbCaEq34	psoriasis	EFO:0000676	psoriasis	EFO:0000676	psoriasis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+U4mojvZrgC	chronic skin ulcers	EFO:0007066	chronic ulcer of skin	EFO:0007066	chronic ulcer of skin	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+k8sWdzTXuN	malabsorption/coeliac disease	HP:0002024	Malabsorption	EFO:0001060	celiac disease	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+t2aBs5YJsa	duodenal ulcer	EFO:0004607	duodenal ulcer	EFO:0004607	duodenal ulcer	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+RmCSnRKkcJ	diverticular disease/diverticulitis	EFO:0009959	diverticular disease	EFO:1001460	diverticulitis	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+K4EzG3m63D	colitis/not crohns or ulcerative colitis	EFO:0000729	ulcerative colitis	EFO:0003872	colitis	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+BkdJJcBhsA	rectal or colon adenoma/polyps	MONDO:0000530	rectum adenoma	EFO:1000633	adenomatous colon polyp	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+c3pYPADYkQ	inflammatory bowel disease	EFO:0003767	inflammatory bowel disease	EFO:0003767	inflammatory bowel disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+msWXiTzbnv	crohns disease	EFO:0000384	Crohn's disease	EFO:0000384	Crohn's disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+o56DDeZtmW	ulcerative colitis	EFO:0000729	ulcerative colitis	EFO:0000729	ulcerative colitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+mKGKLi5u8V	rheumatoid arthritis	EFO:0000685	rheumatoid arthritis	EFO:0000685	rheumatoid arthritis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+gnwU76aEwy	osteoarthritis	MONDO:0005178	osteoarthritis	EFO:0002506	osteoarthritis	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+J7UjZX9rqE	gout	EFO:0004274	gout	EFO:0004274	gout	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+x8Fxi9ffEb	post-traumatic stress disorder	EFO:0001358	post-traumatic stress disorder	EFO:0001358	post-traumatic stress disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+3eNAt3DHjP	atrial fibrillation	EFO:0000275	atrial fibrillation	EFO:0000275	atrial fibrillation	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+2mS75xVatn	emphysema	EFO:0000464	emphysema	EFO:0000464	emphysema	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+WaghtgDZuL	high cholesterol	EFO:0004612	high density lipoprotein cholesterol measurement	HP:0003124	hypercholesterolemia	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+BcFH3Yevxm	hiatus hernia	HP:0002036	Hiatus hernia	HP:0002036	hiatus hernia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+ALik5FTugG	sciatica	HP:0011868	Sciatica	HP:0011868	sciatica	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+tiSTVfMdJx	psoriatic arthropathy	EFO:1000999	joint disease	EFO:0003778	psoriatic arthritis	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+SaPRmSKQZj	rheumatic fever	EFO:1001160	rheumatic fever	EFO:1001160	rheumatic fever	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+GTh6DGJ6cf	chronic fatigue syndrome	EFO:0004540	chronic fatigue syndrome	EFO:0004540	chronic fatigue syndrome	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+dFAVXhSRJf	irregular heart beat	EFO:0009841	irregular respiration	EFO:0004269	cardiac arrhythmia	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+PEjx8RL9L7	brain haemorrhage	EFO:0000551	intracranial hemorrhage	EFO:0000551	intracranial hemorrhage	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+6w3uLgaSqU	varicose veins	HP:0002619	Varicose veins	HP:0002619	varicose veins	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+uNjBJyHRNF	lymphoedema	MONDO:0019297	lymphedema	ORDO:79383	lymphedema	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+diMdZBLy79	pneumothorax	MONDO:0002076	pneumothorax	HP:0002107	pneumothorax	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+NkxSUMjHYf	labyrinthitis	EFO:0009604	labyrinthitis	EFO:0009604	labyrinthitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+X9B58m9xwo	vertigo	HP:0002321	Vertigo	HP:0002321	vertigo	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+dpXi7wRZwo	pyloric stenosis	EFO:0009626	pyloric stenosis	EFO:0009626	pyloric stenosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+P6mrpz3zVL	appendicitis	EFO:0007149	appendicitis	EFO:0007149	appendicitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+YXrCBU7q7A	anal fissure	HP:0012390	Anal fissure	HP:0012390	anal fissure	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+gpCsXtAMuN	haemorrhoids / piles	EFO:0009552	hemorrhoid	EFO:0009552	hemorrhoid	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+tVkcdqNih2	jaundice (unknown cause)	HP:0000952	Jaundice	HP:0000952	jaundice	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+FjpFoPaz7r	dyspepsia / indigestion	EFO:0008533	dyspepsia	EFO:0008533	dyspepsia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+LJkq9WiMiN	abdominal hernia	HP:0004299	Hernia of the abdominal wall	HP:0004299	hernia of the abdominal wall	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+iKwZfCumuu	umbilical hernia	HP:0001537	Umbilical hernia	HP:0001537	umbilical hernia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+hUebEvVRyZ	inguinal hernia	HP:0000023	Inguinal hernia	HP:0000023	inguinal hernia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+6GbQsP3Z8z	cystitis	EFO:1000025	cystitis	EFO:1000025	cystitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+YippYzN7qg	bph / benign prostatic hypertrophy	EFO:0000284	benign prostatic hyperplasia	EFO:0000284	benign prostatis hypertrophy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+DEoB2BwJoz	prostatitis	EFO:0003830	prostatitis	EFO:0003830	prostatitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+pknMcQExz8	erectile dysfunction / impotence	EFO:0004234	erectile dysfunction	EFO:0004234	erectile dysfunction	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+MMPoipykTZ	grave's disease	EFO:0004237	Graves disease	EFO:0004237	Graves disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+qfyxYh8c94	trigemminal neuralgia	EFO:1001219	trigeminal neuralgia	EFO:1001219	trigeminal neuralgia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+kULks4pm8h	benign / essential tremor	EFO:0003108	essential tremor	EFO:0003108	essential tremor	Same	TRUE	FALSE	TRUE	FALSE	FALSE										
+hCNt35QNdf	polio / poliomyelitis	EFO:0007450	poliomyelitis	EFO:0007450	poliomyelitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+afJv4AdgX8	dry eyes	EFO:1000906	dry eye syndrome	EFO:1000906	dry eye syndrome	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+93cBCSCQTS	iritis	EFO:1000997	iritis	EFO:1000997	iritis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ChbQn3d7Ju	post-natal depression	EFO:0007453	postpartum depression	EFO:0007453	postpartum depression	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Q4ecqzeKHK	disc degeneration	HP:0008419	Intervertebral disc degeneration	EFO:0004994	lumbar disc degeneration	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+dhjmbBrnwr	back pain	HP:0003418	Back pain	HP:0003418	back pain	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+w5bDHGcGoZ	scoliosis	EFO:0004273	scoliosis	EFO:0004273	scoliosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+xQR3Abvj3W	spinal stenosis	EFO:0007490	spinal stenosis	EFO:0007490	spinal stenosis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+hUMJPzkMdt	joint pain	HP:0002829	Arthralgia	HP:0002829	arthralgia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+R6qCK8p4TC	arthritis (nos)	EFO:0005856	arthritis	EFO:0005856	arthritis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+3uUgr4hNa8	plantar fascitis	EFO:1001909	Plantar Fasciitis	EFO:1001909	plantar fasciitis	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+kxiAex6hpc	carpal tunnel syndrome	EFO:0004143	carpal tunnel syndrome	EFO:0004143	carpal tunnel syndrome	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+g77Wg8MyaD	fibromyalgia	EFO:0005687	fibromyalgia	EFO:0005687	fibromyalgia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+HxvPFshWKn	dupuytren's contracture	EFO:1000438	Palmar Fibromatosis	EFO:0004229	Dupuytren contracture	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+NJmBkCTArP	acne/acne vulgaris	EFO:0003894	acne	EFO:0003894	acne	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+QUE2ovzV3y	lichen planus	EFO:1000726	lichen planus	EFO:1000726	lichen planus	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+KMiFHYAk6P	cervical intra-epithelial neoplasia (cin) / precancerous cells cervix	MONDO:0022394	cervical intraepithelial neoplasia	EFO:1000910	dysplasia of cervix	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+Q6zd4udjSE	menorrhagia (unknown cause)	HP:0000132	Menorrhagia	HP:0000132	menorrhagia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+Q3DKL2pkPb	ectopic pregnancy	HP:0031456	Ectopic pregnancy	HP:0031456	ectopic pregnancy	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+VzsSZg9vH6	breast fibroadenoma	EFO:1000254	Fibroadenoma	EFO:1000254	Fibroadenoma	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+fGVpWuPZQ4	raynaud's phenomenon/disease	EFO:1001145	Raynaud disease	EFO:1001145	Raynaud disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+eqqGgTPXv3	food intolerance	EFO:1001890	food allergy	EFO:1001890	food allergy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+6YwGLUVJUh	urticaria	EFO:0005531	urticaria	EFO:0005531	urticaria	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+XduSH5A96K	measles / morbillivirus	EFO:1002025	measles	EFO:1002025	measles	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+CZP9SDz6q5	mumps / epidemic parotitis	EFO:0007383	Mumps virus infectious disease	EFO:0007383	mumps infectious disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ufy6NtGsrh	rubella / german measles	EFO:1002026	rubella	EFO:1002026	rubella	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+sdGpBMnrGf	chickenpox	EFO:0007204	chickenpox	EFO:0007204	chickenpox	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+D3s9gwVqE4	whooping cough / pertussis	EFO:0000650	whooping cough	EFO:0000650	whooping cough	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+W6HviD5qCV	shingles	EFO:0006510	Herpes Zoster	EFO:0006510	Herpes Zoster	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+PrMexeqjJj	herpes simplex	EFO:0007282	genital herpes	EFO:1002022	herpes simplex infection	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+pMn6LjfMkL	hepatitis a	EFO:0007305	hepatitis A virus infection	EFO:0007305	hepatitis a	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+XukCMMCUa3	hepatitis b	EFO:0004197	hepatitis B virus infection	EFO:0004197	hepatitis b infection	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+WAyh9XdLAJ	hepatitis c	EFO:0003047	hepatitis C virus infection	EFO:0003047	hepatitis c infection	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+EotRTrNRRv	aortic regurgitation / incompetence	EFO:0007148	aortic valve insufficiency	EFO:0007148	aortic valve insufficiency	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+mTUrgW4JyE	hypertrophic cardiomyopathy (hcm / hocm)	EFO:0000538	hypertrophic cardiomyopathy	EFO:0000538	hypertrophic cardiomyopathy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+kRe6k9cMdF	pericarditis	EFO:0007427	pericarditis	EFO:0007427	pericarditis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+GCxncUwHNN	tinnitus / tiniitis	HP:0000360	Tinnitus	HP:0000360	tinnitus	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+x5iotdN5ae	tonsiltis	MONDO:0001039	tonsillitis	HP:0011110	tonsillitis	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+UBRhrFJcMk	constipation	HP:0002019	Constipation	HP:0002019	constipation	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+8Eqz8MKNpz	rectal prolapse	HP:0002035	Rectal prolapse	HP:0002035	rectal prolapse	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+F4P8ZvC5AS	femoral hernia	EFO:1001791	femoral hernia	EFO:1001791	femoral hernia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+jgmnXHokbR	incisional hernia	HP:0004872	Incisional hernia	HP:0004872	incisional hernia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+7DSPFdzZYL	nephritis	EFO:1002050	nephritis	EFO:1002050	nephritis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+b6DxArGr3E	thyroid goitre	MONDO:0001658	nontoxic goiter	EFO:0004283	goiter	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+fy6NbU7Jjw	blepharitis / eyelid infection	EFO:0007315	hordeolum	EFO:0009536	blepharitis	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+ABGzLrQzHa	obsessive compulsive disorder (ocd)	EFO:0004242	obsessive-compulsive disorder	EFO:0004242	obsessive-compulsive disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+cZCnCpqXNb	insomnia	EFO:0004698	insomnia	EFO:0004698	insomnia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+nxCabJ4aFp	osteopenia	HP:0000938	Osteopenia	HP:0000938	osteopenia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+XEmZWgkpiS	bursitis	MONDO:0002471	bursitis	EFO:1000941	frozen shoulder	Sibling	TRUE	FALSE	FALSE	FALSE	FALSE										
+tcLEHiHN4C	tennis elbow / lateral epicondylitis	EFO:1001896	lateral epicondylitis	EFO:1001896	lateral epicondylitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ThZV36RDRa	cellulitis	EFO:0003035	cellulitis	EFO:0003035	cellulitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+tFgpHXuAsy	fracture skull / head	EFO:1001425	Skull Fractures	EFO:1001425	skull fractures	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+KWTKLrB35Q	fracture radius	EFO:0003957	radius fracture	EFO:0003957	radius fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+vw7CmdWMEK	fracture ulna	EFO:0003950	ulna fracture	EFO:0003950	ulna fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+tcrdehNrZj	fracture tibia	EFO:0003944	tibia fracture	EFO:0003944	tibia fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+xXhbLYBh8y	septicaemia / sepsis	HP:0100806	Sepsis	HP:0100806	sepsis	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+9S2SnPdrfa	meningioma / benign meningeal tumour	EFO:0003851	meningeal neoplasm	ORDO:2495	meningioma	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+3iZTNEf6XH	rosacea	EFO:1000760	rosacea	EFO:1000760	rosacea	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+UR47r4NKXX	vitiligo	EFO:0004208	Vitiligo	EFO:0004208	vitiligo	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+VyA2du92of	cervical erosion	EFO:1000862	cervix erosion	EFO:1000862	cervix erosion	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+mDNTan8Vu3	dysmenorrhoea / dysmenorrhea	HP:0100607	Dysmenorrhea	HP:0100607	dysmenorrhea	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+BWXUGWKpg2	menopausal symptoms / menopause	EFO:0003922	menopause	EFO:0003922	menopause	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+MWuJ47cX5S	alopecia / hair loss	MONDO:0004907	alopecia	ORDO:79364	alopecia	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+YAKQcovkro	scarlet fever / scarlatina	EFO:0007477	scarlet fever	EFO:0007477	scarlet fever	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+myLYRtcZLw	undescended testicle	EFO:0004562	cryptorchidism	EFO:0004562	cryptorchidism	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+hKgqy8AGQS	Hearing difficulty/problems: Yes	HP:0003698	Difficulty standing	EFO:0004238	hearing loss	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+eo38AmDQji	Overall health rating	EFO:0003935	mental health	EFO:0004778	self rated health	Unrelated	FALSE	FALSE	FALSE	FALSE	TRUE										
+NmxAx2NCPV	General pain for 3+ months	EFO:0003843	pain	HP:0012532	Chronic pain	More General	FALSE	FALSE	TRUE	FALSE	FALSE										
+TquBWBbu3a	Number of spontaneous miscarriages	HP:0005268	Miscarriage	EFO:1001255	spontaneous abortion	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+QAzrz3gorw	Pulse wave reflection index	EFO:0009804	pulse wave reflection index measurement	EFO:0009804	reflection wave amplitude	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+5iTdQyNjRF	Cough on most days	HP:0012735	Cough	HP:0012735	cough	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+MynfKzTCEn	Years of cough on most days	HP:0012735	Cough	HP:0012735	cough	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+7JYgawfga9	head injury	EFO:0009505	head injury	EFO:0009505	head injury	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+vYojzAeeCJ	gynaecological disorder (not cancer)	EFO:1001331	"Genital neoplasm, female"	EFO:0009549	female reproductive system disease	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+YKyiCtq6Dx	peripheral nerve injury	EFO:0009510	peripheral nerve injury	EFO:0009510	peripheral nerve injury	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ntnepcAzeH	fracture jaw	EFO:0009612	jaw fracture	EFO:0009612	jaw fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+FRYugeiT6H	fracture nose	EFO:0003931	bone fracture	EFO:0009623	nose injury	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+rgQB8dE8xS	fracture clavicle / collar bone	EFO:0009614	clavicle fracture	EFO:0009614	clavicle facture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+HAsVHsr5Ky	fracture shoulder / scapula	EFO:0009621	shoulder fracture	EFO:0009621	shoulder fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+YiCduTURnw	fracture forearm / wrist	EFO:0009515	wrist fracture	EFO:0009515	wrist fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+4igqWdtp2o	fracture wrist / colles fracture	EFO:0009515	wrist fracture	EFO:0009515	wrist fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ofCGGRAgiP	fracture hand	HP:0004277	Fractured hand bones	NCIT:C27161	hand fracture	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+wnrAEoiJLz	fracture finger	EFO:0009616	finger fracture	EFO:0009616	finger fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+MfZHWcfEkd	fracture rib	EFO:0009620	rib fracture	EFO:0009620	rib fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+d3VrupWfNP	fracture pelvis	EFO:0009622	fracture of pelvis	EFO:0009622	facture of pelvis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+UqcmXtkZE3	fracture patella / knee	EFO:0009617	knee fracture	EFO:0009617	knee fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ejDBLBZpnA	fracture fibula	EFO:0009613	fibula fracture	EFO:0009613	fibula fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+YoYE9e6Tbs	fracture foot	EFO:0009618	foot fracture	EFO:0009618	foot fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+vRg9GQhXJb	Hand grip strength (left)	EFO:0006941	grip strength measurement	EFO:0006941	grip strength measurement	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+D8q77ogL93	Hand grip strength (right)	EFO:0006941	grip strength measurement	EFO:0006941	grip strength measurement	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+gRCinQKobv	"Heel bone mineral density (BMD) T-score, automated"	EFO:0009270	heel bone mineral density	EFO:0009270	heel bone mineral density	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+i6Lz7PFzh9	Age completed full time education	EFO:0000721	time	EFO:0004784	self reported educational attainment	Unrelated	FALSE	TRUE	FALSE	FALSE	FALSE										
+S3xp5NZaXj	Worrier / anxious feelings	EFO:0009597	feeling nervous measurement	EFO:0005230	anxiety	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+JeSewQZ484	Diabetes diagnosed by doctor	EFO:0000400	diabetes mellitus	EFO:0000400	diabetes mellitus	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+sbZpZ39cte	Cancer diagnosed by doctor	EFO:0005603	age at breast cancer diagnosis	EFO:0000311	cancer	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+dcnwmpk7fs	Fractured/broken bones in last 5 years	EFO:0003931	bone fracture	EFO:0003931	bone fracture	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+gHynLmhdVP	Ever used hormone-replacement therapy (HRT)	EFO:0003961	hormone replacement therapy	EFO:0003961	hormone replacement therapy	Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+kvYJdX3Bhr	Longest period of depression	MONDO:0002050	depressive disorder	EFO:0007704	depressive episode measurement	Unrelated	FALSE	TRUE	FALSE	FALSE	FALSE										
+XB9Fsq9SYU	Number of depression episodes	EFO:0007704	depressive episode measurement	EFO:0007704	depressive episode measurement	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+shxHYHe9Ca	Creatinine (enzymatic) in urine	EFO:0004518	creatinine measurement	EFO:0007934	creatine clearance measurement	Sibling	FALSE	TRUE	FALSE	FALSE	FALSE										
+YrD2dJKH49	cin/pre-cancer cells cervix	MONDO:0002974	cervical cancer	EFO:1000910	dysplasia of cervix	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+Ksb5dcyERM	heart valve problem/heart murmur	HP:0030148	Heart murmur	EFO:0009551	heart valve disease	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+WCT7NvHs2a	pericardial problem	MONDO:0021381	neoplasm of pericardium	EFO:0007427	pericarditis	Sibling	TRUE	FALSE	FALSE	FALSE	FALSE										
+EurZpeBgbL	other respiratory problems	EFO:0009834	respiratory process	EFO:0000684	respiratory system disease	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+S8oT9e7pCZ	oesophageal disorder	EFO:0009544	esophageal disease	EFO:0009544	esophageal disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+oKjJ9kFntX	stomach disorder	EFO:0009608	stomach disease	EFO:0009608	stomach disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+WyYHUND96n	parathyroid gland problem (not cancer)	MONDO:0021311	malignant tumor of parathyroid gland	EFO:0005754	parathyroid disease	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+zuCKtVSRYV	chronic/degenerative neurological problem	EFO:0000618	nervous system disease	EFO:0005772	neurodegenerative disease	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+DZpJRnBMbJ	muscle/soft tissue problem	EFO:1000541	Soft Tissue Neoplasm	EFO:0009470	soft tissue disease	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+h5obW5dvwY	other renal/kidney problem	EFO:0003865	kidney neoplasm	EFO:0003086	kidney disease	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+uwdndM638J	other joint disorder	EFO:1000999	joint disease	EFO:1000999	joint disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+StWL9nycXA	diabetic neuropathy/ulcers	EFO:1000783	diabetic neuropathy	EFO:1000783	diabetic neuropathy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Vv2F5GDpCH	cervical spondylosis	EFO:0009610	cervical spondylosis	EFO:0009610	"spondylosis, cervical"	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+rY7e2g8Fdq	svt / supraventricular tachycardia	HP:0004755	Supraventricular tachycardia	HP:0004755	supraventricular tachycardia	Same	TRUE	FALSE	TRUE	FALSE	FALSE										
+6W6mMNFz3o	anal problem	EFO:0009477	vertebral joint disease	HP:0004378	abnormality of the anus	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+msfwfZ6Yfz	macular degeneration	EFO:0001365	age-related macular degeneration	EFO:0009606	macular degeneration	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+FFPFfoKqT4	bowel / intestinal obstruction	MONDO:0004565	intestinal obstruction	HP:0004796	gastrointestinal obstruction	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+NWUpS5izJq	benign neuroma	EFO:0002751	benign	EFO:0009619	neuroma	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+Cxs4garPQn	Hearing difficulty/problems: I am completely deaf	HP:0003698	Difficulty standing	EFO:0001063	deafness	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+jWUpUEtngk	Which eye(s) are affected by cataract: Right eye	EFO:1001888	eye infection	EFO:0001059	cataract	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+XtVsCTVMBJ	Which eye(s) are affected by cataract: Left eye	EFO:1001888	eye infection	EFO:0001059	cataract	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+i7fstLUFWr	Number of self-reported cancers	EFO:0009800	"number of cancers, self-reported"	EFO:0009800	cancer	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+4PD9qU3Dt3	Number of self-reported non-cancer illnesses	EFO:0009801	"number of non-cancer illnesses, self-reported"	EFO:0009801	disease	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+L2zbwQVALV	"Number of operations, self-reported"	EFO:0009802	"number of operations, self-reported"	EFO:0009802	medical prodecure	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+3hSApPoVxC	Number of treatments/medications taken	EFO:0009803	"number of treatments or medications taken, self-reported"	EFO:0009803	treatment	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+ekpqKjLK2N	Getting up in morning	EFO:0009817	"ease of getting up in the morning, self-reported"	EFO:0009817		Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+TzqkenRQrn	Nap during day	EFO:0009818	"nap during day, self-reported"	EFO:0009818	Need to sleep during day	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+sFkmPsw4Hp	Comparative body size at age 10	EFO:0009819	"comparative body size at age 10, self-reported"	EFO:0009819	body height	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+bqd5FHykeN	Father's age at death	EFO:0009712	father's age at death	EFO:0009712	age at death	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+DFLJEisAYJ	Suffer from 'nerves'	EFO:0003843	pain	NCIT:C74532	nervousness	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+7Fumeg9zno	"Seen doctor (GP) for nerves, anxiety, tension or depression"	EFO:0009820	"seeing a general practitioner for nerves, anxiety, tension or depression, self-reported"	EFO:0009820	mental or behavioural disorder	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+7VJHNuLbDj	"Seen a psychiatrist for nerves, anxiety, tension or depression"	EFO:0009821	"seeing a psychiatrist for nerves, anxiety, tension or depression, self-reported"	EFO:0009821	mental or behavioural disorder	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+pnWzohKbQQ	Relative age of first facial hair	EFO:0009716	age at first facial hair	EFO:0009716	puberty onset measurement	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+a2PXiu4ABg	Number of children fathered	EFO:0009814	number of children fathered measurement	EFO:0009814	number of children ever born measurement	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+sgCmYFC66Y	Age at first live birth	EFO:0009101	age at first birth measurement	EFO:0009101	age at first birth measurement	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+WsoTDfq3PU	Bilateral oophorectomy (both ovaries removed)	EFO:0009717	bilateral oophorectomy	EFO:0009717	bilateral oophorectomy	Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+Nv6DYuHUtv	Peak expiratory flow (PEF)	EFO:0009718	peak expiratory flow	EFO:0009718	peak expiratory flow	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+ntgHAiDEkH	Pace-maker	EFO:0009719	artificial cardiac pacemaker	EFO:0009719	cardiac pacemaker	Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+awAV7C4qry	Mother's age at death	EFO:0009721	mother's age at death	EFO:0009721	age at death	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+BhdpjvJ2KL	Number of stillbirths	EFO:0009722	number of stillbirths	EFO:0009722	?	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+vaYsSK7z9c	Age of primiparous women at birth of child	MONDO:0017014	interstitial lung disease specific to childhood	EFO:0009101	age at first birth measurement	Unrelated	FALSE	TRUE	FALSE	FALSE	FALSE										
+7u53YV3dSR	Pulse wave reflection index	EFO:0009804	pulse wave reflection index measurement	EFO:0009804	reflection wave amplitude	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+6LjmtM2crk	Work/job satisfaction	EFO:0009723	job satisfaction measurement	EFO:0009723	job satisfaction	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+MFZMipVRCk	Health satisfaction	EFO:0009724	health satisfaction measurement	EFO:0009724	satisfaction	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+L3YXwXv5nP	Friendships satisfaction	EFO:0009725	friendship satisfaction measurement	EFO:0009725	satisfaction	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+L5sS5cwfez	Financial situation satisfaction	EFO:0009726	financial situation satisfaction measurement	EFO:0009726	satisfied with current financial situation	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+Sw6RTqkqxo	Ever manic/hyper for 2 days	EFO:0007706	manic or hypomanic episode	EFO:0007705	manic episode measurement	Unrelated	FALSE	TRUE	FALSE	FALSE	FALSE										
+85PWK8qbD6	Ever highly irritable/argumentative for 2 days	HP:0000737	Irritability	EFO:0009594	irritability measurement	Unrelated	FALSE	TRUE	FALSE	FALSE	FALSE										
+eqUZy46bjw	Cochlear implant	EFO:0009728	cochlear implant	EFO:0009728	cochlear implants	Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+zxn5SfQKmr	Able to walk or cycle unaided for 10 minutes	EFO:0009822	"ability to walk or cycle unaided for 10 minutes, self-reported"	EFO:0009822	physical activity	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+YmXuv8GaWs	Target heart rate achieved	EFO:0009823	"achievement of target heart rate, self-reported"	EFO:0009823	heart rate	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+3wKn8L66fM	Sitting height	EFO:0011011	sitting height measurement	EFO:0007118	sitting height ratio	Unrelated	FALSE	TRUE	FALSE	FALSE	FALSE										
+bYPmfwDXx7	Cascot confidence score	EFO:0009815	CASCOT confidence score measurement	EFO:0009815	quantitative confidence value	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+FHunKEd27i	Bring up phlegm/sputum/mucus on most days	EFO:0009824	"bringing up phlegm, sputum or mucus on most days, self-reported"	EFO:0009824	?	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+a3DUo4zjVu	Whole body water mass	EFO:0009805	whole body water mass	EFO:0009805	body weight	Same	FALSE	TRUE	FALSE	FALSE	FALSE										
+Jf4euVvscL	Reported occurrences of cancer	MONDO:0004992	cancer	EFO:0000311	cancer	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+cgs7KQt6hz	oesophageal stricture	HP:0002043	Esophageal stricture	HP:0002043	esophageal stricture	Same	TRUE	FALSE	TRUE	FALSE	FALSE										
+5MEzNaKfR7	bladder problem (not cancer)	MONDO:0005411	gallbladder cancer	EFO:1000018	bladder disease	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+3pvceLzjih	prostate problem (not cancer)	MONDO:0008315	prostate cancer	EFO:0009602	prostate disease	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+hnz4ZvYhHx	testicular problems (not cancer)	EFO:0005088	testicular carcinoma	EFO:0009601	testicular disease	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+Gj58GgzkLL	thyroid problem (not cancer)	MONDO:0002108	thyroid cancer	EFO:1000627	thyroid disease	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+uz5iSfGUVF	thyroid radioablation therapy	EFO:0009600	thyroid radioablation therapy	EFO:0009600	thyroid radioablation therapy	Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+jQE95qUBDa	adrenocortical insufficiency/addison's disease	EFO:0009491	adrenocortical insufficiency	EFO:0009491	adrenocortical insufficiency	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+GNvBaAHbwi	neurological injury/trauma	EFO:0009490	nervous system injury	EFO:0009490	nervous system injury	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Whzt6yhb6C	cranial nerve problem/palsy	EFO:0009489	cranial nerve palsy	EFO:0009489	cranial nerve palsy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+eUp9obUoUx	spinal cord disorder	EFO:0009488	spinal cord disease	EFO:0009488	spinal cord disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+AU4NLa4ZMA	peripheral nerve disorder	EFO:0009387	peripheral nervous system disease	EFO:0009387	peripheral nervous system disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+jmTtuKa3aE	trapped nerve/compressed nerve	EFO:0009487	nerve compression syndrome	EFO:0009487	nerve compression syndrome	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+jG9qZ7Svxf	diabetic eye disease	EFO:0009486	diabetic eye disease	EFO:0009486	diabetic eye disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+VS8a9Yuc4e	eye trauma	EFO:0000546	injury	EFO:0009485	eye injury	More General	FALSE	FALSE	FALSE	FALSE	FALSE										
+ugzQDJVfQY	back problem	EFO:0009477	vertebral joint disease	HP:0003418	back pain	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+odXDBiDihZ	uterine polyps	EFO:0009484	uterine polyp	EFO:0009484	uterine polyp	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+FRx6VsvaeL	allergy or anaphylactic reaction to drug	EFO:0009482	drug allergy	EFO:0009482	drug allergy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+uUZRjY5h6P	enlarged prostate	EFO:0000284	benign prostatic hyperplasia	EFO:0000284	benign prostatic hyperplasia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+WWXaBEwBHb	burns	EFO:1001788	Eye Burns	EFO:0009516	burn	More Specific	FALSE	FALSE	FALSE	FALSE	FALSE										
+tjuYvPBFMc	nasal/sinus disorder	EFO:0009481	paranasal sinus disease	EFO:0009481	paranasal sinus disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+4C7LvWZLBm	throat or larynx disorder	EFO:0009479	throat disease	EFO:0009479	throat disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+SjMT63V7NA	vocal cord polyp	EFO:0009478	vocal cord polyp	EFO:0009478	vocal cord polyp	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+s6vSLCEbc5	other neurological problem	EFO:0000618	nervous system disease	EFO:0000618	nervous system disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ncPn46k9dG	clotting disorder/excessive bleeding	EFO:0009314	blood coagulation disease	EFO:0009314	blood coagulation disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Ps5dJ4JQrQ	disc problem	EFO:0009477	vertebral joint disease	EFO:0009477	vertebral joint disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+XvQE7inXqj	cervical polyps	EFO:0009475	cervical polyp	EFO:0009475	cervical polyp	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+qJ9WGSbbDA	abnormal smear (cervix)	EFO:0009511	abnormal PAP smear	EFO:0009511	abnormal PAP smear	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+3HmxgVn3Pf	benign breast lump	HP:0032408	Breast mass	EFO:0003014	breast fibrocystic disease	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+EbPnX3dZJD	Volume_depletion	EFO:0001715	volume	HP0011106	?	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+wscnxxtuuU	Perineal_laceration_during_delivery	EFO:0009816	perineal laceration during delivery	EFO:0009816	first degree perineal laceration	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+DGucEAmpFB	Intrauterine_hypoxia	EFO:1001793	fetal hypoxia	EFO:1001793	hypoxia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+PzMtSu9HTq	Abnormal_serum_enzyme_levels	EFO:0009826	abnormality of serum enzyme levels	EFO:0009826	liver enzyme measurement	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+pBunWrGnrn	Injury_of_other_intrathoracic_organs	EFO:0009887	intrathoracic organ injury	EFO:0009887	injury	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+LxWxcGP6GU	Other_fluke_infections	EFO:0007418	paragonimiasis	EFO:1001342	infectious disease	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+AbHTBrFWrQ	Hereditary_ataxia	EFO:0009671	hereditary ataxia	EFO:0009671	hereditary ataxia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+yS7DD4T2f2	Mycetoma	EFO:0007265	eumycotic mycetoma	EFO:0007265	eumycotic mycetoma	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+xiyLTkW8BM	Viral_warts	EFO:0007147	anogenital venereal wart	EFO:0009662	warts	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+cDDcXRqE5C	Convalescence	EFO:0009630	convalescence	EFO:0009630	caonvalescence	Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+d8KGQrCJRc	Other_disorders_of_nervous_system	EFO:0000618	nervous system disease	EFO:0000618	nervous system disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+fZMg7MXPPm	Hypertensive_renal_disease	MONDO:0024633	hypertensive nephropathy	EFO:1002039	renal hypertension	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+adXLCRmnnb	Headache	HP:0002315	Headache	HP:0002315	Headache	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+rJ3RgsRZrR	Fever of unknown origin	EFO:0003952	fever of unknown origin	EFO:0003952	fever of unknown origin	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+Ppgqgjda9P	Dysphagia	HP:0002015	Dysphagia	HP:0002015	Dysphagia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+gvqYFjWBHF	Cough	HP:0012735	Cough	HP:0012735	Cough	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+vQbT3wkFa2	Other arthritis	EFO:0005856	arthritis	EFO:0005856	arthritis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+4qZxVPb8n6	Systemic lupus erythematosus	MONDO:0007915	systemic lupus erythematosus	EFO:0002690	systemic lupus erythematosus	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+7Vgg4GXJyH	Systemic sclerosis	EFO:0000717	systemic scleroderma	EFO:0000717	systemic scleroderma	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+sgF97pm8tU	Psoriasis	EFO:0000676	psoriasis	EFO:0000676	psoriasis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+cE7HxX85mj	Other disorders of pigmentation	EFO:1000755	pigmentation disease	EFO:1000755	pigmentation disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+BK9rm8NvN3	"Ulcer of lower limb, not elsewhere classified"	EFO:0007068	ulcer of lower limb	EFO:0007068	ulcer of lower limb	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+4vpWfTTYLe	Dyspepsia	EFO:0008533	dyspepsia	EFO:0008533	dyspepsia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+YrrdemByQY	Inguinal hernia	HP:0000023	Inguinal hernia	HP:0000023	inguinal hernia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+XMEcRBAncb	"Bacterial pneumonia, not elsewhere classified"	EFO:1001272	bacterial pneumonia	EFO:1001272	bacterial pneumonia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+LRsQFSxHXL	"Pneumonia, organism unspecified"	EFO:0007183	bronchiolitis obliterans	EFO:0003106	pneumonia	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+4hER3Q5YxJ	Nasal polyp	EFO:1000391	Nasal Cavity Polyp	EFO:1000391	nasal cavity polyp	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+avwMdZL2xY	Peritonsillar abscess	EFO:0007429	peritonsillar abscess	EFO:0007429	peritonsillar abscess	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+yB7u2PK6zZ	Emphysema	EFO:0000464	emphysema	EFO:0000464	emphysema	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+PB3aGTiYYM	Other chronic obstructive pulmonary disease	EFO:0000341	chronic obstructive pulmonary disease	EFO:0000341	chronic obstructive pulmonary disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+B2EFspHRJj	Asthma	MONDO:0004979	asthma	EFO:0000270	asthma	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+JHF92Q465E	Bronchiectasis	HP:0002110	Bronchiectasis	HP:0002110	Bronchiectasis	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+kdrvCu9yJ8	Other interstitial pulmonary diseases	HP:0006530	Abnormal pulmonary interstitial morphology	EFO:0004244	interstitial lung disease	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+wn3tmpf96F	Other respiratory disorders	EFO:0000684	respiratory system disease	EFO:0000684	respiratory system disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+DsSp2W8pdq	Bipolar affective disorder	MONDO:0004985	bipolar disorder	EFO:0000289	bipolar disorder	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+qGmLbBLWms	"Sexual dysfunction, not caused by organic disorder or disease"	EFO:0004714	sexual dysfunction	EFO:0004714	sexual dysfunction	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+o8dr3NCFzD	Other hypothyroidism	EFO:0004705	hypothyroidism	EFO:0004705	hypothyroidism	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Pjqea2CsJJ	Melanoma in situ	EFO:0000756	melanoma	EFO:0004957	Clark level I melanoma	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+psdYpdziXr	Benign neoplasm of ovary	EFO:1000116	Benign Ovarian Neoplasm	EFO:1000116	benign ovarian neoplasm	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+TENEk85mdH	Benign neoplasm of thyroid gland	EFO:1000122	Benign Thyroid Gland Neoplasm	EFO:1000122	benign thyroid gland neoplasm	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+D6x2JkSFMh	Polycythaemia vera	EFO:0002429	polycythemia vera	EFO:0002429	Polycythaemia vera	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+gr4wDqk2kE	Myelodysplastic syndromes	EFO:0000198	myelodysplastic syndrome	EFO:0000198	myelodysplastic syndrome	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+mS77wrVdKa	Malignant neoplasm of colon	MONDO:0021063	malignant colon neoplasm	EFO:1001950	colon carcinoma	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+X5y7nhDFwY	Malignant neoplasm of larynx	EFO:1000354	Malignant Laryngeal Neoplasm	EFO:1000354	Malignant Laryngeal Neoplasm	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Df6EdBWPd3	Mesothelioma	EFO:0000588	mesothelioma	EFO:0000588	mesothelioma	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ezHCNeDFo9	Hodgkin's disease	EFO:0000183	Hodgkins lymphoma	EFO:0000183	Hodgkins lymphoma	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+enSWpttkhd	Lymphoid leukaemia	EFO:0000220	acute lymphoblastic leukemia	EFO:0004289	lymphoid leukemia	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+cTwL2MezZK	Myeloid leukaemia	MONDO:0004643	myeloid leukemia	EFO:0000222	acute myeloid leukemia	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+CK27pzEiBd	Other disorders of bladder	EFO:1000018	bladder disease	EFO:1000018	bladder disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+NWLBY9WnZG	Other inflammation of vagina and vulva	MONDO:0002234	vaginitis	EFO:0005757	vaginal inflammation	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+rh9oHfdTeL	Other rheumatoid arthritis	EFO:0000685	rheumatoid arthritis	EFO:0000685	rheumatoid arthritis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+HC6wiyyZWL	"Other joint disorders, not elsewhere classified"	EFO:1000999	joint disease	EFO:1000999	joint disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+HHDHryauYr	"Other disorders of skin and subcutaneous tissue, not elsewhere classified"	EFO:0000701	skin disease	EFO:0000701	skin disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+oHcjmggx84	Other aneurysm	EFO:0009659	aneurysm	EFO:0009659	aneurysm	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+VeX3EHNBjc	Other hearing loss	EFO:0004238	hearing loss	EFO:0004238	hearing loss	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Jdtp4fzuk4	Acute and transient psychotic disorders	EFO:0000677	mental or behavioural disorder	EFO:0005940	General psycotic symptoms term	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+W6dLEBAXCG	Other anxiety disorders	EFO:0006788	anxiety disorder	EFO:0006788	General anxiety disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+U4ftcEVvaT	Other disorders of thyroid	EFO:1000627	thyroid disease	EFO:1000627	General throid disorder term	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Z4ihRWFtZf	Neoplasm of uncertain or unknown behaviour of female genital organs	EFO:1001331	"Genital neoplasm, female"	EFO:1001331	"Genital neoplasm, female"	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Yd2SXatBfU	Neoplasm of uncertain or unknown behaviour of endocrine glands	EFO:0003769	endocrine neoplasm	EFO:0003769	endocrine neoplasm	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+YxXevKvJ6X	Malignant neoplasm of tonsil	EFO:1001214	tonsil cancer	EFO:1001214	tonsil cancer	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+S5A9LA5nJc	Malignant neoplasm of rectum	EFO:1000657	rectum cancer	EFO:1000657	rectum cancer	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+jVB3aY8qku	Malignant melanoma of skin	EFO:0000389	cutaneous melanoma	EFO:0000389	cutaneous melanoma	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+tbSSQLrnik	Other septicaemia	EFO:1001091	Pasteurella hemorrhagic septicemia	HP:0100806	sepsis	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+mTCVme35id	Family history of malignant neoplasm	EFO:0009640	family history of cancer	EFO:0009640	"There is only family history of breast or lung cancer, could use a parent term like family history of cancer?"	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+MDjXHEoVB9	Abnormal findings on diagnostic imaging of other body structures	EFO:0009827	abnormal result of diagnostic imaging	EFO:0009827	abnormal finding	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+M5xihyNUmh	Symptoms and signs concerning food and fluid intake	EFO:0009825	sign or symptom concerning food and fluid intake	EFO:0009825	sign or symptom	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+3csJmDKFrU	Pregnancy examination and test	EFO:0009643	pregnancy test	EFO:0009643	pregnancy test	Same	FALSE	FALSE	FALSE	FALSE	TRUE										
+bchxEmuNh8	"Adverse effects, not elsewhere classified"	EFO:0009658	adverse effect	EFO:0009658	No general adverse effects term	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+y7CNRveEkF	Injury of unspecified body region	EFO:0000546	injury	EFO:0000546	injury	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+8cucpZzftJ	"Dislocation, sprain and strain of joints and ligaments at neck level"	HP:0001373	Joint dislocation	EFO:0009476	neck injury	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+7F46v7dHqG	Other general symptoms and signs	EFO:0003765	sign or symptom	EFO:0003765	sign or symptom	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+7gz37VUVuj	"Oedema, not elsewhere classified"	EFO:0009373	edema	EFO:0009373	edema	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+uFs98kY4RZ	Syncope and collapse	HP:0001279	Syncope	HP:0001279	syncope	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+ibwJDJbHcP	Malaise and fatigue	HP:0012378	Fatigue	HP:0012378 | EFO:0009641	fatigue||malaise	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+vWVgJUhJuP	Voice disturbances	HP:0001288	Gait disturbance	EFO:0009692	voice disturbance	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+e4TScFwPFZ	Other symptoms and signs involving the urinary system	EFO:0003765	sign or symptom	HP:0000079	abnormality of the urinary system	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+G4zYXjWibs	Other skin changes	HP:0000712	Emotional lability	HP:0000951	abnormality of the skin	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+UTTC8PaeQh	Flatulence and related conditions	EFO:0009669	flatulence	EFO:0009669	flatulence	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+GrMSZVyw7L	Ectopic pregnancy	HP:0031456	Ectopic pregnancy	HP:0031456	ectopic pregnancy	Same	FALSE	FALSE	FALSE	FALSE	FALSE										
+P9w7Qjqghu	Other disorders of amniotic fluid and membranes	EFO:1001263	amniotic fluid embolism	HP:0001560	abnormality of the amniotic fluid	Unrelated	FALSE	FALSE	TRUE	FALSE	FALSE										
+AfCbGzpMHf	"Antepartum haemorrhage, not elsewhere classified"	HP:0025328	Antepartum hemorrhage	HP:0025328	antepartum hemorrhage	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+EQJpavVXH5	False labour	EFO:0009639	Braxton-Hicks contractions	EFO:0009639	Braxton-Hicks contraction	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+t3u7NWtfap	Prolonged pregnancy	EFO:0009681	post term pregnancy	EFO:0009681	post term pregnancy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+zzdaGNCCg2	Single spontaneous delivery	EFO:0004018	spontaneous mutation	EFO:0009638	spontaneous labor and birth	Unrelated	FALSE	FALSE	FALSE	FALSE	TRUE										
+iXJgAz3rKi	"Complications of the puerperium, not elsewhere classified"	EFO:0009683	puerperal disorder	EFO:0009683	puerperal disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+urvmA6Fvm8	"Other maternal diseases classifiable elsewhere but complicating pregnancy, childbirth and the puerperium"	EFO:0009682	pregnancy disorder	EFO:0009682	pregnancy disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+uRZDR5zenK	Calculus of lower urinary tract	MONDO:0004828	lower urinary tract calculus	EFO:1001228	ureterolithiasis	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+i3EmFEozej	"Neuromuscular dysfunction of bladder, not elsewhere classified"	MONDO:0020124	neuromuscular junction disease	HP:0000011	neurogenic bladder	Unrelated	TRUE	FALSE	TRUE	FALSE	FALSE										
+WdMm96EJm7	Other disorders of urethra	EFO:0009689	urethral disease	EFO:0009689	urethral disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+sXTRiWUkTn	Other disorders of urinary system	EFO:0009690	urinary system disease	EFO:0009690	urinary system disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+agXD3hFLsz	Hyperplasia of prostate	EFO:0000284	benign prostatic hyperplasia	EFO:0000284	benign prostatic hyperplasia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+EpCCJt2oob	Other disorders of prostate	EFO:0009602	prostate disease	EFO:0009602	prostate disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+qWyqegWfML	Other disorders of breast	EFO:0009483	breast disease	EFO:0009483	breast disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+tpdLHMcM5L	Erosion and ectropion of cervix uteri	EFO:1000862	cervix erosion	EFO:1000862	cervix erosion	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+x5MPjRM9RA	Other abnormal uterine and vaginal bleeding	HP:0100608	Metrorrhagia	HP:0100608	metrorrhagia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+ALQRBpcRF8	Other arthrosis	EFO:1001344	Hemarthrosis	EFO:0002506	osteoarthritis	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+vLfWzc5YtD	Other acquired deformities of limbs	MONDO:0017427	congenital deformities of limbs	ORDO:294944	congenital deformities of limbs	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+sJgXpGXr66	Disorders of patella	EFO:0009665	disorder of patella	EFO:0009665	abnormality of the patella	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+LKYwaKmqyo	Other disorders of muscle	EFO:0002970	muscular disease	EFO:0002970	muscular disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ZQDKtHQsdW	Other disorders of synovium and tendon	MONDO:0056799	synovium disorder	EFO:1001435	tenosynovitis	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+d6m4UKVqTQ	Other enthesopathies	EFO:0009666	enthesopathy	EFO:0009666	enthesopathy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+3BtdafbToQ	"Other soft tissue disorders, not elsewhere classified"	EFO:0009470	soft tissue disease	EFO:0009470	soft tissue disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+n4KUUnxTvQ	Other disorders of bone	EFO:0004260	bone disease	EFO:0004260	bone disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+afzCXwTCpN	Other disorders of cartilage	EFO:0005802	cartilage disease	EFO:0005802	cartilage disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+hZsvdbf4Ni	Other acquired deformities of musculoskeletal system and connective tissue	EFO:0009676	musculoskeletal system disease	EFO:0009676 | EFO:1001986	musculoskeletal system disease | connective tissue disease	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+qyFCEjeC2V	Other epidermal thickening	HP:0011368	Epidermal thickening	HP:0011368	epidermal thickening	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+JBr3EwntHz	Embedded and impacted teeth	HP:0011079	Impacted tooth	HP:0011079	impacted tooth	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+EZSoU3oUY6	Other disorders of teeth and supporting structures	MONDO:0002635	periodontal disorder	EFO:1001216	tooth disease	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+exCwtevK5H	Stomatitis and related lesions	EFO:0009688	stomatitis	EFO:0009688	stomatitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+dbGGfCctQx	Other diseases of anus and rectum	EFO:0009685	rectal disease	EFO:0009660 | EFO:0009685	anus disease||rectal disease	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+fmYCLyUBrf	Other diseases of pancreas	EFO:0009605	pancreas disease	EFO:0009605	pancreas disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+fRkYhuZhgZ	Other diseases of digestive system	EFO:0000405	digestive system disease	EFO:0000405	digestive system disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+ZZT9i9zCP6	Acute pharyngitis	EFO:0009657	acute pharyngitis	EFO:0009657	pharyngitis	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+WF6vxLtJ4G	"Diseases of vocal cords and larynx, not elsewhere classified"	EFO:0009673	laryngeal disease	EFO:0009673	laryngeal disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+AwarDsNuYN	"Bronchitis, not specified as acute or chronic"	EFO:0006505	chronic bronchitis	EFO:0009661	bronchitis	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+r5k9MMfXK2	Pyothorax	EFO:0009680	pleural empyema	EFO:0009680	pleural empyema	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+fetyLtFSCa	"Pleural effusion, not elsewhere classified"	EFO:0009637	pleural effusion	EFO:0009637	pleural effusion	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+TCioyx3Gza	"Respiratory failure, not elsewhere classified"	EFO:0009686	respiratory failure	EFO:0009686	respiratory failure	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+hShgo8VTpB	Other diseases of pericardium	MONDO:0000474	pericardium disorder	EFO:0007427	pericarditis	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+7L7skDWmkL	Other conduction disorders	EFO:0004216	conduct disorder	EFO:0005137	conduction system disease	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+M7yaNYawB5	Other cardiac arrhythmias	EFO:0004269	cardiac arrhythmia	EFO:0004269	cardiac arrythmia	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+PUBkoAFNKS	"Occlusion and stenosis of precerebral arteries, not resulting in cerebral infarction"	EFO:0009677	occlusion precerebral artery	EFO:0009677	occlusion precerebral artery	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+yF6T92Gmmy	Other venous embolism and thrombosis	HP:0004936	Venous thrombosis	EFO:0004286	venous thromboembolism	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+43Q33veVGn	Other non-infective disorders of lymphatic vessels and lymph nodes	EFO:0007352	lymphatic system disease	EFO:0007352	lymphatic system disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+M9aYiiu5ZX	Other disorders of eyelid	EFO:0009547	eyelid disease	EFO:0009547	eyelid disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+RHfqFZMHYe	Disorders of orbit	MONDO:0024611	orbit neoplasm	EFO:0009664	disease of orbital region	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+TjpTbEKyaB	Other disorders of conjunctiva	EFO:1000203	Conjunctival Disorder	EFO:1000203	conjunctival disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+VwGFNQJ9vV	Other disorders of lens	EFO:0009674	lens disease	EFO:0009674	lens disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+KALzegwyZm	Paralytic strabismus	EFO:0009678	paralytic strabismus	EFO:0009678	paralytic strabismus	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+yrzKPM5ugK	Other strabismus	HP:0000486	Strabismus	HP:0000486	strabismus	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+tE8nCc8tYE	Other disorders of eye and adnexa	EFO:0009546	eye adnexa disease	EFO:0009546	eye adnexa disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+VwroC6c2CA	Other disorders of external ear	EFO:0009668	external ear disease	EFO:0009668	external ear disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+WXSownL8mb	Other disorders of Eustachian tube	EFO:0009667	eustachian tube disease	EFO:0009667	eustachian tube disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+TnQXh3mVsr	Disorders of vestibular function	EFO:0009691	vestibular disease	EFO:0009691	vestibular disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+bHGpoH69Zj	Other diseases of inner ear	EFO:0009672	inner ear disease	EFO:0009672	inner ear disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+Z7tL4sZTL4	Otalgia and effusion of ear	HP:0030766	Ear pain	HP:0030766 | EFO:0007415	ear pain||otitis media with effusion	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+8qcTkHh5SJ	"Other disorders of ear, not elsewhere classified"	MONDO:0021205	disorder of ear	EFO:1001455	auditory system disease	Unrelated	TRUE	FALSE	FALSE	FALSE	FALSE										
+wUzRbPYJ4u	Other mononeuropathies	EFO:0009558	mononeuropathy	EFO:0009558	mononeuropathy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+jmjbAunezS	Other polyneuropathies	EFO:0009562	polyneuropathy	EFO:0009562	polyneuropathy	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+vAAQKaojga	Paraplegia and tetraplegia	EFO:0009684	quadriplegia	EFO:0009679 | EFO:0009684	paraplegia	Unrelated	FALSE	FALSE	FALSE	FALSE	FALSE										
+FfXTqDCrCo	Other disorders of brain	EFO:0005774	brain disease	EFO:0005774	brain disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+nFQukTvA8P	Other diseases of spinal cord	EFO:0009488	spinal cord disease	EFO:0009488	spinal cord disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+duTEC9eEGv	Somatoform disorders	EFO:0009687	somatoform disorder	EFO:0009687	somatoform disorder	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+PdHXyp2eWJ	Thyrotoxicosis [hyperthyroidism]	EFO:0009190	Thyrotoxicosis	EFO:0009189	hyperthyroidism	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+FWLAAhVPJy	"Other disorders of fluid, electrolyte and acid-base balance"	HP:0003111	Abnormal blood ion concentration	HP:0001939	abnormality of metabolism/homeostasis	More Specific	FALSE	FALSE	TRUE	FALSE	FALSE										
+PCX2PvMZKz	Benign lipomatous neoplasm	MONDO:0044983	benign lipomatous neoplasm	EFO:0000759	lipoma	More General	TRUE	FALSE	FALSE	FALSE	FALSE										
+EKHob7TX3L	Melanocytic naevi	MONDO:0044792	large congenital melanocytic nevus	EFO:0009675	Melanocytic nevus	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+kTNQbJEqs6	Benign neoplasm of other and unspecified endocrine glands	MONDO:0000627	benign endocrine neoplasm	EFO:0003769	endocrine neoplasm	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+VLsn248a3e	Benign neoplasm of other and unspecified sites	EFO:0002422	benign neoplasm	EFO:0002422	benign neoplasm	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+LKN9PNj5hk	Neoplasm of uncertain or unknown behaviour of oral cavity and digestive organs	EFO:0003868	mouth neoplasm	EFO:0008549	digestive system neoplasm	More Specific	TRUE	FALSE	FALSE	FALSE	FALSE										
+2hGjSA6zBV	Other aplastic anaemias	HP:0001915	Aplastic anemia	HP:0001915	aplastic anemia	Same	FALSE	FALSE	TRUE	FALSE	FALSE										
+KojCh4MojB	Other diseases of blood and blood-forming organs	EFO:0005803	hematologic disease	EFO:0005803	hematologic disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+VNWsKFi85c	"Other disorders involving the immune mechanism, not elsewhere classified"	EFO:0000540	immune system disease	EFO:0000540	immune system disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
+uSazyQ9GEW	Other and unspecified types of non-Hodgkin's lymphoma	EFO:0000183	Hodgkins lymphoma	EFO:0005952	non-Hodgkins lymphoma	Sibling	TRUE	FALSE	FALSE	FALSE	FALSE										
+gk2UTFmARk	Other disorders of adrenal gland	EFO:0005539	adrenal gland disease	EFO:0005539	adrenal gland disease	Same	TRUE	FALSE	FALSE	FALSE	FALSE										
