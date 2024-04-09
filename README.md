@@ -13,7 +13,7 @@ The inputs for the comparison are:
 
 #### Benchmark mappings
 - `data/gwascatalog_metadata.tsv`: the GWAS Catalog metadata table, downloaded on 2024-02-06 ([URL](https://www.ebi.ac.uk/gwas/docs/file-downloads)).
-- `data/UK_Biobank_master_file.tsv`: mappings of UK Biobank traits to EFO, downloaded on 2024-03-14 ([URL](https://github.com/EBISPOT/EFO-UKB-mappings)).
+- `data/UK_Biobank_master_file.tsv`: UK Biobank phenotype mappings, downloaded on 2024-03-14 ([URL](https://github.com/EBISPOT/EFO-UKB-mappings)).
 - `data/biomappings.tsv`: Biomappings table, downloaded on 2024-04-08 ([URL](https://github.com/biopragmatics/biomappings)).
 
 #### Target ontology
