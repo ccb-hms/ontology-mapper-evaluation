@@ -7,7 +7,7 @@ import text2term
 from text2term import Mapper, onto_utils
 from tqdm import tqdm
 
-__version__ = "0.5.1"
+__version__ = "0.6.0"
 
 # URL to EFO ontology version used
 EFO_URL = "http://www.ebi.ac.uk/efo/releases/v3.62.0/efo.owl"
@@ -28,24 +28,45 @@ MAPPING_TYPES = dict()
 LOG = onto_utils.get_logger("mapping.comparator", logging.INFO)
 
 
+def compare(benchmark_dataset, benchmark_dataset_name, benchmark_mappings, source_term_col, source_term_id_col):
+    # Compute text2term mappings from scratch or load mappings from file if they exist in the output folder
+    t2t_mappings_file = os.path.join(OUTPUT_FOLDER, f"{benchmark_dataset_name}_t2t_mappings.csv")
+    if os.path.exists(t2t_mappings_file):
+        LOG.info(f"Loading text2term mappings from file ({t2t_mappings_file})...")
+        text2term_mappings = pd.read_csv(t2t_mappings_file, skiprows=11, low_memory=False)
+    else:
+        text2term_mappings = compute_text2term_mappings(metadata_df=benchmark_dataset,
+                                                        dataset_name=benchmark_dataset_name,
+                                                        source_term_col=source_term_col,
+                                                        source_term_id_col=source_term_id_col)
+    start = time.time()
+    LOG.info("Comparing mappings...")
+    results_df = compare_mappings(t2t_mappings=text2term_mappings, benchmark_mappings=benchmark_mappings,
+                                  edges_df=efo_edges_df, entailed_edges_df=efo_entailed_edges_df)
+    output_file = os.path.join(OUTPUT_FOLDER, f"{benchmark_dataset_name}_results.tsv")
+    results_df.to_csv(output_file, sep="\t", index=False)
+    LOG.info(
+        f"...done (comparison time: {format(time.time() - start, '.2f')} seconds. Saved results to: {output_file})")
+
+
 def compute_text2term_mappings(metadata_df, dataset_name, source_term_col, source_term_id_col):
     source_terms = metadata_df[source_term_col].tolist()
     source_term_ids = metadata_df[source_term_id_col].tolist()
     return text2term.map_terms(source_terms=source_terms, source_terms_ids=source_term_ids,
                                target_ontology=EFO_URL, excl_deprecated=True, save_graphs=False,
                                max_mappings=1, min_score=0.0, save_mappings=True, mapper=Mapper.TFIDF,
-                               output_file=os.path.join(OUTPUT_FOLDER, f"mappings_t2t_{dataset_name}.csv"),
+                               output_file=os.path.join(OUTPUT_FOLDER, f"{dataset_name}_t2t_mappings.csv"),
                                base_iris=("http://www.ebi.ac.uk/efo/", "http://purl.obolibrary.org/obo/MONDO",
                                           "http://purl.obolibrary.org/obo/HP", "http://www.orpha.net/ORDO",
                                           "http://purl.obolibrary.org/obo/DOID"))
 
 
-def extract_mappings(metadata_df, entailed_edges_df, dataset_name, study_id_col, trait_col, mapped_trait_col,
-                     mapped_trait_iri_col):
+def extract_mappings(dataset, dataset_name, entailed_edges_df, source_term_col, source_term_id_col,
+                     mapped_term_col, mapped_term_iri_col):
     LOG.info(f"Extracting ontology mappings from {dataset_name}...")
     mappings_list = []
-    for _, row in metadata_df.iterrows():
-        mapped_trait_uri = row[mapped_trait_iri_col]
+    for _, row in dataset.iterrows():
+        mapped_trait_uri = row[mapped_term_iri_col]
         if mapped_trait_uri != "" and not pd.isna(mapped_trait_uri):
             if "," in mapped_trait_uri:
                 iris_list = mapped_trait_uri.split(',')
@@ -68,13 +89,13 @@ def extract_mappings(metadata_df, entailed_edges_df, dataset_name, study_id_col,
                                              "IS_PHENOTYPE": is_phenotype,
                                              "IS_AMOUNT": is_amount,
                                              "IS_PROCESS": is_process}
-                if study_id_col is None:
+                if source_term_id_col is None:
                     study_id = onto_utils.generate_uuid()
                 else:
-                    study_id = row[study_id_col]
+                    study_id = row[source_term_id_col]
                 mapping = {T2T_INPUT_TERM_ID_COL: study_id,
-                           T2T_INPUT_TERM_COL: row[trait_col],
-                           T2T_MAPPED_TERM_COL: row[mapped_trait_col],
+                           T2T_INPUT_TERM_COL: row[source_term_col],
+                           T2T_MAPPED_TERM_COL: row[mapped_term_col],
                            T2T_MAPPED_TERM_IRI_COL: iri,
                            T2T_MAPPED_TERM_CURIE_COL: term_curie,
                            "IS_DISEASE": is_disease,
@@ -83,7 +104,7 @@ def extract_mappings(metadata_df, entailed_edges_df, dataset_name, study_id_col,
                            "IS_AMOUNT": is_amount,
                            "IS_PROCESS": is_process}
                 mappings_list.append(mapping)
-    output_mappings_file = os.path.join(OUTPUT_FOLDER, f"mappings_{dataset_name}.tsv")
+    output_mappings_file = os.path.join(OUTPUT_FOLDER, f"{dataset_name}_mappings.tsv")
     mappings_df = pd.DataFrame(mappings_list)
     mappings_df.to_csv(output_mappings_file, sep="\t", index=False)
     LOG.info(f"...done (saved to {output_mappings_file})")
@@ -176,10 +197,8 @@ def compare_mappings(t2t_mappings, benchmark_mappings, edges_df, entailed_edges_
             if not isinstance(benchmark_trait_label, str):
                 try:
                     benchmark_trait_label = benchmark_trait_label[0]
-                except TypeError as e:
-                    LOG.error(benchmark_trait_label)
-                    LOG.error(e)
-                finally:
+                except TypeError:
+                    LOG.error(f"There is no label for benchmark trait {benchmark_trait}.")
                     benchmark_trait_label = ""
             if t2t_trait in benchmark_traits:
                 data.append([query, input_trait, t2t_trait, t2t_trait_label, benchmark_trait, benchmark_trait_label,
@@ -222,13 +241,13 @@ def get_gwascatalog_metadata(dataset_name):
         ~gwascatalog_metadata[mapped_trait_curie_column].astype(str).str.contains(',')]
     LOG.info(f"...metadata contains {gwascatalog_metadata.shape[0]} traits")
 
-    benchmark_mappings = extract_mappings(metadata_df=gwascatalog_metadata,
-                                          entailed_edges_df=efo_entailed_edges_df,
+    benchmark_mappings = extract_mappings(dataset=gwascatalog_metadata,
                                           dataset_name=dataset_name,
-                                          trait_col=trait_column,
-                                          study_id_col=study_id_column,
-                                          mapped_trait_col=mapped_trait_column,
-                                          mapped_trait_iri_col=mapped_trait_iri_column)
+                                          entailed_edges_df=efo_entailed_edges_df,
+                                          source_term_col=trait_column,
+                                          source_term_id_col=study_id_column,
+                                          mapped_term_col=mapped_trait_column,
+                                          mapped_term_iri_col=mapped_trait_iri_column)
     return gwascatalog_metadata, benchmark_mappings
 
 
@@ -248,13 +267,13 @@ def get_efo_ukbb_mappings(dataset_name):
     ukbbefo_table["ID"] = [onto_utils.generate_uuid() for _ in range(len(ukbbefo_table))]
     ukbbefo_table['MAPPED_TERM_URI'] = ukbbefo_table['MAPPED_TERM_URI'].apply(_fix_curie)
 
-    benchmark_mappings = extract_mappings(metadata_df=ukbbefo_table,
-                                          entailed_edges_df=efo_entailed_edges_df,
+    benchmark_mappings = extract_mappings(dataset=ukbbefo_table,
                                           dataset_name=dataset_name,
-                                          trait_col="ZOOMA QUERY",
-                                          study_id_col="ID",
-                                          mapped_trait_col="MAPPED_TERM_LABEL",
-                                          mapped_trait_iri_col="MAPPED_TERM_URI")
+                                          entailed_edges_df=efo_entailed_edges_df,
+                                          source_term_col="ZOOMA QUERY",
+                                          source_term_id_col="ID",
+                                          mapped_term_col="MAPPED_TERM_LABEL",
+                                          mapped_term_iri_col="MAPPED_TERM_URI")
     return ukbbefo_table, benchmark_mappings
 
 
@@ -277,23 +296,20 @@ def get_biomappings(dataset_name, source_ontology="", target_ontology=""):
     biomappings_table["target IRI"] = biomappings_table.apply(
         lambda row: _get_iri(target_ontology=row["target prefix"], target_identifier=row["target identifier"]), axis=1)
 
-    benchmark_mappings = extract_mappings(metadata_df=biomappings_table,
-                                          entailed_edges_df=efo_entailed_edges_df,
+    benchmark_mappings = extract_mappings(dataset=biomappings_table,
                                           dataset_name=dataset_name,
-                                          trait_col="source name",
-                                          study_id_col="source identifier",
-                                          mapped_trait_col="target name",
-                                          mapped_trait_iri_col="target IRI")
+                                          entailed_edges_df=efo_entailed_edges_df,
+                                          source_term_col="source name",
+                                          source_term_id_col="source identifier",
+                                          mapped_term_col="target name",
+                                          mapped_term_iri_col="target IRI")
     return biomappings_table, benchmark_mappings
 
 
 if __name__ == '__main__':
-    benchmark_dataset_1 = "GWASCatalog"
-    benchmark_dataset_2 = "UKBB-EFO"
-    benchmark_dataset_3 = "Biomappings"
-
-    # Specify which benchmark dataset to compare text2term mappings against
-    compare_t2t_to = benchmark_dataset_3
+    gc = "GWASCatalog"
+    ub = "UKBB-EFO"
+    bm = "Biomappings"
 
     # Create output directory if it does not exist
     if not os.path.exists(OUTPUT_FOLDER):
@@ -305,39 +321,17 @@ if __name__ == '__main__':
     # Load the EFO ontology table containing all entailed SubClassOf relationships between terms in EFO
     efo_entailed_edges_df = pd.read_csv(os.path.join("data", "efo_entailed_edges.tsv"), sep="\t")
 
-    if compare_t2t_to == benchmark_dataset_1:
-        metadata, mappings = get_gwascatalog_metadata(benchmark_dataset_1)
-    elif compare_t2t_to == benchmark_dataset_2:
-        metadata, mappings = get_efo_ukbb_mappings(benchmark_dataset_2)
-    else:
-        metadata, mappings = get_biomappings(benchmark_dataset_3, target_ontology="efo")
+    # Compare text2term mappings to the UK Biobank-EFO mapping set
+    efo_ukbb, efo_ukbb_mappings = get_efo_ukbb_mappings(ub)
+    compare(benchmark_dataset=efo_ukbb, benchmark_mappings=efo_ukbb_mappings, benchmark_dataset_name=ub,
+            source_term_col="ZOOMA QUERY", source_term_id_col="ID")
 
-    # Compute text2term mappings from scratch or load mappings from file if they exist in the OUTPUT_FOLDER
-    t2t_mappings_file = os.path.join(OUTPUT_FOLDER, f"mappings_t2t_{compare_t2t_to}.csv")
-    if os.path.exists(t2t_mappings_file):
-        LOG.info(f"Loading text2term mappings from file ({t2t_mappings_file})...")
-        text2term_mappings = pd.read_csv(t2t_mappings_file, skiprows=11, low_memory=False)
-    else:
-        if compare_t2t_to == benchmark_dataset_1:
-            text2term_mappings = compute_text2term_mappings(metadata_df=metadata,
-                                                            dataset_name=compare_t2t_to,
-                                                            source_term_col="DISEASE.TRAIT",
-                                                            source_term_id_col="STUDY.ACCESSION")
-        elif compare_t2t_to == benchmark_dataset_2:
-            text2term_mappings = compute_text2term_mappings(metadata_df=metadata,
-                                                            dataset_name=compare_t2t_to,
-                                                            source_term_col="ZOOMA QUERY",
-                                                            source_term_id_col="ID")
-        else:
-            text2term_mappings = compute_text2term_mappings(metadata_df=metadata,
-                                                            dataset_name=compare_t2t_to,
-                                                            source_term_col="source name",
-                                                            source_term_id_col="source identifier")
+    # Compare text2term mappings to the Biomappings set of EFO mappings
+    biomappings, biomappings_efo_mappings = get_biomappings(bm, target_ontology="efo")
+    compare(benchmark_dataset=biomappings, benchmark_mappings=biomappings_efo_mappings, benchmark_dataset_name=bm,
+            source_term_col="source name", source_term_id_col="source identifier")
 
-    start = time.time()
-    LOG.info("Comparing mappings...")
-    results_df = compare_mappings(t2t_mappings=text2term_mappings, benchmark_mappings=mappings,
-                                  edges_df=efo_edges_df, entailed_edges_df=efo_entailed_edges_df)
-    output_file = os.path.join(OUTPUT_FOLDER, f"mappings_comparison_{compare_t2t_to}.tsv")
-    results_df.to_csv(output_file, sep="\t", index=False)
-    LOG.info(f"...done (comparison time: {format(time.time()-start, '.2f')} seconds. Saved results to: {output_file})")
+    # Compare text2term mappings to the GWAS Catalog mapping set
+    gwascatalog, gwascatalog_mappings = get_gwascatalog_metadata(gc)
+    compare(benchmark_dataset=gwascatalog, benchmark_mappings=gwascatalog_mappings, benchmark_dataset_name=gc,
+            source_term_col="DISEASE.TRAIT", source_term_id_col="STUDY.ACCESSION")
