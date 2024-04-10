@@ -7,7 +7,7 @@ import text2term
 from text2term import Mapper, onto_utils
 from tqdm import tqdm
 
-__version__ = "0.6.1"
+__version__ = "0.7.0"
 
 # URL to EFO ontology version used
 EFO_URL = "http://www.ebi.ac.uk/efo/releases/v3.62.0/efo.owl"
@@ -159,6 +159,10 @@ def _get_iri(target_ontology, target_identifier):
     return bioregistry.get_iri(prefix=target_ontology, identifier=target_identifier, priority=['obofoundry', 'default'])
 
 
+def _get_iri(curie):
+    return bioregistry.get_iri(curie, priority=['obofoundry', 'default'])
+
+
 def compare_mappings(t2t_mappings, benchmark_mappings, edges_df, entailed_edges_df):
     data = []
     queries = t2t_mappings[T2T_INPUT_TERM_ID_COL].unique()
@@ -298,10 +302,33 @@ def get_biomappings(dataset_name, source_ontology="", target_ontology=""):
     return biomappings_table, benchmark_mappings
 
 
+def get_ols_efo_mappings(dataset_name):
+    ols_efo_mappings_file = os.path.join("data", "efo.ols.sssom.tsv")
+    LOG.info(f"Loading OLS mappings table from: {ols_efo_mappings_file}")
+    ols_efo_mappings = pd.read_csv(ols_efo_mappings_file, sep="\t", skiprows=112)
+
+    # Limit table to rows whose mappings have a label to work with
+    ols_efo_mappings = ols_efo_mappings.dropna(subset=['object_label'])
+
+    ols_efo_mappings["efo_IRI"] = ols_efo_mappings['subject_id'].apply(_get_iri)
+    # ols_efo_mappings["target IRI"] = ols_efo_mappings.apply(lambda row: _get_iri(row["subject_id"]), axis=1)
+
+    benchmark_mappings = extract_mappings(dataset=ols_efo_mappings,
+                                          dataset_name=dataset_name,
+                                          entailed_edges_df=efo_entailed_edges_df,
+                                          source_term_col="object_label",
+                                          source_term_id_col="object_id",
+                                          mapped_term_col="subject_label",
+                                          mapped_term_iri_col="efo_IRI")
+    return ols_efo_mappings, benchmark_mappings
+
+
 if __name__ == '__main__':
+    # Benchmark mapping sets
     gc = "GWASCatalog"
     ub = "UKBB-EFO"
     bm = "Biomappings"
+    oe = "OLS-EFO"
 
     # Create output directory if it does not exist
     if not os.path.exists(OUTPUT_FOLDER):
@@ -327,3 +354,8 @@ if __name__ == '__main__':
     gwascatalog, gwascatalog_mappings = get_gwascatalog_metadata(gc)
     compare(benchmark_dataset=gwascatalog, benchmark_mappings=gwascatalog_mappings, benchmark_dataset_name=gc,
             source_term_col="DISEASE.TRAIT", source_term_id_col="STUDY.ACCESSION")
+
+    # Compare text2term mappings to the OLS mappings extracted from EFO
+    ols_efo, ols_mappings = get_ols_efo_mappings(oe)
+    compare(benchmark_dataset=ols_efo, benchmark_mappings=ols_mappings, benchmark_dataset_name=oe,
+            source_term_col="object_label", source_term_id_col="object_id")
