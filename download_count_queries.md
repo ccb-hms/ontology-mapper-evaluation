@@ -11,7 +11,7 @@ WHERE file.project = 'text2term'
     AND CURRENT_DATE()
 ```
 
-### Total number of downloads/installations through _pip_
+### Total number of downloads/installations through _pip_ installer
 ```sql
 SELECT COUNT(*) AS num_downloads
 FROM `bigquery-public-data.pypi.file_downloads`
