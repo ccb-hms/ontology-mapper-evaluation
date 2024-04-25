@@ -10,9 +10,8 @@ WHERE file.project = 'text2term'
     BETWEEN DATE_SUB(CURRENT_DATE(), INTERVAL 36 MONTH)
     AND CURRENT_DATE()
 ```
-Result [as of April 17, 2024] — `16,737` downloads
 
-### Number of downloads per month since first release
+### Number of monthly downloads since first release
 ```sql
 SELECT
   COUNT(*) AS num_downloads,
@@ -20,6 +19,22 @@ SELECT
 FROM `bigquery-public-data.pypi.file_downloads`
 WHERE
   file.project = 'text2term'
+  AND DATE(timestamp)
+    BETWEEN DATE_TRUNC(DATE_SUB(CURRENT_DATE(), INTERVAL 36 MONTH), MONTH)
+    AND CURRENT_DATE()
+GROUP BY `month`
+ORDER BY `month` DESC
+```
+
+### Number of monthly downloads/installations through **pip** installer since first release
+```sql
+SELECT
+  COUNT(*) AS num_downloads,
+  DATE_TRUNC(DATE(timestamp), MONTH) AS `month`
+FROM `bigquery-public-data.pypi.file_downloads`
+WHERE
+  file.project = 'text2term'
+  AND details.installer.name = 'pip'
   AND DATE(timestamp)
     BETWEEN DATE_TRUNC(DATE_SUB(CURRENT_DATE(), INTERVAL 36 MONTH), MONTH)
     AND CURRENT_DATE()
